@@ -1,0 +1,69 @@
+# 2
+Q: Which countries make up Great Britain?
++ England, Scotland and Wales
+- England, Scotland, Wales and Northern Ireland
+- England and Scotland only
+- England, Wales and Northern Ireland
+E: **Great Britain** is England, Scotland and Wales – it does **not** include Northern Ireland.
+
+Q: What is the official name of the country?
++ The United Kingdom of Great Britain and Northern Ireland
+- Great Britain
+- The British Isles
+- The United Kingdom of England and Ireland
+E: The official name is **the United Kingdom of Great Britain and Northern Ireland**.
+
+Q: Northern Ireland is part of Great Britain.
+- True
++ False
+E: Northern Ireland is part of the **UK**, but **Great Britain** means only England, Scotland and Wales.
+
+Q: Which TWO places are Crown dependencies?
++ The Isle of Man
++ The Channel Islands
+- The Falkland Islands
+- St Helena
+E: The **Channel Islands** and the **Isle of Man** are **Crown dependencies** with their own governments.
+
+Q: Which statement is correct?
++ The Channel Islands are not part of the UK
+- The Channel Islands are part of the UK
+E: The Channel Islands are closely linked to the UK but are **not part of it**.
+
+Q: Which TWO are British overseas territories?
++ The Falkland Islands
++ St Helena
+- The Isle of Man
+- Jersey
+E: **St Helena** and the **Falkland Islands** are British overseas territories – linked to the UK but not part of it.
+
+Q: Where does the UK Parliament sit?
++ Westminster
+- Windsor
+- Edinburgh
+- Manchester
+E: The UK is governed by the Parliament sitting in **Westminster**.
+
+Q: The Republic of Ireland is part of the UK.
+- True
++ False
+E: The rest of Ireland is an **independent country**.
+
+Q: Which countries have their own devolved parliaments or assemblies?
++ Scotland, Wales and Northern Ireland
+- England, Scotland and Wales
+- Only Scotland
+- England and Northern Ireland
+E: **Scotland, Wales and Northern Ireland** have their own parliaments or assemblies with **devolved powers**.
+
+Q: Which TWO countries are part of the UK?
++ Wales
++ Northern Ireland
+- The Republic of Ireland
+- The Isle of Man
+E: The UK is **England, Scotland, Wales and Northern Ireland**.
+
+Q: Which statement is correct?
++ The Crown dependencies have their own governments
+- The Crown dependencies are governed directly by the Scottish Parliament
+E: The **Channel Islands** and the **Isle of Man** have **their own governments**.

@@ -1,0 +1,978 @@
+# 4
+Q: Where is the UK located?
++ North west of Europe
+- North east of Europe
+- South west of Europe
+- South east of Europe
+E: The UK is located in the **north west of Europe**.
+
+Q: What is the longest distance on the UK mainland?
++ From John O'Groats to Land's End
+- From London to Edinburgh
+- From Cardiff to Belfast
+- From Dover to Aberdeen
+E: John O'Groats to Land's End is about **870 miles (1,400 km)**.
+
+Q: What is the capital city of Wales?
++ Cardiff
+- Swansea
+- Newport
+- Bangor
+E: The capital of Wales is **Cardiff**.
+
+Q: What is the capital city of Northern Ireland?
++ Belfast
+- Londonderry
+- Dublin
+- Armagh
+E: The capital of Northern Ireland is **Belfast**.
+
+Q: Which TWO cities are in Scotland?
++ Dundee
++ Aberdeen
+- Newport
+- Bradford
+E: Scottish cities include **Edinburgh, Glasgow, Dundee and Aberdeen**.
+
+Q: Which TWO cities are in Wales?
++ Swansea
++ Newport
+- Plymouth
+- Norwich
+E: Welsh cities include **Cardiff, Swansea and Newport**.
+
+Q: Which statement is correct?
++ Scottish and Northern Irish banknotes are valid everywhere in the UK
+- Scottish and Northern Irish banknotes can only be used in Scotland and Northern Ireland
+E: They are **valid everywhere in the UK**, although shops and businesses **do not have to accept them**.
+
+Q: Which TWO are UK banknotes?
++ £20
++ £50
+- £25
+- £100
+E: UK notes are **£5, £10, £20 and £50**.
+
+Q: Which of these is NOT a UK coin?
++ 25p
+- 20p
+- £2
+- 2p
+E: UK coins are **1p, 2p, 5p, 10p, 20p, 50p, £1 and £2**.
+
+Q: In which part of the UK is Gaelic spoken in some areas?
++ The Highlands and Islands of Scotland
+- North Wales
+- Cornwall
+- The north of England
+E: **Gaelic** is spoken in parts of the **Highlands and Islands**; in Northern Ireland some speak **Irish Gaelic**.
+
+Q: What was the UK population in 2010?
++ Just over 62 million
+- Just under 60 million
+- 57 million
+- 50 million
+E: In **2010** the population was **just over 62 million**.
+
+Q: What was the population of the UK in 1901?
++ 40 million
+- 20 million
+- 50 million
+- 8 million
+E: The population was **40 million in 1901** and **50 million in 1951**.
+
+Q: About what percentage of the UK population lives in England?
++ 84%
+- 50%
+- 70%
+- 95%
+E: **England** has about **84%**, Scotland just over 8%, Wales about 5% and Northern Ireland less than 3%.
+
+Q: Which TWO reasons explain recent UK population growth?
++ Migration into the UK
++ Longer life expectancy
+- More people leaving the UK
+- A higher retirement age
+E: **Migration** and **longer life expectancy** have contributed to population growth.
+
+Q: Which statement is correct?
++ More women than men study at university in the UK
+- Fewer women than men study at university in the UK
+E: **More women than men study at university**, and girls leave school with better qualifications on average.
+
+Q: Women make up about half of the UK workforce.
++ True
+- False
+E: **Women make up about half of the workforce** in Britain today.
+
+Q: According to the 2009 Citizenship Survey, what percentage of people identified as Christian?
++ 70%
+- 50%
+- 90%
+- 21%
+E: **70%** identified as Christian and **21%** said they had **no religion**.
+
+Q: What percentage of people said they had no religion in the 2009 Citizenship Survey?
++ 21%
+- 4%
+- 10%
+- 40%
+E: **21%** said they had **no religion**.
+
+Q: Who is the head of the Church of England?
++ The monarch
+- The Archbishop of Canterbury
+- The Prime Minister
+- The Pope
+E: The **monarch is the head** of the Church of England; the **Archbishop of Canterbury** is its spiritual leader.
+
+Q: Who is the spiritual leader of the Church of England?
++ The Archbishop of Canterbury
+- The monarch
+- The Archbishop of York
+- The Moderator
+E: The **Archbishop of Canterbury** is the spiritual leader.
+
+Q: What is the Church of England called in Scotland and the USA?
++ The Episcopal Church
+- The Presbyterian Church
+- The Methodist Church
+- The Church of Scotland
+E: The Church of England is called the **Anglican Church** in other countries and the **Episcopal Church** in Scotland and the USA.
+
+Q: Which TWO are true about the Church of Scotland?
++ It is a Presbyterian Church
++ Its chairperson, the Moderator, is appointed for one year
+- The monarch is its spiritual leader
+- It is a Roman Catholic Church
+E: The **Church of Scotland** is **Presbyterian**, governed by ministers and elders; the **Moderator** serves for **one year**.
+
+Q: Several Church of England bishops sit in the House of Lords.
++ True
+- False
+E: **Several Church of England bishops** sit in the House of Lords.
+
+Q: Which TWO countries have no established Church?
++ Wales
++ Northern Ireland
+- England
+- Scotland
+E: There is **no established Church in Wales or Northern Ireland**.
+
+Q: When is St David's Day?
++ 1 March
+- 17 March
+- 23 April
+- 30 November
+E: **St David's Day** (Wales) is **1 March**.
+
+Q: When is St Andrew's Day?
++ 30 November
+- 1 March
+- 17 March
+- 23 April
+E: **St Andrew's Day** (Scotland) is **30 November**.
+
+Q: When is St George's Day?
++ 23 April
+- 1 March
+- 17 March
+- 30 November
+E: **St George's Day** (England) is **23 April**.
+
+Q: Who is the patron saint of Northern Ireland?
++ St Patrick
+- St David
+- St Andrew
+- St George
+E: **St Patrick**'s day is **17 March**.
+
+Q: Which TWO countries have their patron saint's day as an official holiday?
++ Scotland
++ Northern Ireland
+- England
+- Wales
+E: Only **Scotland and Northern Ireland** have their patron saint's day as an official holiday.
+
+Q: What is the national flower of Wales?
++ Daffodil
+- Rose
+- Thistle
+- Shamrock
+E: **Wales: daffodil**. England: rose. Scotland: thistle. Northern Ireland: shamrock.
+
+Q: What is the national flower of Scotland?
++ Thistle
+- Daffodil
+- Rose
+- Shamrock
+E: The **thistle** is associated with **Scotland**.
+
+Q: When is Boxing Day?
++ 26 December
+- 24 December
+- 25 December
+- 1 January
+E: **Boxing Day** is **26 December**, the day after Christmas, and is a public holiday.
+
+Q: Which TWO days around Easter are public holidays?
++ Good Friday
++ Easter Monday
+- Ash Wednesday
+- Shrove Tuesday
+E: **Good Friday** and **Easter Monday** are public holidays.
+
+Q: What is the period of 40 days before Easter called?
++ Lent
+- Advent
+- Ramadan
+- Hogmanay
+E: **Lent** is the 40 days before Easter, starting on **Ash Wednesday**.
+
+Q: What is Shrove Tuesday also known as?
++ Pancake Day
+- Ash Wednesday
+- Good Friday
+- Boxing Day
+E: **Shrove Tuesday** is **Pancake Day** – the day before Lent begins.
+
+Q: Which TWO religious groups celebrate Diwali?
++ Hindus
++ Sikhs
+- Muslims
+- Jews
+E: **Diwali**, the **Festival of Lights**, is celebrated by **Hindus and Sikhs**.
+
+Q: Which city is famous for its Diwali celebration?
++ Leicester
+- Birmingham
+- Edinburgh
+- Cardiff
+E: There is a famous celebration of Diwali in **Leicester**.
+
+Q: Which festival is celebrated by Jewish people for eight days with a menorah?
++ Hannukah
+- Diwali
+- Vaisakhi
+- Eid al-Fitr
+E: **Hannukah**, in November or December, lasts **eight days**; a candle is lit each day on a **menorah**.
+
+Q: What does Eid al-Fitr celebrate?
++ The end of Ramadan
+- The birth of the Prophet
+- The founding of the Khalsa
+- The new year
+E: **Eid al-Fitr** celebrates **the end of Ramadan**, the month of fasting.
+
+Q: What does Vaisakhi celebrate?
++ The founding of the Sikh community known as the Khalsa
+- The victory of good over evil
+- The end of Ramadan
+- The birth of Jesus
+E: **Vaisakhi** is a **Sikh** festival on **14 April** celebrating the founding of the **Khalsa**.
+
+Q: What is the Scottish name for New Year's Eve?
++ Hogmanay
+- Burns Night
+- Eisteddfod
+- Ceilidh
+E: In Scotland **31 December** is called **Hogmanay**, and **2 January** is also a public holiday.
+
+Q: When is Mothering Sunday?
++ The Sunday three weeks before Easter
+- The second Sunday in May
+- The third Sunday in June
+- The first Sunday in March
+E: **Mothering Sunday** is three weeks before Easter. **Father's Day** is the third Sunday in June.
+
+Q: What event does Bonfire Night commemorate?
++ The failed plot to blow up Parliament in 1605
+- The Great Fire of London in 1666
+- The end of the First World War
+- The defeat of the Spanish Armada
+E: **Bonfire Night (5 November)** remembers **Guy Fawkes'** failed plot to kill the Protestant king in **1605**.
+
+Q: Which TWO things happen on Remembrance Day?
++ A two-minute silence at 11.00 am
++ People wear poppies
+- People give chocolate eggs
+- People play tricks until midday
+E: On **11 November** people wear **poppies**, hold a **two-minute silence at 11 am**, and lay wreaths at the **Cenotaph**.
+
+Q: On April Fool's Day, until what time are jokes played?
++ Midday
+- Midnight
+- 9.00 am
+- 6.00 pm
+E: On **1 April** people play jokes on each other **until midday**.
+
+Q: Halloween has its roots in a pagan festival marking the beginning of winter.
++ True
+- False
+E: **Halloween (31 October)** has roots in a **pagan** festival marking the start of winter.
+
+Q: Bank holidays have religious significance.
+- True
++ False
+E: **Bank holidays** are public holidays with **no religious significance**.
+
+Q: Which TWO sports originated in Britain?
++ Cricket
++ Golf
+- Baseball
+- Basketball
+E: **Cricket, football, lawn tennis, golf and rugby** all began in Britain.
+
+Q: In which years has the UK hosted the Olympic Games?
++ 1908, 1948 and 2012
+- 1908, 1956 and 2012
+- 1924, 1948 and 2012
+- 1896, 1948 and 2012
+E: The UK hosted the Olympics in **1908, 1948 and 2012**.
+
+Q: Where was the main Olympic site for the 2012 Games?
++ Stratford, East London
+- Wembley, North London
+- Greenwich, South London
+- Manchester
+E: The main 2012 Olympic site was in **Stratford, East London**.
+
+Q: Where did the Paralympics originate?
++ Stoke Mandeville hospital
+- Wimbledon
+- Wembley Stadium
+- Leamington Spa
+E: The Paralympics began with **Dr Sir Ludwig Guttmann** at **Stoke Mandeville** hospital in Buckinghamshire.
+
+Q: Who was the first man to run a mile in under four minutes?
++ Sir Roger Bannister
+- Mo Farah
+- Sebastian Coe
+- Steve Redgrave
+E: **Sir Roger Bannister** ran a mile in under four minutes in **1954**.
+
+Q: Who captained the English football team that won the World Cup in 1966?
++ Bobby Moore
+- David Beckham
+- Bobby Charlton
+- Ian Botham
+E: **Bobby Moore** captained England to victory in **1966**.
+
+Q: Who won gold medals in rowing at five consecutive Olympic Games?
++ Sir Steve Redgrave
+- Sir Chris Hoy
+- Bradley Wiggins
+- David Weir
+E: **Sir Steve Redgrave** is one of Britain's greatest Olympians.
+
+Q: Who was the first Briton to win the Tour de France?
++ Bradley Wiggins
+- Chris Hoy
+- Mark Cavendish
+- Jackie Stewart
+E: **Bradley Wiggins** won the Tour de France in **2012**.
+
+Q: Which TWO events did Mo Farah win at the 2012 Olympics?
++ 5,000 metres
++ 10,000 metres
+- Marathon
+- 1,500 metres
+E: **Mo Farah**, born in Somalia, won the **5,000m and 10,000m** in **2012**.
+
+Q: Which event did Jessica Ennis win at the 2012 Olympics?
++ Heptathlon
+- Pentathlon
+- 100 metres
+- Long jump
+E: **Jessica Ennis** won the **heptathlon**, which includes seven track and field events.
+
+Q: Which tennis tournament did Andy Murray win in 2012?
++ The US Open
+- Wimbledon
+- The French Open
+- The Australian Open
+E: **Andy Murray** won the **US Open** men's singles in **2012**, the first British man to win a Grand Slam singles title since **1936**.
+
+Q: Who won gold medals for ice dancing at the 1984 Olympics?
++ Jayne Torvill and Christopher Dean
+- Kelly Holmes and Steve Redgrave
+- Ellie Simmonds and David Weir
+- Chris Hoy and Bradley Wiggins
+E: **Torvill and Dean** won Olympic gold in **1984** and four world championships.
+
+Q: Who became the fastest person to sail around the world single-handed in 2004?
++ Dame Ellen MacArthur
+- Sir Francis Chichester
+- Sir Robin Knox-Johnston
+- Dame Kelly Holmes
+E: **Ellen MacArthur** became the fastest single-handed sailor around the world in **2004**.
+
+Q: Which sport is Sir Jackie Stewart famous for?
++ Motor racing
+- Golf
+- Cycling
+- Tennis
+E: **Jackie Stewart** is a Scottish former racing driver who won the **Formula 1** world championship **three times**.
+
+Q: Which TWO Paralympians won the London Marathon six times?
++ Tanni Grey-Thompson
++ David Weir
+- Ellie Simmonds
+- Chris Hoy
+E: Both **Tanni Grey-Thompson** and **David Weir** won the London Marathon **six times**.
+
+Q: What is the UK's most popular sport?
++ Football
+- Cricket
+- Rugby
+- Tennis
+E: **Football** is the UK's most popular sport.
+
+Q: England's only international football tournament victory was the 1966 World Cup.
++ True
+- False
+E: England's only international tournament victory was the **1966 World Cup**, hosted in the UK.
+
+Q: What is the Ashes?
++ A cricket series between England and Australia
+- A rugby competition between England and Scotland
+- A horse race in Liverpool
+- A rowing race on the Thames
+E: **The Ashes** is a series of Test matches between **England and Australia**.
+
+Q: Which TWO countries take part in the Six Nations rugby championship?
++ France
++ Italy
+- Australia
+- New Zealand
+E: The **Six Nations**: **England, Ireland, Scotland, Wales, France and Italy**.
+
+Q: Where is the Grand National held?
++ Aintree, near Liverpool
+- Ascot, Berkshire
+- Ayr, Scotland
+- Newmarket, Suffolk
+E: The **Grand National** is at **Aintree** near Liverpool. The **Scottish Grand National** is at **Ayr**.
+
+Q: Where is the National Horseracing Museum?
++ Newmarket, Suffolk
+- Aintree, Liverpool
+- Ascot, Berkshire
+- Cheltenham
+E: The **National Horseracing Museum** is in **Newmarket, Suffolk**.
+
+Q: Which place is known as the home of golf?
++ St Andrews
+- Wimbledon
+- Edinburgh
+- Augusta
+E: **St Andrews** in Scotland is the home of golf. Modern golf dates back to **15th-century Scotland**.
+
+Q: Which TWO statements are true about Wimbledon?
++ It is the oldest tennis tournament in the world
++ It is the only Grand Slam event played on grass
+- It is held in Scotland
+- It is the newest Grand Slam event
+E: **Wimbledon** is the oldest tennis tournament and the **only Grand Slam on grass**.
+
+Q: Where was the first tennis club founded in 1872?
++ Leamington Spa
+- Wimbledon
+- Bath
+- Oxford
+E: The first tennis club was founded in **Leamington Spa in 1872**.
+
+Q: Who was the first person to sail single-handed around the world?
++ Sir Francis Chichester
+- Sir Robin Knox-Johnston
+- Dame Ellen MacArthur
+- Sir Francis Drake
+E: **Sir Francis Chichester** did it in **1966/67**; **Sir Robin Knox-Johnston** was first to do it **without stopping**.
+
+Q: Where is Europe's longest dry ski slope?
++ Near Edinburgh
+- Near Cardiff
+- Near Manchester
+- Near Belfast
+E: **Europe's longest dry ski slope** is near **Edinburgh**; there are five ski centres in Scotland.
+
+Q: What are the Proms?
++ An eight-week summer season of classical music
+- A dance festival in Wales
+- A pop music festival in Glastonbury
+- A theatre festival in Edinburgh
+E: **The Proms** is an **eight-week summer season** of orchestral music, organised by the **BBC since 1927**.
+
+Q: Which composer wrote Water Music for King George I?
++ George Frederick Handel
+- Henry Purcell
+- Edward Elgar
+- Gustav Holst
+E: German-born **Handel** wrote **Water Music** for George I and **Music for the Royal Fireworks** for George II.
+
+Q: Which composer wrote The Planets?
++ Gustav Holst
+- Benjamin Britten
+- Edward Elgar
+- William Walton
+E: **Gustav Holst** wrote **The Planets**; Jupiter became the hymn **I Vow to Thee My Country**.
+
+Q: Which piece is usually played at the Last Night of the Proms?
++ Land of Hope and Glory
+- God Save the King only
+- Messiah
+- The Planets
+E: **Elgar**'s Pomp and Circumstance March No 1 – **Land of Hope and Glory** – is played at the Last Night of the Proms.
+
+Q: Which TWO operas did Benjamin Britten write?
++ Peter Grimes
++ Billy Budd
+- The Mikado
+- HMS Pinafore
+E: **Britten** wrote **Peter Grimes** and **Billy Budd**, and founded the **Aldeburgh festival**.
+
+Q: Who was the organist at Westminster Abbey and wrote church music and operas?
++ Henry Purcell
+- George Frederick Handel
+- Ralph Vaughan Williams
+- Edward Elgar
+E: **Henry Purcell** developed a distinctly British style of music.
+
+Q: What is the National Eisteddfod?
++ A Welsh cultural festival including music, dance and poetry
+- A Scottish New Year celebration
+- An Irish horse race
+- An English flower show
+E: The **National Eisteddfod of Wales** is largely **in Welsh** and includes competitions for Welsh poetry.
+
+Q: What is the Mercury Music Prize awarded for?
++ The best album from the UK and Ireland
+- The best classical composition
+- The best musical theatre show
+- The best live performance
+E: The **Mercury Music Prize** is awarded each **September** for the best album from the **UK and Ireland**.
+
+Q: Which play by Agatha Christie has had the longest initial run of any show in history?
++ The Mousetrap
+- Murder on the Orient Express
+- Cats
+- The Phantom of the Opera
+E: **The Mousetrap** has run in the West End since **1952**.
+
+Q: Which TWO comic operas did Gilbert and Sullivan write?
++ The Pirates of Penzance
++ The Mikado
+- Evita
+- Cats
+E: **Gilbert and Sullivan** wrote **HMS Pinafore, The Pirates of Penzance and The Mikado**.
+
+Q: Which TWO shows did Andrew Lloyd Webber write the music for?
++ Cats
++ The Phantom of the Opera
+- The Mousetrap
+- HMS Pinafore
+E: **Lloyd Webber** also wrote **Jesus Christ Superstar** and **Evita** (with Tim Rice).
+
+Q: In a pantomime, what is "the Dame"?
++ A woman played by a man
+- A man played by a woman
+- The villain of the story
+- A pantomime horse
+E: The **Dame** is a woman played by a man.
+
+Q: What is the Edinburgh Festival Fringe?
++ A showcase of mainly theatre and comedy
+- A classical music festival
+- A Highland games event
+- A film festival in winter
+E: The **Fringe** is the biggest part of the **Edinburgh Festival**, held every summer.
+
+Q: Which awards are named after a British actor known for his Shakespeare roles?
++ The Laurence Olivier Awards
+- The BAFTAs
+- The Brit Awards
+- The Turner Prize
+E: The **Laurence Olivier Awards** take place annually in London.
+
+Q: What is the Turner Prize awarded for?
++ Contemporary art
+- Classical music
+- Literature
+- Architecture
+E: The **Turner Prize** (since **1984**) celebrates **contemporary art**; works are shown at **Tate Britain**.
+
+Q: Which artist is famous for landscapes of Dedham Vale?
++ John Constable
+- Joseph Turner
+- Thomas Gainsborough
+- David Hockney
+E: **John Constable** painted **Dedham Vale** on the Suffolk–Essex border.
+
+Q: Which artist is best known for large bronze abstract sculptures?
++ Henry Moore
+- Lucian Freud
+- David Allan
+- John Petts
+E: **Henry Moore** was an English sculptor known for **large bronze abstract** works.
+
+Q: Which artist was an important contributor to the 1960s "pop art" movement?
++ David Hockney
+- John Constable
+- Joseph Turner
+- Henry Moore
+E: **David Hockney** contributed to **pop art** in the 1960s.
+
+Q: Which TWO artists were Pre-Raphaelites?
++ Dante Gabriel Rossetti
++ Holman Hunt
+- Thomas Gainsborough
+- Henry Moore
+E: The **Pre-Raphaelites** included **Holman Hunt, Dante Gabriel Rossetti and Sir John Millais**.
+
+Q: Which Welsh artist was known for engravings and stained glass?
++ John Petts
+- John Lavery
+- David Allan
+- Lucian Freud
+E: **John Petts** was a **Welsh** artist known for **engravings and stained glass**.
+
+Q: Who designed the Cenotaph in Whitehall?
++ Sir Edwin Lutyens
+- Sir Christopher Wren
+- Inigo Jones
+- Robert Adam
+E: **Sir Edwin Lutyens** designed the **Cenotaph** and **New Delhi**.
+
+Q: Which TWO buildings did Inigo Jones design?
++ The Queen's House at Greenwich
++ The Banqueting House in Whitehall
+- St Paul's Cathedral
+- The Houses of Parliament
+E: **Inigo Jones** designed the **Queen's House** and the **Banqueting House** in the 17th century.
+
+Q: Which TWO buildings were built in the 19th-century gothic style?
++ The Houses of Parliament
++ St Pancras Station
+- St Paul's Cathedral
+- The Queen's House
+E: The **Houses of Parliament** and **St Pancras Station** were built in the revived **gothic** style.
+
+Q: Which Scottish architect designed Dumfries House?
++ Robert Adam
+- Christopher Wren
+- Edwin Lutyens
+- Norman Foster
+E: **Robert Adam** designed the inside and outside of houses such as **Dumfries House**.
+
+Q: Who designed landscapes for country houses to look natural?
++ Lancelot "Capability" Brown
+- Gertrude Jekyll
+- Thomas Chippendale
+- Clarice Cliff
+E: **Capability Brown** designed natural-looking grounds in the 18th century.
+
+Q: Which TWO are famous British fashion designers?
++ Mary Quant
++ Vivienne Westwood
+- Thomas Chippendale
+- Capability Brown
+E: Leading fashion designers include **Mary Quant, Alexander McQueen and Vivienne Westwood**.
+
+Q: What did Thomas Chippendale design?
++ Furniture
+- Gardens
+- Ceramics
+- Clothes
+E: **Thomas Chippendale** designed **furniture** in the 18th century.
+
+Q: Which novel was voted the country's best-loved novel in 2003?
++ The Lord of the Rings
+- Pride and Prejudice
+- Harry Potter
+- Oliver Twist
+E: **The Lord of the Rings** by **JRR Tolkien** was voted best-loved in **2003**.
+
+Q: Which TWO writers have won the Nobel Prize in Literature?
++ Seamus Heaney
++ Harold Pinter
+- J K Rowling
+- Jane Austen
+E: Nobel winners include **William Golding, Seamus Heaney and Harold Pinter**.
+
+Q: Authors from which places can win the Man Booker Prize?
++ The Commonwealth, Ireland or Zimbabwe
+- Only the UK
+- Any country in the world
+- Europe only
+E: The **Man Booker Prize** (since **1968**) is open to the **Commonwealth, Ireland or Zimbabwe**.
+
+Q: Who wrote Pride and Prejudice?
++ Jane Austen
+- Charlotte Brontë
+- Thomas Hardy
+- Charles Dickens
+E: **Jane Austen** wrote **Pride and Prejudice** and **Sense and Sensibility**.
+
+Q: Which TWO novels were written by Charles Dickens?
++ Oliver Twist
++ Great Expectations
+- Treasure Island
+- Lucky Jim
+E: **Dickens** wrote **Oliver Twist** and **Great Expectations**.
+
+Q: Who wrote Treasure Island?
++ Robert Louis Stevenson
+- Arthur Conan Doyle
+- Walter Scott
+- Rudyard Kipling
+E: **Robert Louis Stevenson** wrote **Treasure Island**, **Kidnapped** and **Dr Jekyll and Mr Hyde**.
+
+Q: Who wrote the Sherlock Holmes stories?
++ Sir Arthur Conan Doyle
+- Agatha Christie
+- Ian Fleming
+- Charles Dickens
+E: **Sir Arthur Conan Doyle**, a Scottish doctor, created **Sherlock Holmes**.
+
+Q: Who wrote Far from the Madding Crowd?
++ Thomas Hardy
+- Jane Austen
+- Evelyn Waugh
+- Graham Greene
+E: **Thomas Hardy** wrote novels about rural society, including **Jude the Obscure**.
+
+Q: Which poet wrote about daffodils?
++ William Wordsworth
+- William Blake
+- Lord Byron
+- Robert Browning
+E: **Wordsworth**: "I wander'd lonely as a cloud … A host of golden daffodils".
+
+Q: Which TWO poets wrote about their experiences in the First World War?
++ Wilfred Owen
++ Siegfried Sassoon
+- John Keats
+- Lord Byron
+E: **Wilfred Owen** and **Siegfried Sassoon** wrote about the First World War.
+
+Q: Who wrote Paradise Lost?
++ John Milton
+- William Shakespeare
+- Geoffrey Chaucer
+- John Keats
+E: **John Milton** wrote **Paradise Lost**, inspired by his religious views.
+
+Q: How many lines does a sonnet have?
++ 14
+- 10
+- 12
+- 16
+E: A **sonnet** must be **14 lines** long.
+
+Q: Where are many famous poets buried or commemorated?
++ Poets' Corner, Westminster Abbey
+- St Paul's Cathedral
+- The British Library
+- The Globe Theatre
+E: Many poets are commemorated in **Poets' Corner** in **Westminster Abbey**.
+
+Q: Which poem is about a hero who battles monsters?
++ Beowulf
+- The Canterbury Tales
+- Paradise Lost
+- The Tyger
+E: The Anglo-Saxon poem **Beowulf** tells of its hero's battles against monsters.
+
+Q: Which TWO are traditional foods of Wales and Scotland?
++ Welsh cakes
++ Haggis
+- Ulster fry
+- Yorkshire pudding
+E: **Welsh cakes** (Wales) and **haggis** (Scotland). Ulster fry is from NI; Yorkshire pudding from England.
+
+Q: Who became famous in silent movies for playing a tramp character?
++ Charlie Chaplin
+- Alfred Hitchcock
+- Laurence Olivier
+- David Niven
+E: **Sir Charles (Charlie) Chaplin** became famous for his **tramp** character.
+
+Q: Which TWO film franchises, the highest-grossing of all time, were produced in the UK?
++ Harry Potter
++ James Bond
+- Star Wars
+- Wallace and Gromit
+E: The two highest-grossing franchises – **Harry Potter and James Bond** – were produced in the UK.
+
+Q: Which British animator has won four Oscars, three for Wallace and Gromit?
++ Nick Park
+- Ridley Scott
+- David Lean
+- Alfred Hitchcock
+E: **Nick Park** has won **four Oscars**, three for **Wallace and Gromit**.
+
+Q: Which film studio claims to be the oldest continuously working film studio in the world?
++ Ealing Studios
+- Pinewood Studios
+- Shepperton Studios
+- Elstree Studios
+E: **Ealing Studios** has that claim.
+
+Q: Which British film was directed by David Lean?
++ Lawrence of Arabia
+- The 39 Steps
+- The Third Man
+- Chariots of Fire
+E: **David Lean** directed **Brief Encounter** and **Lawrence of Arabia**. Hitchcock directed The 39 Steps.
+
+Q: What are the BAFTAs?
++ The British equivalent of the Oscars
+- Awards for music albums
+- Awards for theatre
+- Awards for contemporary art
+E: The **British Academy Film Awards** are hosted by **BAFTA**.
+
+Q: Which TWO were satirical TV shows?
++ Spitting Image
++ That Was The Week That Was
+- Coronation Street
+- EastEnders
+E: **That Was The Week That Was** (1960s) and **Spitting Image** (1980s–90s) were satirical shows.
+
+Q: In which year did Monty Python's Flying Circus first appear?
++ 1969
+- 1959
+- 1979
+- 1989
+E: In **1969** **Monty Python's Flying Circus** introduced a new type of comedy.
+
+Q: What is the maximum fine for watching TV without a TV licence?
++ £1,000
+- £100
+- £500
+- £5,000
+E: You can be fined **up to £1,000** for watching TV without a licence.
+
+Q: Which TWO groups can get a free or discounted TV licence?
++ People over 75
++ Blind people
+- Students
+- People under 18
+E: People **over 75** can apply for a free licence; **blind people get 50% off**.
+
+Q: How is the BBC funded?
++ By TV licences
+- By advertisements
+- By subscriptions
+- By donations
+E: The **BBC** is funded by the **TV licence**; other channels by adverts and subscriptions.
+
+Q: The BBC is the only wholly state-funded media organisation that is independent of government.
++ True
+- False
+E: The **BBC** is state-funded but **independent of government**.
+
+Q: How old must you be to buy alcohol in a pub?
++ 18
+- 16
+- 17
+- 21
+E: You must be **18** to buy alcohol.
+
+Q: At what age can people drink wine or beer with a meal in a hotel or restaurant, if with someone over 18?
++ 16
+- 14
+- 17
+- 18
+E: At **16** you can drink wine or beer **with a meal**, if accompanied by someone over 18.
+
+Q: How old must you be to enter a betting shop?
++ 18
+- 16
+- 21
+- 17
+E: You must be **18** to go into betting shops or gambling clubs.
+
+Q: What must all dogs in public places wear?
++ A collar showing the name and address of the owner
+- A muzzle
+- A lead at least two metres long
+- A microchip tag with a photo
+E: Dogs in public must wear a **collar with the owner's name and address**.
+
+Q: How many national parks are there in England, Wales and Scotland?
++ 15
+- 10
+- 20
+- 25
+E: There are **15 national parks** in England, Wales and Scotland.
+
+Q: When was the National Trust founded?
++ 1895
+- 1795
+- 1945
+- 1851
+E: The **National Trust** was founded in **1895 by three volunteers**.
+
+Q: What is "Big Ben"?
++ The great bell of the clock at the Houses of Parliament
+- The tower of Westminster Abbey
+- A clock in Trafalgar Square
+- The largest bell in St Paul's Cathedral
+E: **Big Ben** is the nickname for the **great bell**. The tower is called **Elizabeth Tower**.
+
+Q: Where is the Eden Project?
++ Cornwall
+- Devon
+- Kent
+- Wales
+E: The **Eden Project**, with its giant greenhouses (**biomes**), is in **Cornwall**.
+
+Q: Where is the Giant's Causeway?
++ The north-east coast of Northern Ireland
+- The west coast of Scotland
+- North Wales
+- Cornwall
+E: The **Giant's Causeway** is in **Northern Ireland**, formed from **volcanic lava** about 50 million years ago.
+
+Q: What is the highest mountain in Wales?
++ Snowdon
+- Ben Nevis
+- Scafell Pike
+- Slieve Donard
+E: **Snowdon**, in **Snowdonia** national park, is the highest mountain in Wales.
+
+Q: What is England's largest national park?
++ The Lake District
+- Snowdonia
+- Dartmoor
+- The Peak District
+E: The **Lake District** is England's largest national park. Its biggest lake is **Windermere**.
+
+Q: What is the largest expanse of fresh water in mainland Britain?
++ Loch Lomond
+- Windermere
+- Loch Ness
+- Wastwater
+E: **Loch Lomond** is the largest expanse of fresh water in mainland Britain.
+
+Q: Who gives tours at the Tower of London?
++ Yeoman Warders (Beefeaters)
+- Members of the Royal Family
+- Soldiers of the Scots Guards
+- National Trust volunteers
+E: Tours are given by the **Yeoman Warders**, known as **Beefeaters**. The **Crown Jewels** are kept there.
+
+Q: The London Eye was originally built to celebrate what?
++ The new millennium
+- The Queen's Golden Jubilee
+- The 2012 Olympics
+- The end of the Second World War
+E: The **London Eye** was built for the **millennium** and is part of New Year celebrations.
+
+Q: In 2007, which place did TV viewers vote as Britain's favourite view?
++ Wastwater
+- Windermere
+- Loch Lomond
+- The Giant's Causeway
+E: **Wastwater** in the Lake District was voted Britain's favourite view.

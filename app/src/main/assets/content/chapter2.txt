@@ -1,0 +1,35 @@
+@title What is the UK?
+@subtitle The countries, the names and the islands
+@intro The shortest chapter, but a favourite source of trick questions: the difference between **the UK**, **Great Britain** and **the British Isles**, and what the **Crown dependencies** are.
+
+@section The countries of the UK
+The UK is made up of four countries: **England, Scotland, Wales and Northern Ireland**. The rest of Ireland is an **independent country**.
+
+The official name is **the United Kingdom of Great Britain and Northern Ireland**.
+
+**Great Britain** means only **England, Scotland and Wales** – it does **not** include Northern Ireland. The words "Britain" and "British" are used in the handbook to mean everyone in the UK.
+
+! "Great Britain" vs "United Kingdom" is one of the most common test questions. Great Britain = 3 countries. UK = 4 countries.
+
+| UK | England, Scotland, Wales, Northern Ireland
+| Great Britain | England, Scotland, Wales
+
+@section Crown dependencies and overseas territories
+Some islands are closely linked to the UK but are **not part of it**:
+
+- **The Channel Islands** and **the Isle of Man** have their **own governments** and are called **Crown dependencies**.
+- **British overseas territories** in other parts of the world, such as **St Helena** and **the Falkland Islands**, are also linked to the UK but are **not part of it**.
+
+## How the UK is governed
+The UK is governed by **the Parliament sitting in Westminster**. Scotland, Wales and Northern Ireland also have their **own parliaments or assemblies** with **devolved powers** in defined areas.
+
+@remember The UK
+- The UK = **England, Scotland, Wales and Northern Ireland**
+- Official name: **the United Kingdom of Great Britain and Northern Ireland**
+- **Great Britain** = England, Scotland and Wales only (**not** Northern Ireland)
+- The rest of Ireland is an **independent country**
+
+@remember Linked but not part of the UK
+- **Crown dependencies**: the **Channel Islands** and the **Isle of Man** – they have their own governments
+- **Overseas territories**: e.g. **St Helena** and the **Falkland Islands**
+- The UK is governed from **Westminster**; Scotland, Wales and NI have **devolved** parliaments or assemblies

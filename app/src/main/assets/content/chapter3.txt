@@ -1,0 +1,457 @@
+@title A long and illustrious history
+@subtitle From the Stone Age to the present day
+@intro The biggest chapter and the source of many questions. Told here in order, from the first farmers to today. Focus on **dates**, **who did what**, **battles**, **Acts of Parliament** and how **Parliament and the right to vote** developed.
+
+@section Early Britain
+## The Stone Age
+The first people in Britain were **hunter-gatherers**. For much of the Stone Age, Britain was joined to the continent by a land bridge. It became an island, separated by the Channel, about **10,000 years ago**.
+
+The **first farmers arrived about 6,000 years ago**, probably from **south-east Europe**. They built houses, tombs and monuments – including **Stonehenge** in **Wiltshire**, probably a gathering place for seasonal ceremonies. **Skara Brae on Orkney** is the **best-preserved prehistoric village in northern Europe**.
+
+## The Bronze and Iron Ages
+Around **4,000 years ago** people learned to make **bronze**. They lived in **roundhouses** and buried their dead in tombs called **round barrows**, and were skilled metalworkers in bronze and gold.
+
+In the **Iron Age** people made tools and weapons from iron and built defended sites called **hill forts** – an impressive one is **Maiden Castle in Dorset**. They spoke languages from the **Celtic** family (related languages survive in Wales, Scotland and Ireland) and made **the first coins minted in Britain**, some inscribed with the names of Iron Age kings. This marks **the beginning of British history**.
+
+## The Romans (AD 43 – AD 410)
+**Julius Caesar** invaded in **55 BC** but failed. In **AD 43 Emperor Claudius** led a successful invasion. **Boudicca**, queen of the **Iceni** in eastern England, fought the Romans – her **statue stands on Westminster Bridge** near Parliament.
+
+Parts of Scotland were never conquered. **Emperor Hadrian** built **Hadrian's Wall** to keep out the **Picts** (ancestors of the Scots). Forts such as **Housesteads** and **Vindolanda** can still be seen; it is a **UNESCO World Heritage Site**.
+
+The Romans stayed for **400 years**, building roads and public buildings, creating a structure of law and introducing new plants and animals. The **first Christian communities** appeared in the **3rd and 4th centuries AD**.
+
+## The Anglo-Saxons
+The Roman army left in **AD 410**. Britain was invaded by the **Jutes, Angles and Saxons** from northern Europe, whose languages are **the basis of modern English**. By about **AD 600** Anglo-Saxon kingdoms were established, mainly in England; Wales and Scotland stayed free of them.
+
+A king was buried with treasure and armour in a ship at **Sutton Hoo in Suffolk**.
+
+Missionaries brought Christianity. From Ireland: **St Patrick** (patron saint of Ireland) and **St Columba**, who founded a monastery on **Iona**. From Rome: **St Augustine**, who became **the first Archbishop of Canterbury**.
+
+## The Vikings
+The Vikings came from **Denmark and Norway**, first raiding in **AD 789**. The Anglo-Saxon kingdoms united under **King Alfred the Great**, who **defeated the Vikings**. Many Vikings settled in the east and north of England in the **Danelaw** – place names like **Grimsby** and **Scunthorpe** come from Viking languages.
+
+There was a short period of Danish kings, the first being **Cnut (Canute)**. In the north, the Viking threat led people to unite under **Kenneth MacAlpin**, and the name **Scotland** began to be used.
+
+## The Norman Conquest (1066)
+In **1066 William, Duke of Normandy** defeated **Harold**, the Saxon king, at the **Battle of Hastings**. William became **William the Conqueror**. The battle is shown in the **Bayeux Tapestry**, which can still be seen **in France**.
+
+It was **the last successful foreign invasion of England**. Norman French influenced the English language. The Normans conquered Wales at first (the Welsh won land back) but **did not invade Scotland**.
+
+William ordered a survey of every town and village, who owned the land and what animals they had: the **Domesday Book**, which still exists today.
+
+@section The Middle Ages
+The period from 1066 to about **1485** is the **Middle Ages** (medieval period) – a time of almost constant war.
+
+## Wars at home and abroad
+- **Wales**: in **1284 Edward I** introduced the **Statute of Rhuddlan**, annexing Wales to the English Crown. Huge castles such as **Conwy** and **Caernarvon** were built. The last Welsh rebellions were defeated by the **mid-15th century**.
+- **Scotland**: in **1314** the Scots, led by **Robert the Bruce**, defeated the English at the **Battle of Bannockburn**. Scotland remained unconquered.
+- **Ireland**: by **1200** the English ruled an area around **Dublin** known as **the Pale**.
+- Abroad: knights fought in the **Crusades** for the Holy Land, and England fought France in the **Hundred Years War** – which actually lasted **116 years**. At the **Battle of Agincourt (1415)**, **Henry V**'s outnumbered army defeated the French. The English left France in the **1450s**.
+
+## Feudalism and the Black Death
+The Normans used **feudalism**: the king gave land to lords in return for help in war. Most peasants were **serfs** who worked their lord's land and could not move away. In the north of Scotland and Ireland, land was owned by **clans**.
+
+In **1348** the **Black Death** (probably plague) killed **one third of the population of England**, and a similar share in Scotland and Wales. Afterwards there were labour shortages, peasants demanded higher wages, a new class of large landowners appeared (**the gentry**), and people moved to towns, where a strong **middle class** developed.
+
+## Magna Carta and Parliament
+In **1215 King John** was forced by his noblemen to agree to the **Magna Carta** ("Great Charter"). It established that **even the king was subject to the law**, protected the rights of the nobility and restricted the king's power to collect taxes or change laws.
+
+Parliament grew from the king's council. Two Houses formed: the **House of Lords** (nobility, great landowners, bishops) and the **House of Commons** (knights and wealthy townspeople, elected by a small part of the population). Scotland's Parliament had **three Houses called Estates**: the lords, the commons and the clergy.
+
+The principle that **judges are independent of government** began. English judges developed **common law** by **precedent** (following previous decisions); in Scotland laws were **codified** (written down).
+
+## Language and culture
+Norman French and Anglo-Saxon combined to become **English**. By **1400** official documents were in English, and it was the preferred language of the royal court and Parliament.
+
+**Geoffrey Chaucer** wrote **The Canterbury Tales**, poems about pilgrims travelling to Canterbury. It was one of the first books printed by **William Caxton**, **the first person in England to print books** with a printing press. In Scotland, **John Barbour** wrote **The Bruce** about Bannockburn.
+
+Castles (e.g. **Windsor** and **Edinburgh**, still in use) and great cathedrals (e.g. **Lincoln**) were built; **York Minster** is famous for its stained glass. **English wool** was a major export.
+
+## The Wars of the Roses
+In **1455** a civil war began between the **House of Lancaster** (**red rose**) and the **House of York** (**white rose**). It ended at the **Battle of Bosworth Field in 1485**: **Richard III** (York) was killed and **Henry Tudor** (Lancaster) became **King Henry VII**. He married **Elizabeth of York**, uniting the families. The **Tudor rose** is a **red rose with a white rose inside**.
+
+@section The Tudors
+**Henry VII** strengthened central government, reduced the power of the nobles and built up the monarchy's finances. His son **Henry VIII** is famous for **breaking away from the Church of Rome** and **marrying six times**.
+
+## The six wives of Henry VIII
+| 1 | **Catherine of Aragon** – Spanish princess; mother of **Mary**. Henry divorced her.
+| 2 | **Anne Boleyn** – English; mother of **Elizabeth**. **Executed** at the Tower of London.
+| 3 | **Jane Seymour** – gave Henry his son **Edward**; died shortly after the birth.
+| 4 | **Anne of Cleves** – German princess, married for political reasons; **divorced**.
+| 5 | **Catherine Howard** – cousin of Anne Boleyn; **executed**.
+| 6 | **Catherine Parr** – a widow; she **survived** Henry.
+
+! Memory aid: divorced, beheaded, died, divorced, beheaded, survived.
+
+When the **Pope refused** Henry a divorce, he established the **Church of England**, in which **the king, not the Pope**, appointed bishops. This happened alongside the **Reformation** across Europe – a Protestant movement against the Pope's authority. Protestants read the Bible in their own language and did not pray to saints. In Ireland, attempts to impose Protestantism led to rebellion.
+
+Under Henry VIII, Wales was formally united with England by the **Act for the Government of Wales**.
+
+## Edward VI, Mary and Elizabeth I
+**Edward VI** was strongly Protestant; the **Book of Common Prayer** was written in his reign. He died at **15**. His half-sister **Mary**, a devout Catholic, persecuted Protestants and became known as **"Bloody Mary"**.
+
+**Elizabeth I** (daughter of Henry VIII and Anne Boleyn) was Protestant and re-established the Church of England, finding a balance between Catholics and extreme Protestants. She became one of the most popular monarchs, especially after **1588**, when the English **defeated the Spanish Armada**, sent to conquer England and restore Catholicism.
+
+## Scotland and Mary, Queen of Scots
+In **1560** the Scottish Parliament abolished the Pope's authority and a Protestant **Church of Scotland** was set up – but, unlike in England, **not a state Church**.
+
+**Mary Stuart (Mary, Queen of Scots)** was Catholic and became queen at a week old. Suspected of involvement in her husband's murder, she fled to England and gave her throne to her Protestant son **James VI**. Elizabeth I, her cousin, kept her prisoner for **20 years** and she was eventually **executed** for plotting against Elizabeth.
+
+## Exploration, poetry and drama
+The Elizabethan period was a time of growing **patriotism**. **Sir Francis Drake**, a commander against the Armada, sailed the **Golden Hind**, one of the first ships to **sail around the world**. English settlers first began to **colonise the east coast of America**.
+
+> William Shakespeare (1564–1616) :: Born in **Stratford-upon-Avon**. Playwright and actor; famous plays include **A Midsummer Night's Dream, Hamlet, Macbeth** and **Romeo and Juliet**. He was one of the first to portray **ordinary English people** and invented many words still used today. The **Globe Theatre** in London is a modern copy of the theatres where his plays were first performed.
+
+Famous lines and where they come from:
+- "Once more unto the breach" – **Henry V**
+- "To be or not to be" – **Hamlet**
+- "A rose by any other name" – **Romeo and Juliet**
+- "All the world's a stage" – **As You Like It**
+- "The darling buds of May" – **Sonnet 18**
+
+@section The Stuarts, civil war and revolution
+## James VI and I
+Elizabeth I never married. When she died in **1603** her cousin **James VI of Scotland** became **James I of England, Wales and Ireland** – but Scotland remained a **separate country**. His reign produced the **King James Version** (Authorised Version) of the **Bible** in English.
+
+In Ireland, the English encouraged Scottish and English Protestants to settle in **Ulster**, taking land from Catholics. These settlements were called **plantations** and had serious long-term consequences.
+
+## The road to civil war
+**James I** and his son **Charles I** believed in the **Divine Right of Kings** – that the king was appointed by God and should not need Parliament's approval. Charles I tried to rule **without Parliament for 11 years**.
+
+Charles tried to impose a new Prayer Book on the **Presbyterian Church in Scotland**, causing a Scottish army to form. In **1640** he recalled Parliament for money; many MPs were **Puritans** (strict Protestants) and refused. Charles entered the House of Commons to arrest five leaders, who escaped – **no monarch has entered the Commons since**.
+
+**Civil war began in 1642**: the king's supporters were the **Cavaliers**; Parliament's supporters were the **Roundheads**. The king's army was defeated at **Marston Moor** and **Naseby**. Charles I was **executed in 1649**.
+
+## The Commonwealth: England's only republic
+England became a republic called **the Commonwealth**. **Oliver Cromwell** crushed the revolt in Ireland so violently that he remains controversial there. The Scots crowned **Charles II**, but Cromwell defeated him at **Dunbar** and **Worcester**; Charles escaped, famously **hiding in an oak tree**.
+
+Cromwell ruled as **Lord Protector** until his death in **1658**. His son Richard could not control the army, and after **11 years** as a republic people wanted a king again.
+
+## The Restoration (1660)
+In **1660 Charles II** returned from exile in the Netherlands. The Church of England was again the official Church.
+- **1665**: a major outbreak of **plague** in London.
+- **1666**: the **Great Fire of London** destroyed much of the city, including **St Paul's Cathedral**, rebuilt by **Sir Christopher Wren**. **Samuel Pepys** described these events in his **diary**.
+- **1679**: the **Habeas Corpus Act** – Latin for "you must present the person in court" – guaranteed **no one could be held prisoner unlawfully**.
+- The **Royal Society**, **the oldest surviving scientific society in the world**, was formed. Early members included **Edmund Halley** (Halley's Comet) and **Isaac Newton**.
+
+> Isaac Newton (1643–1727) :: Born in **Lincolnshire**, studied at **Cambridge**. His **Principia Mathematica** showed how **gravity** applied to the whole universe. He also discovered that **white light is made up of the colours of the rainbow**.
+
+## The Glorious Revolution (1688)
+Charles II's brother **James II** (James VII of Scotland) was a **Roman Catholic**. When his son was born, a Catholic succession seemed likely. In **1688** Protestants invited **William of Orange**, the Protestant ruler of the Netherlands and husband of James's daughter **Mary**, to take the throne. There was **no fighting** in England, so it was called the **Glorious Revolution**. William and Mary ruled jointly.
+
+James tried to win back the throne through Ireland but was defeated at the **Battle of the Boyne in 1690** (still celebrated by some in Northern Ireland). A Scottish rising was defeated at **Killiecrankie**; the **MacDonalds of Glencoe** were massacred for being late to swear loyalty. James's supporters became known as **Jacobites**.
+
+@section Union, Enlightenment and industry
+## Constitutional monarchy
+At William and Mary's coronation a Declaration of Rights was read. The **Bill of Rights (1689)** confirmed **the rights of Parliament and the limits of the king's power**: the monarch must be **Protestant**, could not raise taxes without Parliament, and a new Parliament had to be elected at least every **three years** (later seven, **now five**).
+
+Monarchs now needed ministers with a majority in Parliament. The two main groups were the **Whigs** and the **Tories** (the Conservatives are still called Tories) – **the beginning of party politics**. From **1695** newspapers no longer needed a government licence: the start of a **free press**.
+
+This was **not yet democracy**: only men who **owned property** could vote and **no women** could. Constituencies controlled by one wealthy family were **"pocket boroughs"**; those with hardly any voters were **"rotten boroughs"**.
+
+## Newcomers
+The **first Jews since the Middle Ages** settled in London in **1656**. Between **1680 and 1720**, **Huguenots** – French **Protestants** persecuted for their religion – came as refugees; many were skilled scientists, bankers and weavers.
+
+## Great Britain is born (1707)
+Queen Anne had no surviving children. The **Act of Union** (the **Treaty of Union** in Scotland) of **1707** created **the Kingdom of Great Britain**. Scotland kept its own **legal and education systems** and **Presbyterian Church**.
+
+## The first Prime Minister
+When Anne died in **1714**, Parliament chose **George I**, a **German** and her nearest Protestant relative. He did not speak good English, so relied on his ministers. The most important became known as **Prime Minister** – the first was **Sir Robert Walpole (1721–1742)**.
+
+## Bonnie Prince Charlie
+In **1745** **Charles Edward Stuart (Bonnie Prince Charlie)**, grandson of James II, landed in Scotland supported by Highland clansmen. He was defeated at the **Battle of Culloden in 1746**. The clans lost power, and in the **Highland Clearances** landlords destroyed small farms (**crofts**) to make way for sheep and cattle; many Scots emigrated to North America.
+
+> Robert Burns (1759–96) :: Known as **"The Bard"**. Scottish poet who wrote in **Scots**, English with Scottish words, and standard English. Best known for **Auld Lang Syne**, sung at New Year (**Hogmanay** in Scotland).
+
+## The Enlightenment
+In the **18th century** new ideas about politics, philosophy and science developed. Many great thinkers were **Scottish**: **Adam Smith** (economics), **David Hume** (human nature) and **James Watt** (steam power). A key principle: everyone has the right to their own political and religious beliefs.
+
+## The Industrial Revolution
+In the **18th and 19th centuries** Britain became **the first country to industrialise on a large scale**, thanks to machinery and **steam power**. The **Bessemer process** for mass-producing **steel** boosted shipbuilding and railways. **Canals** linked factories to towns and ports. Working conditions were very poor, and **children** worked too.
+
+> Richard Arkwright (1732–92) :: Trained as a **barber**. Improved the **carding machine** for preparing fibres, developed **horse-driven spinning mills** and later used **steam power**. Remembered for running his factories **efficiently and profitably**.
+
+> Sake Dean Mahomet (1759–1851) :: From **Bengal**, India. In **1810** he opened the **Hindoostane Coffee House** in London – **the first curry house in Britain**. He and his wife also introduced **"shampooing"** (Indian head massage).
+
+Britain expanded overseas: **Captain James Cook** mapped the coast of **Australia**, Britain gained **Canada**, and the **East India Company** took control of large parts of **India**.
+
+## The slave trade
+British prosperity was partly built on the **slave trade**. Slavery was illegal within Britain itself, but slaves from **West Africa** were shipped in terrible conditions to work on plantations in America and the Caribbean.
+
+The **Quakers** set up the **first formal anti-slavery groups**. **William Wilberforce**, an evangelical Christian MP, helped turn public opinion. In **1807** trading slaves in British ships or ports became illegal, and in **1833** the **Emancipation Act** abolished **slavery throughout the British Empire**. Afterwards **2 million Indian and Chinese workers** replaced the freed slaves.
+
+## America and France
+The American colonies objected to British taxes: **"no taxation without representation"**. In **1776** **13 colonies declared independence**, and Britain recognised it in **1783**.
+
+Britain fought France and Napoleon. At the **Battle of Trafalgar (1805)**, **Admiral Nelson** defeated the French and Spanish fleets but was killed. **Nelson's Column** is in Trafalgar Square, and his ship **HMS Victory** is in **Portsmouth**. In **1815** the **Duke of Wellington** – "the **Iron Duke**", later Prime Minister – defeated Napoleon at the **Battle of Waterloo**.
+
+## The Union Flag
+In **1801** Ireland was united with Great Britain (Act of Union **1800**), creating the **United Kingdom of Great Britain and Ireland**. The **Union Flag** (Union Jack) combines three crosses:
+- **St George** (England) – **red cross on white**
+- **St Andrew** (Scotland) – **diagonal white cross on blue**
+- **St Patrick** (Ireland) – **diagonal red cross on white**
+
+The **Welsh dragon** is not on it because Wales was already united with England when the first Union Flag was created in **1606**.
+
+@section The Victorian age and the Empire
+**Queen Victoria** became queen in **1837 aged 18** and reigned until **1901** – almost **64 years**. Britain's power grew abroad and the **middle classes** became more important at home.
+
+## The British Empire
+The Empire grew to cover **India, Australia and large parts of Africa** – **the largest empire the world has ever seen**, with more than **400 million people**. Between **1853 and 1913** as many as **13 million** British citizens emigrated. Between **1870 and 1914** around **120,000 Russian and Polish Jews** came to Britain to escape persecution.
+
+## Trade, industry and transport
+Britain promoted **free trade**: the **Corn Laws**, which stopped cheap grain being imported, were **repealed in 1846**. In **1847** the working day for **women and children** was limited to **10 hours**.
+
+**George and Robert Stephenson** pioneered the **railway engine**. Britain produced **more than half the world's iron, coal and cotton cloth**. In **1851** the **Great Exhibition** opened in **Hyde Park** in the **Crystal Palace**, a building of steel and glass.
+
+> Isambard Kingdom Brunel (1806–59) :: Engineer from **Portsmouth** who built tunnels, bridges, railways and ships. He built the **Great Western Railway**, the first major railway in Britain, from **Paddington** to the south-west, West Midlands and Wales.
+
+## The Crimean War (1853–56)
+Britain fought with **Turkey and France against Russia**. It was **the first war extensively covered by the media**. Queen Victoria introduced the **Victoria Cross** medal for valour.
+
+> Florence Nightingale (1820–1910) :: Born in **Italy** to English parents. Nursed soldiers in **Turkey** during the Crimean War and cut the death rate. In **1860** she founded the **Nightingale Training School** at **St Thomas' Hospital**, London. Regarded as **the founder of modern nursing**.
+
+## Ireland
+In the mid-19th century the **potato crop failed** and Ireland suffered a **famine**: **a million died** and **a million and a half emigrated**. The nationalist movement grew: the **Fenians** wanted full independence, while **Charles Stuart Parnell** wanted **Home Rule** (Ireland's own parliament within the UK).
+
+## The right to vote
+- **1832 Reform Act**: greatly increased voters, **abolished pocket and rotten boroughs** and gave seats to towns and cities. Voting was still based on **property**.
+- The **Chartists** campaigned for votes for the working classes.
+- **1867 Reform Act**: more urban seats and a lower property requirement – but most men and **no women** could vote.
+
+Until **1870** a married woman's earnings and property belonged to her husband; Acts in **1870 and 1882** let wives keep them. Women campaigning for the vote became known as **suffragettes**.
+
+> Emmeline Pankhurst (1858–1928) :: Born in **Manchester**. Set up the **Women's Franchise League (1889)** and helped found the **Women's Social and Political Union (WSPU)** in **1903**, the first "suffragettes". They chained themselves to railings, smashed windows and went on hunger strike. In **1918** women **over 30** got the vote; in **1928**, shortly before her death, women got the vote at **21, the same as men**.
+
+## The future of the Empire
+The **Boer War (1899–1902)** in South Africa against Dutch settlers (**Boers**) made people question the Empire. Over the 20th century there was a mostly orderly transition from **Empire to Commonwealth**.
+
+> Rudyard Kipling (1865–1936) :: Born in **India**. Believed the British Empire was **a force for good**. Won the **Nobel Prize in Literature (1907)**. Wrote the **Just So Stories**, **The Jungle Book** and the poem **If**, often voted among the UK's favourite poems.
+
+" If you can keep your head when all about you
+" Are losing theirs and blaming it on you…
+"— If, Rudyard Kipling
+
+@section The First World War and after
+## A time of optimism and reform
+In the early 20th century Britain was a global superpower. Reforms included **financial help for the unemployed, old-age pensions and free school meals**, and **MPs were paid a salary for the first time**.
+
+## The First World War (1914–18)
+On **28 June 1914 Archduke Franz Ferdinand** of Austria was assassinated, triggering the war. Britain was among the **Allied Powers** (with France, Russia, Japan, Belgium, Serbia and later Greece, Italy, Romania and the USA). They fought the **Central Powers** – mainly **Germany, Austria-Hungary, the Ottoman Empire** and later **Bulgaria**.
+
+The whole Empire took part: more than **a million Indians** fought for Britain (around **40,000** were killed). Britain suffered over **2 million casualties**. The attack on the **Somme in July 1916** caused about **60,000 British casualties on the first day**.
+
+The war ended at **11.00 am on 11 November 1918** with victory for Britain and its allies.
+
+## The partition of Ireland
+In **1913** the government promised **Home Rule** for Ireland, opposed by Protestants in the north. The war postponed it. In **1916** Irish nationalists rose up in Dublin: the **Easter Rising**. Its leaders were executed and a guerrilla war followed.
+
+A peace treaty was signed in **1921**, and in **1922 Ireland became two countries**: the six mainly Protestant counties in the north stayed in the UK as **Northern Ireland**; the rest became the **Irish Free State**, which became a **republic in 1949**. The later conflict over this split is known as **"the Troubles"**.
+
+## Between the wars
+In **1929** the world entered the **Great Depression**. Heavy industries like **shipbuilding** suffered mass unemployment, while new **car and aviation** industries grew. **Car ownership doubled from 1 to 2 million** between 1930 and 1939. Writers **Graham Greene** and **Evelyn Waugh** and economist **John Maynard Keynes** were prominent. The **BBC** began radio broadcasts in **1922** and the **world's first regular television service in 1936**.
+
+@section The Second World War
+**Adolf Hitler** came to power in Germany in **1933**. When he **invaded Poland in 1939**, **Britain and France declared war**.
+
+The **Axis powers** were **Germany, Italy and Japan**. The main Allies were the **UK, France, Poland, Australia, New Zealand, Canada and the Union of South Africa**.
+
+## 1940: Britain stands alone
+As Germany advanced through France in **1940**, **Winston Churchill** became Prime Minister.
+
+- **Dunkirk**: civilian volunteers in small boats helped the Navy rescue **more than 300,000 men** from the beaches – the origin of **"the Dunkirk spirit"**.
+- From **June 1940 until June 1941** Britain and the Empire **stood almost alone** against Nazi Germany.
+- **The Battle of Britain** (summer **1940**): the RAF won the battle for the skies with **Spitfires and Hurricanes**, designed and built in Britain.
+- **The Blitz**: German bombing of cities at night. **Coventry** was almost totally destroyed, as was much of London's **East End** – hence **"the Blitz spirit"**.
+
+> Winston Churchill (1874–1965) :: Son of a politician; a soldier and journalist before becoming a **Conservative MP in 1900**. PM from **May 1940**; he refused to surrender. He **lost the 1945 election** but returned as PM in **1951**. Given a **state funeral** in **1965**, and voted **the greatest Briton of all time** in **2002**.
+
+" I have nothing to offer but blood, toil, tears and sweat
+"— First speech as PM, 1940
+" We shall fight on the beaches … we shall never surrender
+"— After Dunkirk, 1940
+" Never in the field of human conflict was so much owed by so many to so few
+"— During the Battle of Britain, 1940
+
+## Victory
+Japan defeated the British in **Singapore** and occupied **Burma**. The **USA entered the war** after Japan bombed **Pearl Harbor in December 1941**. Hitler's invasion of the **Soviet Union** (1941) failed with huge losses.
+
+On **6 June 1944**, allied forces landed in **Normandy** – **D-Day**. Germany was defeated in **May 1945**. The war against Japan ended in **August 1945** after the USA dropped atom bombs on **Hiroshima and Nagasaki**. Scientists led by **Ernest Rutherford** (Manchester, then Cambridge) were first to **split the atom** and took part in the **Manhattan Project**.
+
+> Alexander Fleming (1881–1955) :: Born in **Scotland**. Discovered **penicillin in 1928** while researching flu. **Howard Florey and Ernst Chain** developed it into a usable drug, mass-produced by the 1940s. **Nobel Prize in Medicine (1945)**.
+
+@section Britain since 1945
+## The welfare state
+In **1945** the British people elected a **Labour** government under **Clement Attlee**, who introduced the welfare state outlined in the **Beveridge Report**. In **1948** **Aneurin (Nye) Bevan**, Minister for Health, led the creation of the **National Health Service (NHS)**, free at the point of use. Railways, coal mines and gas, water and electricity were **nationalised**.
+
+In **1947** independence was granted to **nine countries**, including **India, Pakistan and Ceylon (Sri Lanka)**. The UK developed an **atomic bomb** and joined **NATO**.
+
+> Clement Attlee (1883–1967) :: Born in London; a barrister who did social work in East London. **Churchill's Deputy PM** in the wartime coalition, then **PM 1945–51**. Nationalised major industries, created the **NHS** and led Labour for **20 years**.
+
+> William Beveridge (1879–1963) :: Liberal economist and social reformer. His **1942 report** – the **Beveridge Report** – called for fighting five **"Giant Evils": Want, Disease, Ignorance, Squalor and Idleness**. It was the basis of the **modern welfare state**.
+
+> R A Butler (1902–82) :: Conservative MP responsible for education from 1941. The **Education Act 1944** ("**The Butler Act**") introduced **free secondary education** in England and Wales, and the split between **primary and secondary** schools.
+
+> Dylan Thomas (1914–53) :: **Welsh** poet. Wrote the radio play **Under Milk Wood** and the poem **Do Not Go Gentle into That Good Night**. Died aged 39 in New York; memorials in his birthplace **Swansea**.
+
+There was a **Conservative** government from **1951 to 1964**. PM **Harold Macmillan** made the **"wind of change"** speech about decolonisation.
+
+## Migration after the war
+Labour shortages led the government to invite workers from **Ireland and Europe**, and in **1948** from the **West Indies**. In the 1950s buses recruited in the West Indies, and textile and engineering firms recruited in **India and Pakistan**. Migration fell in the **late 1960s** when new laws restricted it. In the early 1970s Britain admitted **28,000 people of Indian origin** forced to leave **Uganda**.
+
+## The Swinging Sixties
+The **1960s** brought growth in fashion, cinema and pop music (**The Beatles** and **The Rolling Stones**). Laws on **divorce and abortion** were liberalised, and new laws gave women **equal pay** and banned sex discrimination at work.
+
+## The 1970s
+The post-war boom ended. Strikes caused conflict between the **trade unions** and government. In Northern Ireland, the Parliament was **suspended in 1972** and direct rule from London began; some **3,000** people died in the violence after **1969**.
+
+> Mary Peters (1939–) :: Born in Manchester, moved to **Northern Ireland**. Won **Olympic gold in the pentathlon in 1972**, then promoted sport and tourism in NI. Made a **Dame in 2000**.
+
+## Europe
+The **EEC** was formed in **1957** by **West Germany, France, Belgium, Italy, Luxembourg and the Netherlands**. The UK **joined in 1973**.
+
+## Thatcher and the Conservatives (1979–1997)
+> Margaret Thatcher (1925–2013) :: A grocer's daughter from **Grantham, Lincolnshire**; trained as a chemist and lawyer. **Britain's first woman Prime Minister (1979–1990)** and the **longest-serving PM of the 20th century**. **Privatised** nationalised industries, limited trade union power and worked closely with US President **Ronald Reagan**.
+
+In **1982 Argentina invaded the Falkland Islands**; a British naval taskforce recovered them. Traditional industries like shipbuilding and coal mining declined. **John Major** followed Thatcher and helped establish the **Northern Ireland peace process**.
+
+> Roald Dahl (1916–90) :: Born in **Wales** to **Norwegian** parents; served in the RAF. Wrote **Charlie and the Chocolate Factory** and **George's Marvellous Medicine**.
+
+## Labour (1997–2010)
+**Tony Blair**'s government created the **Scottish Parliament** and the **Welsh Assembly** (both **1999**). In Northern Ireland the **Good Friday Agreement** was signed in **1998**; the NI Assembly was elected in **1999**, suspended in **2002** and restored in **2007**. **Gordon Brown** became PM in **2007**.
+
+In the **1990s** Britain helped liberate **Kuwait** (after Iraq invaded in **1990**) and acted in the former **Yugoslavia**. Since **2000**, British forces have fought terrorism in **Afghanistan and Iraq**; combat troops left Iraq in **2009**.
+
+## Recent governments
+- **2010–2015**: the first **coalition** since 1974 – **Conservatives and Liberal Democrats**, with **David Cameron** as PM.
+- **2015–2024**: **Conservative** governments under **Cameron, Theresa May, Boris Johnson, Liz Truss and Rishi Sunak**, including the **2016 EU referendum (Brexit)** and the COVID-19 pandemic.
+- **2024**: **Labour**, led by **Keir Starmer**, won a majority at the general election.
+
+@section Great British inventions
+Britain gave the world many 20th-century inventions. You **do not need to remember birth and death dates** – focus on **who invented what**.
+
+| Television | **John Logie Baird** (Scottish), 1920s. First TV broadcast London–Glasgow in **1932**.
+| Radar | **Sir Robert Watson-Watt** (Scottish). First successful test **1935**.
+| Radio telescope | **Sir Bernard Lovell** built it at **Jodrell Bank**, Cheshire – for years the biggest in the world.
+| Turing machine | **Alan Turing**, 1930s – a theoretical device that shaped modern computing.
+| Insulin | **John MacLeod** (Scottish) was **co-discoverer**; used to treat diabetes.
+| DNA structure | Discovered in **1953** at London and Cambridge; **Francis Crick** shared the Nobel Prize.
+| Jet engine | **Sir Frank Whittle**, an RAF engineer, **1930s**.
+| Hovercraft | **Sir Christopher Cockerell**, **1950s**.
+| Concorde | Developed by **Britain and France** – the only supersonic passenger aircraft. First flew **1969**, retired **2003**.
+| Harrier jump jet | Designed in the UK – can **take off vertically**.
+| ATM (cashpoint) | **James Goodfellow**, 1960s. First used by **Barclays in Enfield, 1967**.
+| IVF | **Sir Robert Edwards** and **Patrick Steptoe**. First "test-tube baby" born in **Oldham, 1978**.
+| Cloning | **Sir Ian Wilmut** and **Keith Campbell** cloned **Dolly the sheep** in **1996** – the first cloned mammal.
+| MRI scanner | **Sir Peter Mansfield** was **co-inventor**.
+| World Wide Web | **Sir Tim Berners-Lee**. First used **25 December 1990**.
+
+@remember Key dates
+- **55 BC** Julius Caesar's failed invasion; **AD 43** Claudius conquers Britain
+- **AD 410** Romans leave; **AD 789** first Viking raids
+- **1066** Battle of Hastings – Norman Conquest
+- **1215** Magna Carta (King John)
+- **1284** Statute of Rhuddlan annexes Wales; **1314** Battle of Bannockburn
+- **1348** Black Death kills a third of England's population
+- **1415** Battle of Agincourt (Henry V)
+- **1455** Wars of the Roses begin; **1485** Battle of Bosworth Field
+- **1560** Scottish Parliament abolishes the Pope's authority
+- **1588** Spanish Armada defeated
+- **1603** James VI of Scotland becomes James I of England
+- **1642** Civil war begins; **1649** Charles I executed
+- **1660** Restoration of Charles II; **1665** plague; **1666** Great Fire of London
+- **1679** Habeas Corpus Act; **1688** Glorious Revolution; **1689** Bill of Rights; **1690** Battle of the Boyne
+- **1707** Act of Union creates Great Britain
+- **1721–42** Robert Walpole, first Prime Minister
+- **1746** Battle of Culloden
+- **1776** American Declaration of Independence
+- **1801** Union with Ireland (Union Flag)
+- **1805** Trafalgar; **1815** Waterloo
+- **1807** Slave trade abolished; **1833** Emancipation Act ends slavery in the Empire
+- **1832** and **1867** Reform Acts
+- **1837–1901** Queen Victoria's reign
+- **1846** Corn Laws repealed; **1851** Great Exhibition
+- **1853–56** Crimean War; **1899–1902** Boer War
+- **1914–18** First World War; **1916** Easter Rising and the Somme
+- **1918** women over 30 get the vote; **1928** women vote at 21
+- **1922** Ireland split; Irish Free State
+- **1939–45** Second World War; **1940** Dunkirk and Battle of Britain; **1944** D-Day
+- **1948** NHS founded; **1973** UK joins the EEC
+- **1979** Thatcher becomes first woman PM; **1982** Falklands War
+- **1998** Good Friday Agreement; **1999** Scottish Parliament and Welsh Assembly
+
+@remember Monarchs and rulers
+- **William the Conqueror** – Norman Conquest 1066, Domesday Book
+- **King John** – Magna Carta 1215
+- **Henry VII** – first Tudor king, married Elizabeth of York
+- **Henry VIII** – six wives, created the Church of England, united Wales with England
+- **Edward VI** – Protestant; Book of Common Prayer
+- **Mary I** – Catholic, "Bloody Mary"
+- **Elizabeth I** – Protestant; defeated the Armada 1588
+- **James I** – King James Bible; Ulster plantations
+- **Charles I** – Divine Right of Kings; executed 1649
+- **Oliver Cromwell** – Lord Protector of the republic (Commonwealth)
+- **Charles II** – the Restoration 1660
+- **James II** – Catholic, overthrown 1688
+- **William III and Mary II** – Glorious Revolution
+- **Queen Anne** – Act of Union 1707
+- **George I** – German; relied on ministers, first PM Walpole
+- **Queen Victoria** – reigned 1837–1901, almost 64 years
+
+@remember Wives of Henry VIII (in order)
+- **Catherine of Aragon** (divorced) → **Anne Boleyn** (executed) → **Jane Seymour** (died) → **Anne of Cleves** (divorced) → **Catherine Howard** (executed) → **Catherine Parr** (survived)
+
+@remember Battles
+- **Hastings 1066** – William of Normandy beat Harold
+- **Bannockburn 1314** – Robert the Bruce beat the English
+- **Agincourt 1415** – Henry V beat the French
+- **Bosworth Field 1485** – ended the Wars of the Roses
+- **Marston Moor and Naseby** – Parliament beat Charles I
+- **Dunbar and Worcester** – Cromwell beat Charles II
+- **Boyne 1690** – William III beat James II
+- **Culloden 1746** – Bonnie Prince Charlie defeated
+- **Trafalgar 1805** – Nelson beat the French and Spanish fleets
+- **Waterloo 1815** – Wellington beat Napoleon
+
+@remember People
+- **Boudicca** – queen of the Iceni, fought the Romans
+- **St Augustine** – first Archbishop of Canterbury; **St Columba** – monastery on Iona
+- **Alfred the Great** – united the Anglo-Saxons, defeated the Vikings
+- **Chaucer** – The Canterbury Tales; **Caxton** – first printing press in England
+- **Sir Francis Drake** – sailed the Golden Hind around the world
+- **Shakespeare** – born in Stratford-upon-Avon
+- **Isaac Newton** – gravity; white light contains the rainbow colours
+- **Robert Walpole** – first Prime Minister
+- **Adam Smith, David Hume, James Watt** – Scottish Enlightenment
+- **Richard Arkwright** – efficient factories, carding machine
+- **Sake Dean Mahomet** – first curry house (1810)
+- **William Wilberforce** – anti-slavery MP
+- **Brunel** – Great Western Railway
+- **Florence Nightingale** – founder of modern nursing
+- **Emmeline Pankhurst** – suffragettes
+- **Rudyard Kipling** – The Jungle Book; Nobel Prize 1907
+- **Winston Churchill** – wartime PM; greatest Briton (2002)
+- **Alexander Fleming** – penicillin (1928)
+- **Clement Attlee** – NHS and welfare state; **Nye Bevan** – led NHS creation
+- **William Beveridge** – five Giant Evils; **R A Butler** – Education Act 1944
+- **Margaret Thatcher** – first woman PM, 1979–90
+
+@remember Acts and documents
+- **Magna Carta (1215)** – the king is subject to the law
+- **Act for the Government of Wales** – Henry VIII unites Wales and England
+- **Habeas Corpus Act (1679)** – no unlawful imprisonment
+- **Bill of Rights (1689)** – rights of Parliament, limits on the monarch
+- **Act of Union (1707)** – creates Great Britain
+- **Emancipation Act (1833)** – abolishes slavery in the Empire
+- **Reform Act (1832)** – abolishes pocket and rotten boroughs
+- **Education Act (1944)** – free secondary education
+
+@remember Inventions
+- **TV** – John Logie Baird; **radar** – Robert Watson-Watt
+- **Jet engine** – Frank Whittle; **hovercraft** – Christopher Cockerell
+- **ATM** – James Goodfellow (1967, Barclays, Enfield)
+- **World Wide Web** – Tim Berners-Lee (1990)
+- **Penicillin** – Alexander Fleming; **insulin** – John MacLeod (co-discoverer)
+- **MRI** – Peter Mansfield (co-inventor); **IVF** – Edwards and Steptoe (1978)
+- **Dolly the sheep** – first cloned mammal (1996)
+- **Concorde** – with France; **Harrier jump jet** – takes off vertically
