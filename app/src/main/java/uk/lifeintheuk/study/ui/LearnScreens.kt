@@ -41,6 +41,7 @@ import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -511,6 +512,59 @@ fun RememberScreen(repo: Repository, progress: ProgressStore, nav: Navigator, ch
                         }
                     }
                 }
+            }
+            if (chapter != null) {
+                item { RememberFooter(repo, nav, chapter) }
+            }
+        }
+    }
+}
+
+/** Where to go after reviewing a chapter's key facts: the next chapter, or practice. */
+@Composable
+private fun RememberFooter(repo: Repository, nav: Navigator, chapter: Int) {
+    val next = repo.chapters.firstOrNull { it.number == chapter + 1 }
+    Column(Modifier.padding(top = 28.dp)) {
+        Button(
+            onClick = {
+                if (next != null) nav.replace(Screen.Reader(next.sections.first().id))
+                else nav.replace(Screen.Quiz("Mock test", repo.mockTest().map { it.id }, mock = true))
+            },
+            modifier = Modifier.fillMaxWidth().height(56.dp),
+            shape = RoundedCornerShape(16.dp),
+        ) {
+            if (next != null) {
+                Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                    Text("Next: Chapter ${next.number}", style = MaterialTheme.typography.labelMedium)
+                    Text(next.title, maxLines = 1, overflow = TextOverflow.Ellipsis)
+                }
+            } else {
+                Text("You've finished the handbook – take a mock test")
+            }
+        }
+        Spacer(Modifier.height(12.dp))
+        Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+            OutlinedButton(
+                onClick = { nav.push(Screen.Cards("Chapter $chapter", repo.cardsFor(chapter).shuffled().map { it.id })) },
+                modifier = Modifier.weight(1f).height(52.dp),
+                shape = RoundedCornerShape(16.dp),
+            ) {
+                Icon(Icons.Outlined.Style, null, Modifier.size(18.dp))
+                Spacer(Modifier.width(8.dp))
+                Text("Flashcards")
+            }
+            OutlinedButton(
+                onClick = {
+                    nav.push(
+                        Screen.Quiz("Chapter $chapter quiz", repo.questionsFor(chapter).shuffled().take(20).map { it.id }, mock = false)
+                    )
+                },
+                modifier = Modifier.weight(1f).height(52.dp),
+                shape = RoundedCornerShape(16.dp),
+            ) {
+                Icon(Icons.Outlined.Quiz, null, Modifier.size(18.dp))
+                Spacer(Modifier.width(8.dp))
+                Text("Chapter quiz")
             }
         }
     }
