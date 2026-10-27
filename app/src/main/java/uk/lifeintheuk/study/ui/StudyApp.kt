@@ -40,11 +40,14 @@ sealed interface Screen {
     data class Chapter(val number: Int) : Screen
     data class Reader(val sectionId: String) : Screen
     data class Remember(val chapter: Int?) : Screen
+    data class ChapterComplete(val number: Int) : Screen
     data class Cards(val title: String, val cardIds: List<String>) : Screen
     data class Quiz(
         val title: String,
         val questionIds: List<String>,
         val mock: Boolean,
+        /** Chapter to offer next on the results page, when the quiz ends a chapter. */
+        val continueTo: Int? = null,
         val nonce: Long = System.nanoTime(),
     ) : Screen
 }
@@ -84,6 +87,7 @@ fun StudyApp(repo: Repository, progress: ProgressStore) {
             is Screen.Chapter -> ChapterScreen(repo, progress, nav, screen.number)
             is Screen.Reader -> ReaderScreen(repo, progress, nav, screen.sectionId)
             is Screen.Remember -> RememberScreen(repo, progress, nav, screen.chapter)
+            is Screen.ChapterComplete -> ChapterCompleteScreen(repo, nav, screen.number)
             is Screen.Cards -> CardSessionScreen(repo, progress, nav, screen)
             is Screen.Quiz -> QuizScreen(repo, progress, nav, screen)
         }

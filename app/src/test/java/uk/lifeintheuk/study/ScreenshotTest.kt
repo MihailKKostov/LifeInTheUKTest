@@ -14,6 +14,7 @@ import org.junit.Test
 import uk.lifeintheuk.study.data.ProgressStore
 import uk.lifeintheuk.study.ui.CardSessionScreen
 import uk.lifeintheuk.study.ui.CardsHomeScreen
+import uk.lifeintheuk.study.ui.ChapterCompleteScreen
 import uk.lifeintheuk.study.ui.ChapterScreen
 import uk.lifeintheuk.study.ui.HomeScreen
 import uk.lifeintheuk.study.ui.Navigator
@@ -55,6 +56,8 @@ class ScreenshotTest {
     @Test fun readerShortWithFacts() { val p = progress(); snap { ReaderScreen(repo, p, nav, "1.2") } }
     @Test fun readerChapterEnd() { val p = progress(); snap { ReaderScreen(repo, p, nav, "2.2") } }
     @Test fun readerInventions() { val p = progress(); snap { ReaderScreen(repo, p, nav, "3.10") } }
+    @Test fun chapterComplete() { snap { ChapterCompleteScreen(repo, nav, 2) } }
+    @Test fun lastChapterComplete() { snap { ChapterCompleteScreen(repo, nav, 5) } }
     @Test fun remember() { val p = progress(); snap { RememberScreen(repo, p, nav, 2) } }
     @Test fun cardsHome() { val p = progress(); snap { CardsHomeScreen(repo, p, nav) } }
     @Test fun cardSession() {

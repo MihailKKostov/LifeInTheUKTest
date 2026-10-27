@@ -563,24 +563,34 @@ private fun Results(repo: Repository, items: List<QuizItem>, screen: Screen.Quiz
             }
         }
         item {
-            Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
-                OutlinedButton(
-                    onClick = nav::pop,
-                    modifier = Modifier.weight(1f).height(52.dp),
-                    shape = RoundedCornerShape(14.dp),
-                ) { Text("Done") }
-                Button(
-                    onClick = {
-                        nav.replace(
-                            screen.copy(
-                                questionIds = if (screen.mock) repo.mockTest().map { it.id } else screen.questionIds.shuffled(),
-                                nonce = System.nanoTime(),
+            Column {
+                screen.continueTo?.let { next ->
+                    Button(
+                        onClick = { nav.replace(Screen.Reader(repo.chapter(next).sections.first().id)) },
+                        modifier = Modifier.fillMaxWidth().height(56.dp).padding(bottom = 4.dp),
+                        shape = RoundedCornerShape(14.dp),
+                    ) { Text("Continue to Chapter $next", fontWeight = FontWeight.SemiBold) }
+                    Spacer(Modifier.height(8.dp))
+                }
+                Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+                    OutlinedButton(
+                        onClick = nav::pop,
+                        modifier = Modifier.weight(1f).height(52.dp),
+                        shape = RoundedCornerShape(14.dp),
+                    ) { Text("Done") }
+                    Button(
+                        onClick = {
+                            nav.replace(
+                                screen.copy(
+                                    questionIds = if (screen.mock) repo.mockTest().map { it.id } else screen.questionIds.shuffled(),
+                                    nonce = System.nanoTime(),
+                                )
                             )
-                        )
-                    },
-                    modifier = Modifier.weight(1f).height(52.dp),
-                    shape = RoundedCornerShape(14.dp),
-                ) { Text(if (screen.mock) "New test" else "Try again") }
+                        },
+                        modifier = Modifier.weight(1f).height(52.dp),
+                        shape = RoundedCornerShape(14.dp),
+                    ) { Text(if (screen.mock) "New test" else "Try again") }
+                }
             }
         }
         item {

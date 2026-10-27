@@ -414,7 +414,11 @@ fun ReaderScreen(repo: Repository, progress: ProgressStore, nav: Navigator, sect
                     }
                 }
             } else {
-                ChapterEndActions(repo, nav, chapter.number, onContinue = { progress.markRead(sectionId) })
+                Button(
+                    onClick = { progress.markRead(sectionId); nav.replace(Screen.ChapterComplete(chapter.number)) },
+                    modifier = Modifier.fillMaxWidth().height(56.dp),
+                    shape = RoundedCornerShape(16.dp),
+                ) { Text("Finish chapter ${chapter.number}") }
             }
             TextButton(
                 onClick = { nav.pop() },
@@ -480,12 +484,11 @@ fun RememberScreen(repo: Repository, progress: ProgressStore, nav: Navigator, ch
 
 /** End-of-chapter choices: move on to the next chapter (or a mock test), or practise this one. */
 @Composable
-private fun ChapterEndActions(repo: Repository, nav: Navigator, chapter: Int, onContinue: () -> Unit = {}) {
+private fun ChapterEndActions(repo: Repository, nav: Navigator, chapter: Int) {
     val next = repo.chapters.firstOrNull { it.number == chapter + 1 }
     Column {
         Button(
             onClick = {
-                onContinue()
                 if (next != null) nav.replace(Screen.Reader(next.sections.first().id))
                 else nav.replace(Screen.Quiz("Mock test", repo.mockTest().map { it.id }, mock = true))
             },
@@ -597,6 +600,114 @@ private fun FactRows(facts: List<RememberItem>, progress: ProgressStore) {
                         .height(1.dp)
                         .background(MaterialTheme.colorScheme.outlineVariant)
                 )
+            }
+        }
+    }
+}
+
+/** Shown after the last section of a chapter: test yourself now, or move straight on. */
+@Composable
+fun ChapterCompleteScreen(repo: Repository, nav: Navigator, number: Int) {
+    val chapter = repo.chapter(number)
+    val next = repo.chapters.firstOrNull { it.number == number + 1 }
+    val colors = LocalStudyColors.current
+    val questions = repo.questionsFor(number)
+
+    fun startQuiz() = nav.replace(
+        Screen.Quiz(
+            "Chapter $number test",
+            questions.shuffled().take(20).map { it.id },
+            mock = false,
+            continueTo = next?.number,
+        )
+    )
+
+    Scaffold(
+        containerColor = MaterialTheme.colorScheme.background,
+        topBar = { BackTopBar("", nav::pop) },
+    ) { padding ->
+        Column(
+            Modifier
+                .fillMaxSize()
+                .padding(padding)
+                .verticalScroll(rememberScrollState())
+                .padding(horizontal = 24.dp)
+                .navigationBarsPadding(),
+            horizontalAlignment = Alignment.CenterHorizontally,
+        ) {
+            Spacer(Modifier.height(24.dp))
+            ProgressRing(1f, size = 88.dp, stroke = 8.dp, color = colors.success) {
+                Icon(Icons.Filled.Check, null, tint = colors.success, modifier = Modifier.size(40.dp))
+            }
+            Spacer(Modifier.height(20.dp))
+            Text("Chapter $number complete", style = MaterialTheme.typography.headlineMedium)
+            Spacer(Modifier.height(6.dp))
+            Text(
+                chapter.title,
+                style = MaterialTheme.typography.bodyLarge,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+            Spacer(Modifier.height(32.dp))
+            Text(
+                if (next != null) "Do you want to test yourself on this chapter before moving on?"
+                else "That's the whole handbook. How would you like to test yourself?",
+                style = MaterialTheme.typography.titleLarge,
+                textAlign = androidx.compose.ui.text.style.TextAlign.Center,
+            )
+            Spacer(Modifier.height(24.dp))
+
+            ChoiceCard(
+                icon = Icons.Outlined.Quiz,
+                title = "Take the chapter test",
+                subtitle = "${minOf(20, questions.size)} questions with explanations",
+                primary = true,
+                onClick = ::startQuiz,
+            )
+            Spacer(Modifier.height(12.dp))
+            if (next != null) {
+                ChoiceCard(
+                    icon = Icons.AutoMirrored.Filled.ArrowForward,
+                    title = "Skip to Chapter ${next.number}",
+                    subtitle = next.title,
+                    primary = false,
+                    onClick = { nav.replace(Screen.Reader(next.sections.first().id)) },
+                )
+            } else {
+                ChoiceCard(
+                    icon = Icons.Outlined.AutoStories,
+                    title = "Take a full mock test",
+                    subtitle = "You've finished the handbook – 24 questions, 45 minutes",
+                    primary = false,
+                    onClick = { nav.replace(Screen.Quiz("Mock test", repo.mockTest().map { it.id }, mock = true)) },
+                )
+            }
+            Spacer(Modifier.height(12.dp))
+            TextButton(
+                onClick = { nav.push(Screen.Cards("Chapter $number", repo.cardsFor(number).shuffled().map { it.id })) },
+                colors = ButtonDefaults.textButtonColors(contentColor = MaterialTheme.colorScheme.onSurfaceVariant),
+            ) { Text("Review with flashcards instead") }
+            Spacer(Modifier.height(24.dp))
+        }
+    }
+}
+
+@Composable
+private fun ChoiceCard(
+    icon: androidx.compose.ui.graphics.vector.ImageVector,
+    title: String,
+    subtitle: String,
+    primary: Boolean,
+    onClick: () -> Unit,
+) {
+    val container = if (primary) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.surfaceContainerLow
+    val content = if (primary) MaterialTheme.colorScheme.onPrimary else MaterialTheme.colorScheme.onSurface
+    StudyCard(onClick = onClick, color = container) {
+        Row(Modifier.padding(horizontal = 18.dp, vertical = 18.dp), verticalAlignment = Alignment.CenterVertically) {
+            Icon(icon, null, tint = content, modifier = Modifier.size(26.dp))
+            Spacer(Modifier.width(16.dp))
+            Column(Modifier.weight(1f)) {
+                Text(title, style = MaterialTheme.typography.titleMedium, color = content)
+                Text(subtitle, style = MaterialTheme.typography.bodyMedium, color = content.copy(alpha = 0.75f))
             }
         }
     }
