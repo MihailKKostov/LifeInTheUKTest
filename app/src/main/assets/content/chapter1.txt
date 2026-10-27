@@ -39,12 +39,25 @@ If you want to be a permanent resident or citizen of the UK, you should:
 
 ! Questions often ask you to pick "two responsibilities" or "two freedoms". Responsibilities are things you do (obey the law, look after your family); freedoms are things you receive (free speech, fair trial).
 
+@remember
+- The five principles: **democracy, the rule of law, individual liberty, tolerance of other faiths and beliefs, participation in community life**
+- British values are based on **history and traditions** and protected by **law, customs and expectations**
+- There is **no place for extremism or intolerance**
+- New citizens make a **pledge** of loyalty at a **citizenship ceremony**
+- Responsibilities: **obey the law, respect others' rights, treat others fairly, look after yourself and your family, look after your area and the environment**
+- Freedoms: **belief and religion, speech, freedom from unfair discrimination, a fair trial, joining in the election of a government**
+
 @section Becoming a permanent resident
 To become a permanent resident or citizen you must **speak and read English** and have **a good understanding of life in the UK**.
 
 For settlement you need to **pass the Life in the UK test** and show **speaking and listening skills in English at B1** of the Common European Framework of Reference (equivalent to **ESOL Entry Level 3**).
 
 The handbook is written so that anyone who reads English at **ESOL Entry Level 3** can understand it. People below that level can take an **ESOL course in English with Citizenship** instead, which ends with its own test.
+
+@remember
+- You must **speak and read English** and understand **life in the UK**
+- Settlement needs the **Life in the UK test** plus English at **B1** (= **ESOL Entry Level 3**)
+- Below that level you can take an **ESOL course in English with Citizenship**
 
 @section Taking the Life in the UK test
 ## The format
@@ -62,18 +75,9 @@ The handbook is written so that anyone who reads English at **ESOL Entry Level 3
 
 ! Only certificates from registered test centres are accepted – a test taken anywhere else does not count.
 
-@remember Fundamental principles
-- The five principles: **democracy, the rule of law, individual liberty, tolerance of other faiths and beliefs, participation in community life**
-- British values are based on **history and traditions** and protected by **law, customs and expectations**
-- New citizens make a **pledge** of loyalty to the UK at a **citizenship ceremony**
-
-@remember Responsibilities and freedoms
-- Responsibilities: **obey the law, respect others' rights, treat others fairly, look after yourself and your family, look after your area and the environment**
-- Freedoms: **belief and religion, speech, freedom from unfair discrimination, a fair trial, joining in the election of a government**
-
-@remember The test
-- **24 questions**, **45 minutes**, pass mark **75% (18/24)**
-- Taken at about **60 registered test centres**; booked **online only**
+@remember
+- **24 questions** from **the whole handbook**, **45 minutes**, pass mark **75% (18/24)**
+- About **60 registered test centres**; booking is **online only**
 - Can be taken in **Welsh or Scottish Gaelic** by special arrangement
 - Bring **ID and proof of address**
-- English level required: **B1 / ESOL Entry Level 3**
+- **Isle of Man and Channel Islands** have different arrangements

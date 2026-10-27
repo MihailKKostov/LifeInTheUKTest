@@ -39,6 +39,18 @@ It was **the last successful foreign invasion of England**. Norman French influe
 
 William ordered a survey of every town and village, who owned the land and what animals they had: the **Domesday Book**, which still exists today.
 
+@remember
+- Britain became an island about **10,000 years ago**; first farmers arrived about **6,000 years ago**
+- **Stonehenge** – Wiltshire; **Skara Brae** – Orkney (best-preserved prehistoric village in northern Europe)
+- Bronze Age: **round barrows**; Iron Age: **hill forts** (e.g. **Maiden Castle**, Dorset), **Celtic** languages, **first coins**
+- **55 BC** Julius Caesar fails; **AD 43** Claudius conquers; Romans stay **400 years**, leave **AD 410**
+- **Boudicca** – queen of the **Iceni**; **Hadrian's Wall** kept out the **Picts**
+- **Jutes, Angles and Saxons** – basis of English; **Sutton Hoo** ship burial
+- **St Augustine** – first Archbishop of Canterbury; **St Columba** – Iona; **St Patrick** – Ireland
+- Vikings from **Denmark and Norway** (from **789**); **Alfred the Great** beat them; **Danelaw**; **Cnut** first Danish king; **Kenneth MacAlpin** united Scotland
+- **1066** Battle of Hastings – William beat Harold; **Bayeux Tapestry** (France); **Domesday Book**
+- The Norman Conquest was the **last successful foreign invasion** of England
+
 @section The Middle Ages
 The period from 1066 to about **1485** is the **Middle Ages** (medieval period) – a time of almost constant war.
 
@@ -69,6 +81,19 @@ Castles (e.g. **Windsor** and **Edinburgh**, still in use) and great cathedrals 
 
 ## The Wars of the Roses
 In **1455** a civil war began between the **House of Lancaster** (**red rose**) and the **House of York** (**white rose**). It ended at the **Battle of Bosworth Field in 1485**: **Richard III** (York) was killed and **Henry Tudor** (Lancaster) became **King Henry VII**. He married **Elizabeth of York**, uniting the families. The **Tudor rose** is a **red rose with a white rose inside**.
+
+@remember
+- **1284** Statute of Rhuddlan (Edward I) annexes Wales; castles **Conwy** and **Caernarvon**
+- **1314** Bannockburn – **Robert the Bruce** beats the English
+- **The Pale** – English-ruled area around Dublin
+- Hundred Years War lasted **116 years**; **Agincourt 1415** – **Henry V**
+- **1348** Black Death kills **one third** of England → labour shortages, **gentry**, **middle class**
+- **1215 Magna Carta** (King John) – **the king is subject to the law**
+- Parliament: **Lords** and **Commons**; Scotland had three **Estates**
+- **Common law** by **precedent** (England); laws **codified** (Scotland)
+- By **1400** English is the language of court and Parliament
+- **Chaucer** – Canterbury Tales; **Caxton** – first printing press in England
+- Wars of the Roses: **Lancaster (red)** v **York (white)**, **1455–1485**, ending at **Bosworth Field**; **Henry VII** first Tudor
 
 @section The Tudors
 **Henry VII** strengthened central government, reduced the power of the nobles and built up the monarchy's finances. His son **Henry VIII** is famous for **breaking away from the Church of Rome** and **marrying six times**.
@@ -109,6 +134,18 @@ Famous lines and where they come from:
 - "All the world's a stage" – **As You Like It**
 - "The darling buds of May" – **Sonnet 18**
 
+@remember
+- **Henry VII** strengthened central government
+- **Henry VIII** broke with Rome to divorce; created the **Church of England**
+- Wives in order: **Catherine of Aragon, Anne Boleyn, Jane Seymour, Anne of Cleves, Catherine Howard, Catherine Parr**
+- **Act for the Government of Wales** united Wales with England
+- **Edward VI** – Book of Common Prayer; **Mary I** – Catholic, **"Bloody Mary"**
+- **Elizabeth I** – Protestant; **1588** Spanish Armada defeated
+- **1560** Scotland abolishes the Pope's authority; Church of Scotland **not a state Church**
+- **Mary, Queen of Scots** – Catholic, imprisoned **20 years**, executed
+- **Francis Drake** – Golden Hind, sailed around the world
+- **Shakespeare** – born **Stratford-upon-Avon**; Hamlet, Macbeth, Romeo and Juliet; **Globe Theatre**
+
 @section The Stuarts, civil war and revolution
 ## James VI and I
 Elizabeth I never married. When she died in **1603** her cousin **James VI of Scotland** became **James I of England, Wales and Ireland** – but Scotland remained a **separate country**. His reign produced the **King James Version** (Authorised Version) of the **Bible** in English.
@@ -140,6 +177,18 @@ In **1660 Charles II** returned from exile in the Netherlands. The Church of Eng
 Charles II's brother **James II** (James VII of Scotland) was a **Roman Catholic**. When his son was born, a Catholic succession seemed likely. In **1688** Protestants invited **William of Orange**, the Protestant ruler of the Netherlands and husband of James's daughter **Mary**, to take the throne. There was **no fighting** in England, so it was called the **Glorious Revolution**. William and Mary ruled jointly.
 
 James tried to win back the throne through Ireland but was defeated at the **Battle of the Boyne in 1690** (still celebrated by some in Northern Ireland). A Scottish rising was defeated at **Killiecrankie**; the **MacDonalds of Glencoe** were massacred for being late to swear loyalty. James's supporters became known as **Jacobites**.
+
+@remember
+- **1603** James VI of Scotland becomes **James I** of England; **King James Bible**
+- **Plantations** – Protestant settlers in **Ulster**
+- **Divine Right of Kings** – James I and Charles I
+- **1642** Civil War: **Cavaliers** (king) v **Roundheads** (Parliament); king beaten at **Marston Moor** and **Naseby**
+- **1649** Charles I executed; republic = **the Commonwealth**; **Cromwell** = **Lord Protector**
+- **1660** Restoration of **Charles II**; **1665** plague; **1666** Great Fire; **Wren** rebuilt St Paul's; **Pepys'** diary
+- **1679 Habeas Corpus Act** – no unlawful imprisonment
+- **Royal Society** – oldest surviving scientific society; **Newton** – gravity
+- **1688 Glorious Revolution** – **William of Orange** replaces James II; **1690** Battle of the **Boyne**
+- James's supporters = **Jacobites**
 
 @section Union, Enlightenment and industry
 ## Constitutional monarchy
@@ -193,6 +242,21 @@ In **1801** Ireland was united with Great Britain (Act of Union **1800**), creat
 
 The **Welsh dragon** is not on it because Wales was already united with England when the first Union Flag was created in **1606**.
 
+@remember
+- **1689 Bill of Rights** – rights of Parliament, limits on the monarch, monarch must be **Protestant**
+- **Whigs and Tories** – start of party politics; free press from **1695**
+- **Pocket boroughs** (one family) and **rotten boroughs** (hardly any voters)
+- **Huguenots** – French Protestant refugees (1680–1720)
+- **1707 Act of Union** creates **Great Britain**; Scotland keeps its law, education and Church
+- **Robert Walpole** – first Prime Minister (1721–42)
+- **1746 Culloden** – Bonnie Prince Charlie defeated; **Highland Clearances**
+- **Robert Burns** – "The Bard", Auld Lang Syne
+- Enlightenment: **Adam Smith, David Hume, James Watt**
+- **Arkwright** – efficient factories; **Sake Dean Mahomet** – first curry house (1810)
+- **1807** slave trade banned; **1833 Emancipation Act**; **Wilberforce** and the **Quakers**
+- **1776** American independence; **1805 Trafalgar** (Nelson); **1815 Waterloo** (Wellington)
+- **1801** Union with Ireland; Union Flag = **St George, St Andrew, St Patrick**
+
 @section The Victorian age and the Empire
 **Queen Victoria** became queen in **1837 aged 18** and reigned until **1901** – almost **64 years**. Britain's power grew abroad and the **middle classes** became more important at home.
 
@@ -232,6 +296,18 @@ The **Boer War (1899–1902)** in South Africa against Dutch settlers (**Boers**
 " Are losing theirs and blaming it on you…
 "— If, Rudyard Kipling
 
+@remember
+- **Queen Victoria** reigned **1837–1901** (almost **64 years**)
+- Empire: largest ever, **400 million+** people
+- **1846** Corn Laws repealed; **1847** 10-hour day for women and children
+- **Stephensons** – railway engine; **Brunel** – Great Western Railway
+- **1851 Great Exhibition** – Crystal Palace, Hyde Park
+- **Crimean War 1853–56** – v Russia; **Victoria Cross**; **Florence Nightingale**
+- Irish **potato famine**; **Home Rule** (Parnell) v independence (Fenians)
+- **1832 Reform Act** – ended pocket and rotten boroughs; **Chartists**; **1867** Reform Act
+- **Emmeline Pankhurst** – WSPU suffragettes; women vote **1918 (over 30)**, **1928 (at 21)**
+- **Boer War 1899–1902**; **Kipling** – Jungle Book, Nobel Prize 1907
+
 @section The First World War and after
 ## A time of optimism and reform
 In the early 20th century Britain was a global superpower. Reforms included **financial help for the unemployed, old-age pensions and free school meals**, and **MPs were paid a salary for the first time**.
@@ -250,6 +326,16 @@ A peace treaty was signed in **1921**, and in **1922 Ireland became two countrie
 
 ## Between the wars
 In **1929** the world entered the **Great Depression**. Heavy industries like **shipbuilding** suffered mass unemployment, while new **car and aviation** industries grew. **Car ownership doubled from 1 to 2 million** between 1930 and 1939. Writers **Graham Greene** and **Evelyn Waugh** and economist **John Maynard Keynes** were prominent. The **BBC** began radio broadcasts in **1922** and the **world's first regular television service in 1936**.
+
+@remember
+- Pre-war reforms: pensions, **free school meals**, **MPs paid**
+- WWI **1914–18**, triggered by the killing of **Archduke Franz Ferdinand**
+- Allies v **Central Powers** (Germany, Austria-Hungary, Ottoman Empire, Bulgaria)
+- **Somme 1916** – **60,000** British casualties on day one
+- Ended **11.00 am, 11 November 1918**
+- **1916 Easter Rising**; **1922** Ireland split; Irish Free State a republic **1949**; "the **Troubles**"
+- **1929** Great Depression; car and aviation industries grew
+- BBC radio **1922**; world's first regular TV service **1936**
 
 @section The Second World War
 **Adolf Hitler** came to power in Germany in **1933**. When he **invaded Poland in 1939**, **Britain and France declared war**.
@@ -279,6 +365,16 @@ Japan defeated the British in **Singapore** and occupied **Burma**. The **USA en
 On **6 June 1944**, allied forces landed in **Normandy** – **D-Day**. Germany was defeated in **May 1945**. The war against Japan ended in **August 1945** after the USA dropped atom bombs on **Hiroshima and Nagasaki**. Scientists led by **Ernest Rutherford** (Manchester, then Cambridge) were first to **split the atom** and took part in the **Manhattan Project**.
 
 > Alexander Fleming (1881–1955) :: Born in **Scotland**. Discovered **penicillin in 1928** while researching flu. **Howard Florey and Ernst Chain** developed it into a usable drug, mass-produced by the 1940s. **Nobel Prize in Medicine (1945)**.
+
+@remember
+- **1939** – Hitler invades **Poland**; Britain and France declare war
+- Axis = **Germany, Italy, Japan**
+- **Churchill** PM from **1940**
+- **Dunkirk** – 300,000+ rescued; **Battle of Britain** – Spitfires and Hurricanes; **the Blitz** – Coventry
+- USA joined after **Pearl Harbor (1941)**
+- **D-Day 6 June 1944** – Normandy; Germany defeated **May 1945**; Japan **August 1945**
+- **Rutherford** – split the atom; **Fleming** – penicillin (1928)
+- Churchill voted **greatest Briton (2002)**
 
 @section Britain since 1945
 ## The welfare state
@@ -327,6 +423,18 @@ In the **1990s** Britain helped liberate **Kuwait** (after Iraq invaded in **199
 - **2015–2024**: **Conservative** governments under **Cameron, Theresa May, Boris Johnson, Liz Truss and Rishi Sunak**, including the **2016 EU referendum (Brexit)** and the COVID-19 pandemic.
 - **2024**: **Labour**, led by **Keir Starmer**, won a majority at the general election.
 
+@remember
+- **1945** Labour – **Attlee**; **1948 NHS** led by **Nye Bevan**
+- **Beveridge Report** – Want, Disease, Ignorance, Squalor, Idleness
+- **1944 Education Act (Butler)** – free secondary education
+- **1947** independence for India, Pakistan, Ceylon
+- **1948** West Indians invited to work; **28,000** Ugandan Asians admitted in the 1970s
+- **Swinging Sixties** – divorce and abortion laws liberalised, equal pay
+- **1973** UK joins the EEC
+- **Thatcher** – first woman PM, **1979–90**; **1982 Falklands**
+- **1998 Good Friday Agreement**; **1999** Scottish Parliament and Welsh Assembly
+- **2010** coalition (Cameron); **2016** Brexit vote; **2024** Labour (Starmer)
+
 @section Great British inventions
 Britain gave the world many 20th-century inventions. You **do not need to remember birth and death dates** – focus on **who invented what**.
 
@@ -346,112 +454,13 @@ Britain gave the world many 20th-century inventions. You **do not need to rememb
 | MRI scanner | **Sir Peter Mansfield** was **co-inventor**.
 | World Wide Web | **Sir Tim Berners-Lee**. First used **25 December 1990**.
 
-@remember Key dates
-- **55 BC** Julius Caesar's failed invasion; **AD 43** Claudius conquers Britain
-- **AD 410** Romans leave; **AD 789** first Viking raids
-- **1066** Battle of Hastings – Norman Conquest
-- **1215** Magna Carta (King John)
-- **1284** Statute of Rhuddlan annexes Wales; **1314** Battle of Bannockburn
-- **1348** Black Death kills a third of England's population
-- **1415** Battle of Agincourt (Henry V)
-- **1455** Wars of the Roses begin; **1485** Battle of Bosworth Field
-- **1560** Scottish Parliament abolishes the Pope's authority
-- **1588** Spanish Armada defeated
-- **1603** James VI of Scotland becomes James I of England
-- **1642** Civil war begins; **1649** Charles I executed
-- **1660** Restoration of Charles II; **1665** plague; **1666** Great Fire of London
-- **1679** Habeas Corpus Act; **1688** Glorious Revolution; **1689** Bill of Rights; **1690** Battle of the Boyne
-- **1707** Act of Union creates Great Britain
-- **1721–42** Robert Walpole, first Prime Minister
-- **1746** Battle of Culloden
-- **1776** American Declaration of Independence
-- **1801** Union with Ireland (Union Flag)
-- **1805** Trafalgar; **1815** Waterloo
-- **1807** Slave trade abolished; **1833** Emancipation Act ends slavery in the Empire
-- **1832** and **1867** Reform Acts
-- **1837–1901** Queen Victoria's reign
-- **1846** Corn Laws repealed; **1851** Great Exhibition
-- **1853–56** Crimean War; **1899–1902** Boer War
-- **1914–18** First World War; **1916** Easter Rising and the Somme
-- **1918** women over 30 get the vote; **1928** women vote at 21
-- **1922** Ireland split; Irish Free State
-- **1939–45** Second World War; **1940** Dunkirk and Battle of Britain; **1944** D-Day
-- **1948** NHS founded; **1973** UK joins the EEC
-- **1979** Thatcher becomes first woman PM; **1982** Falklands War
-- **1998** Good Friday Agreement; **1999** Scottish Parliament and Welsh Assembly
-
-@remember Monarchs and rulers
-- **William the Conqueror** – Norman Conquest 1066, Domesday Book
-- **King John** – Magna Carta 1215
-- **Henry VII** – first Tudor king, married Elizabeth of York
-- **Henry VIII** – six wives, created the Church of England, united Wales with England
-- **Edward VI** – Protestant; Book of Common Prayer
-- **Mary I** – Catholic, "Bloody Mary"
-- **Elizabeth I** – Protestant; defeated the Armada 1588
-- **James I** – King James Bible; Ulster plantations
-- **Charles I** – Divine Right of Kings; executed 1649
-- **Oliver Cromwell** – Lord Protector of the republic (Commonwealth)
-- **Charles II** – the Restoration 1660
-- **James II** – Catholic, overthrown 1688
-- **William III and Mary II** – Glorious Revolution
-- **Queen Anne** – Act of Union 1707
-- **George I** – German; relied on ministers, first PM Walpole
-- **Queen Victoria** – reigned 1837–1901, almost 64 years
-
-@remember Wives of Henry VIII (in order)
-- **Catherine of Aragon** (divorced) → **Anne Boleyn** (executed) → **Jane Seymour** (died) → **Anne of Cleves** (divorced) → **Catherine Howard** (executed) → **Catherine Parr** (survived)
-
-@remember Battles
-- **Hastings 1066** – William of Normandy beat Harold
-- **Bannockburn 1314** – Robert the Bruce beat the English
-- **Agincourt 1415** – Henry V beat the French
-- **Bosworth Field 1485** – ended the Wars of the Roses
-- **Marston Moor and Naseby** – Parliament beat Charles I
-- **Dunbar and Worcester** – Cromwell beat Charles II
-- **Boyne 1690** – William III beat James II
-- **Culloden 1746** – Bonnie Prince Charlie defeated
-- **Trafalgar 1805** – Nelson beat the French and Spanish fleets
-- **Waterloo 1815** – Wellington beat Napoleon
-
-@remember People
-- **Boudicca** – queen of the Iceni, fought the Romans
-- **St Augustine** – first Archbishop of Canterbury; **St Columba** – monastery on Iona
-- **Alfred the Great** – united the Anglo-Saxons, defeated the Vikings
-- **Chaucer** – The Canterbury Tales; **Caxton** – first printing press in England
-- **Sir Francis Drake** – sailed the Golden Hind around the world
-- **Shakespeare** – born in Stratford-upon-Avon
-- **Isaac Newton** – gravity; white light contains the rainbow colours
-- **Robert Walpole** – first Prime Minister
-- **Adam Smith, David Hume, James Watt** – Scottish Enlightenment
-- **Richard Arkwright** – efficient factories, carding machine
-- **Sake Dean Mahomet** – first curry house (1810)
-- **William Wilberforce** – anti-slavery MP
-- **Brunel** – Great Western Railway
-- **Florence Nightingale** – founder of modern nursing
-- **Emmeline Pankhurst** – suffragettes
-- **Rudyard Kipling** – The Jungle Book; Nobel Prize 1907
-- **Winston Churchill** – wartime PM; greatest Briton (2002)
-- **Alexander Fleming** – penicillin (1928)
-- **Clement Attlee** – NHS and welfare state; **Nye Bevan** – led NHS creation
-- **William Beveridge** – five Giant Evils; **R A Butler** – Education Act 1944
-- **Margaret Thatcher** – first woman PM, 1979–90
-
-@remember Acts and documents
-- **Magna Carta (1215)** – the king is subject to the law
-- **Act for the Government of Wales** – Henry VIII unites Wales and England
-- **Habeas Corpus Act (1679)** – no unlawful imprisonment
-- **Bill of Rights (1689)** – rights of Parliament, limits on the monarch
-- **Act of Union (1707)** – creates Great Britain
-- **Emancipation Act (1833)** – abolishes slavery in the Empire
-- **Reform Act (1832)** – abolishes pocket and rotten boroughs
-- **Education Act (1944)** – free secondary education
-
-@remember Inventions
+@remember
 - **TV** – John Logie Baird; **radar** – Robert Watson-Watt
 - **Jet engine** – Frank Whittle; **hovercraft** – Christopher Cockerell
 - **ATM** – James Goodfellow (1967, Barclays, Enfield)
 - **World Wide Web** – Tim Berners-Lee (1990)
-- **Penicillin** – Alexander Fleming; **insulin** – John MacLeod (co-discoverer)
-- **MRI** – Peter Mansfield (co-inventor); **IVF** – Edwards and Steptoe (1978)
+- **Insulin** – John MacLeod; **DNA structure** – 1953, Francis Crick
+- **MRI** – Peter Mansfield; **IVF** – Edwards and Steptoe (1978)
 - **Dolly the sheep** – first cloned mammal (1996)
-- **Concorde** – with France; **Harrier jump jet** – takes off vertically
+- **Concorde** – with France; **Harrier jump jet** – vertical take-off
+- **Jodrell Bank** radio telescope – Bernard Lovell; **Turing machine** – Alan Turing

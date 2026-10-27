@@ -6,13 +6,18 @@ data class Chapter(
     val subtitle: String,
     val intro: String,
     val sections: List<Section>,
-    val remember: List<RememberGroup>,
-)
+) {
+    /** The key facts of every section, grouped under the section titles. */
+    val remember: List<RememberGroup>
+        get() = sections.filter { it.remember.isNotEmpty() }.map { RememberGroup(it.title, it.remember) }
+}
 
 data class Section(
     val id: String,
     val title: String,
     val blocks: List<Block>,
+    /** Key facts shown at the end of the section. */
+    val remember: List<RememberItem>,
 ) {
     /** Rough reading time in minutes, used for the section list. */
     val minutes: Int by lazy {
@@ -21,7 +26,7 @@ data class Section(
     }
 }
 
-/** A titled group of "must remember" facts shown at the end of a chapter. */
+/** A titled group of "must remember" facts, used for chapter-wide revision lists. */
 data class RememberGroup(val title: String, val items: List<RememberItem>)
 
 data class RememberItem(val id: String, val text: String)

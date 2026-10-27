@@ -10,7 +10,7 @@ An offline Android app that condenses *Life in the United Kingdom: A guide for n
 
 | Tab | What it does |
 | --- | --- |
-| **Learn** | The 5 handbook chapters, rewritten as 36 short sections. History is told in chronological order. Key facts are highlighted like a marker pen, and people, tips, quotes and timelines get their own cards. Each chapter ends with a **"Remember these"** checklist you can tick off. |
+| **Learn** | The 5 handbook chapters, rewritten as 36 short sections. History is told in chronological order. Key facts are highlighted like a marker pen, and people, tips, quotes and timelines get their own cards. Every section ends with its own **"Key facts to remember"** checklist you can tick off, and the last section of a chapter leads straight on to the next chapter. |
 | **Cards** | 370 flip-cards. Mark each one "Got it" or "Still learning", then repeat the ones you missed. |
 | **Practice** | 495 questions in the real test's formats: single answer, choose TWO, true/false, and "which statement is correct". You can take a chapter quiz with instant explanations, review the questions you got wrong, or sit a **mock test** (24 questions, 45-minute timer, pass mark 18/24). |
 
@@ -22,7 +22,7 @@ Progress (sections read, cards known, ticked facts, mistakes, test history) is s
 
 ```
 app/src/main/assets/content/   Study content (plain text, easy to edit)
-  chapter1-5.txt               Narrative sections + "remember" lists
+  chapter1-5.txt               Narrative sections, each ending with its key facts
   cards.txt                    Flashcards  (front | back)
   questions1-5.txt             Question bank (Q:, + correct, - wrong, E: explanation)
 app/src/main/java/...          Kotlin + Jetpack Compose app

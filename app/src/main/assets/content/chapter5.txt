@@ -19,6 +19,11 @@ The campaign was seen as a failure at the time, but by **1918** most of these re
 | 1928 | Men and women **over 21** can vote
 | 1969 | Voting age lowered to **18**
 
+@remember
+- Early 1800s: only **men over 21 with property** could vote
+- Chartists wanted: votes for every man, annual elections, equal regions, **secret ballots**, any man as MP, **paid MPs**
+- **1918** women over 30; **1928** everyone over 21; **1969** voting age **18**
+
 @section The constitution and the monarchy
 A **constitution** is the set of principles by which a country is governed. The British constitution is **not written down in any single document**, so it is called **"unwritten"** – mainly because the UK has never had a revolution that created a totally new system.
 
@@ -44,6 +49,14 @@ The national anthem is **"God Save the King"** (or Queen).
 New citizens **swear (oath) or affirm (affirmation)** loyalty to the King at the citizenship ceremony: "…I will be **faithful and bear true allegiance** to His Majesty King Charles the Third, his Heirs and Successors, according to law."
 
 ! The **oath** mentions "Almighty God"; the **affirmation** is the non-religious version. Both promise allegiance to the monarch.
+
+@remember
+- The constitution is **unwritten** (no single document)
+- The monarch **appoints** the government but **does not rule**; can **advise, warn and encourage**
+- The monarch **opens each parliamentary session**; Acts are made in the monarch's name
+- **King Charles III**; heir **Prince William, Prince of Wales**
+- Anthem: **God Save the King**
+- New citizens **swear an oath or make an affirmation** of allegiance
 
 @section Parliament and elections
 The UK is a **parliamentary democracy**, divided into **constituencies**. Voters in each elect a **Member of Parliament (MP)** at a **General Election**. All MPs together form the **House of Commons**. The party with the majority of MPs forms the government; if no party has a majority, two can form a **coalition**.
@@ -75,6 +88,15 @@ Debates in the Commons are chaired by **the Speaker**, an MP who is **politicall
 ## Contacting your representatives
 You can write to or phone your MP at their constituency office or at the **House of Commons, Westminster, London SW1A 0AA**. Many MPs hold local **"surgeries"** where constituents can raise issues in person.
 
+@remember
+- **Commons** = elected MPs (more important); **Lords** = unelected **peers**
+- **Life peers** since **1958** (monarch appoints on PM's advice); hereditary peers lost automatic right in **1999**
+- The Commons can **overrule** the Lords
+- **Speaker** – neutral, chosen by MPs in a **secret ballot**
+- General Election **at least every five years**; **by-election** if an MP dies or resigns
+- **First past the post** – most votes wins
+- MPs hold **surgeries** for constituents
+
 @section The government
 ## The Prime Minister
 The **PM** is the **leader of the party in power**, appoints the cabinet and controls many public appointments. The PM's official home is **10 Downing Street**; the country house is **Chequers**. The PM can be changed by MPs of the governing party, or resign, and usually resigns after losing a General Election.
@@ -102,6 +124,15 @@ Civil servants **support the government** and deliver public services. They are 
 ## Local government
 Towns, cities and rural areas are run by elected **councils** ("**local authorities**"), funded by **central government and local taxes**. Many appoint a ceremonial **mayor**. **London has 33 local authorities**, coordinated by the **Greater London Authority** and the **Mayor of London**. Local elections for councillors are usually held in **May** every year.
 
+@remember
+- PM: **10 Downing Street**; country house **Chequers**
+- Cabinet of about **20**; **Chancellor** = economy; **Home Secretary** = crime, policing, immigration; **Foreign Secretary**
+- **Opposition** = second-largest party; **shadow cabinet**; **PMQs** weekly
+- Stand as MP at **18**; non-party MPs are **independents**
+- Pressure groups: **CBI, Greenpeace, Liberty**
+- Civil service: **politically neutral**; integrity, honesty, objectivity, impartiality
+- **London has 33 local authorities**; local elections in **May**
+
 @section Devolved government
 Since **1997** some powers have been **devolved** to Wales, Scotland and Northern Ireland. The **Welsh Assembly** and **Scottish Parliament** have existed since **1999**.
 
@@ -115,6 +146,15 @@ A **Northern Ireland Parliament** was set up in **1922** and **abolished in 1972
 
 ## The media
 Parliament's proceedings are broadcast on TV and published in **Hansard**. The UK has a **free press** – newspapers are free from government control and may support particular parties. **Radio and TV coverage of political parties must be balanced**, giving equal time to rival views.
+
+@remember
+- Devolution since **1997**; Scottish Parliament and Welsh Assembly since **1999**
+- UK keeps **defence, foreign affairs, immigration, taxation, social security**
+- **Wales**: Cardiff, **60** members, elections every **4** years
+- **Scotland**: Holyrood, **129 MSPs**; civil and criminal law, extra tax powers
+- **Northern Ireland**: Stormont, **90 MLAs**, **power-sharing**
+- All use **proportional representation**; UK can **suspend** them
+- **Hansard** records Parliament; broadcast coverage must be **balanced**
 
 @section Voting and standing for office
 The UK has had a **fully democratic voting system since 1928**, and the voting age of **18** was set in **1969**.
@@ -140,6 +180,14 @@ Members of the **House of Lords cannot stand for the House of Commons**.
 ## Visiting Parliament
 You can watch debates free from the **public galleries** in both Houses – write to your MP for tickets or queue on the day; the Lords is usually easier to get into. You can also visit **Stormont** (NI), **Holyrood** (Scotland) and the **Senedd in Cardiff Bay** (Wales).
 
+@remember
+- **UK, Commonwealth and Irish** citizens living here vote in **all** elections
+- Electoral register updated every **September or October**; NI registers **individually**
+- Polling stations open **7 am – 10 pm**; NI voters need **photo ID**
+- Can't get there? Use a **postal ballot**
+- Stand for office at **18**; not **armed forces, civil servants** or certain criminals
+- Peers **cannot** stand for the Commons
+
 @section The UK and the world
 ## The Commonwealth
 An association of countries, most **once part of the British Empire**, working towards democracy and development. The **monarch is its ceremonial head**. Membership is **voluntary**; it has **no power over members** but **can suspend** them. Core values: **democracy, good government and the rule of law**. It now has **56 members** (the original handbook says 54).
@@ -155,6 +203,13 @@ Set up **after the Second World War** to prevent war and promote peace, with **m
 
 ## NATO
 A group of **European and North American** countries who agree to **help each other if attacked**. The UK joined after the war.
+
+@remember
+- **Commonwealth**: monarch is head; voluntary; can **suspend** members; democracy, good government, rule of law
+- **Treaty of Rome 1957** – 6 founders; UK joined **1973**, left **31 January 2020**
+- **Council of Europe** – separate from EU; human rights; **cannot make laws**
+- **UN Security Council** – 15 members, UK one of **5 permanent**
+- **NATO** – members help each other if attacked
 
 @section Rights and responsibilities
 Britain's tradition of rights has its roots in **Magna Carta, the Habeas Corpus Act and the Bill of Rights (1689)**.
@@ -177,6 +232,14 @@ It is illegal to treat people unfairly because of **age, disability, sex, pregna
 - **Domestic violence** is a serious crime, whether the victim is a man or woman, married or not. A man who forces a woman to have sex – **including her husband** – can be charged with **rape**. **Refuges or shelters** offer safe places to stay.
 - **Female genital mutilation (FGM)** is **illegal**, as is **taking a girl abroad** for it.
 - **Forced marriage** is a **criminal offence**; **arranged marriages** with both people's consent are acceptable. **Forced Marriage Protection Orders** were introduced in **2008** (England, Wales and NI) and **2011** (Scotland). Breaking an order can mean **up to two years in jail**.
+
+@remember
+- Roots: **Magna Carta, Habeas Corpus, Bill of Rights**
+- UK signed the **ECHR in 1950**; **Human Rights Act 1998**
+- No discrimination by age, disability, sex, pregnancy, race, religion, sexuality or marital status
+- **Domestic violence** is a crime; a husband can be charged with **rape**
+- **FGM** is illegal – including taking a girl **abroad** for it
+- **Forced marriage** is a crime; breaching a protection order = up to **2 years** in jail
 
 @section Respecting the law
 **Everyone receives equal treatment under the law.** Some things allowed elsewhere are **not acceptable in the UK**.
@@ -205,6 +268,15 @@ Police officers must obey the law themselves. They are supported by **Police Com
 ## Terrorism and extremism
 The most serious terrorist threat is from **Al Qa'ida** and similar groups; there is also **Northern Ireland-related** terrorism. **Extremism** means **vocal or active opposition to fundamental British values**. If someone tries to recruit you, tell your **local police**.
 
+@remember
+- **Criminal law** = crimes; **civil law** = disputes (housing, consumer, employment, debt)
+- Carrying **any weapon** is a crime – even for self-defence
+- Tobacco and alcohol: not sold to under-**18**s
+- Police: **protect life and property, keep the peace, prevent and detect crime**
+- Forces led by **Chief Constables**; **PCCs** elected since **November 2012**
+- **PCSOs** support police officers
+- Extremism = opposition to **fundamental British values**
+
 @section The courts
 **Judges** (the **judiciary**) interpret the law and make sure trials are fair; **the government cannot interfere**. If judges find the government acted illegally, it must **change its policies or ask Parliament to change the law**.
 
@@ -230,6 +302,15 @@ A **jury** is chosen **at random from the electoral register**. It has **12 memb
 ## Legal advice
 **Solicitors** give legal advice and represent clients. **Citizens Advice** and the **Law Society** can recommend one. Charges are usually based on **time spent**, so ask about costs at the start.
 
+@remember
+- The government **cannot interfere** with judges
+- Minor crime: **Magistrates' Court** (Scotland: **Justice of the Peace Court**)
+- Serious crime: **Crown Court** (Scotland: **Sheriff Court**; murder: **High Court**)
+- Jury: **12** (**15** in Scotland); Scotland also has **"not proven"**
+- **Youth Court** 10–17; Scotland: **Children's Hearings**; NI: **youth conferencing**
+- Civil: **County Court**; serious civil: **High Court** / **Court of Session**
+- Small claims under **£10,000** (England & Wales), **£5,000** (Scotland & NI)
+
 @section Tax, National Insurance and driving
 ## Income tax
 You pay income tax on **wages, self-employment profits, taxable benefits, pensions** and income from **property, savings and dividends**. It pays for services like **roads, education, police and the armed forces**.
@@ -248,6 +329,14 @@ Young people are sent a **National Insurance number just before their 16th birth
 - In Northern Ireland, new drivers display an **"R" plate** (restricted) for **one year**.
 - A licence from the **EU, Iceland, Liechtenstein or Norway** is valid as long as it is valid. Other foreign licences can be used for **12 months**.
 - Vehicles must be **registered with the DVLA**, have **road tax** and **insurance** (driving uninsured is a **serious criminal offence**), and cars over **three years old** need an annual **MOT** test.
+
+@remember
+- Income tax through **PAYE** to **HMRC**; self-employed use **self-assessment**
+- **National Insurance** pays for benefits, the state pension and the **NHS**
+- NI number arrives just before you turn **16**; it doesn't prove right to work
+- Drive at **17** (moped **16**); licence to **70**, then every **3** years
+- Non-EU licence valid **12 months**; NI new drivers show an **R plate** for 1 year
+- **MOT** yearly for vehicles over **3 years** old; driving uninsured is a crime
 
 @section Your role in the community
 ## Shared values and responsibilities
@@ -281,73 +370,12 @@ The **National Citizen Service** gives **16- and 17-year-olds** outdoor activiti
 ## Looking after the environment
 **Recycle** as much as you can – it uses less energy and reduces landfill. **Shop locally** to support local businesses and reduce your **carbon footprint**. **Walk or use public transport** to create less pollution.
 
-@remember Democracy and the monarchy
-- Chartists wanted: votes for every man, annual elections, equal regions, **secret ballots**, any man to be an MP, **paid MPs**
-- **1918** women over 30 vote; **1928** everyone over 21; **1969** voting age **18**
-- The constitution is **unwritten** (not in a single document)
-- The monarch **appoints** the government but **does not rule**; can **advise, warn and encourage**
-- The monarch **opens each parliamentary session** with a speech
-- **King Charles III**; heir **Prince William, Prince of Wales**
-- Anthem: **God Save the King**
-
-@remember Parliament and government
-- **Commons** = elected MPs (more important); **Lords** = unelected peers
-- **Life peers** since **1958**, appointed by the monarch on the PM's advice; hereditary peers lost automatic right in **1999**
-- The **Speaker** is neutral, chosen by MPs in a **secret ballot**
-- General Election **at least every five years**; **by-election** when an MP dies or resigns; **first past the post**
-- PM lives at **10 Downing Street**; country house **Chequers**
-- **Chancellor** = economy; **Home Secretary** = crime, policing, immigration; **Foreign Secretary** = foreign affairs
-- **Opposition** = second-largest party; **shadow cabinet**; **PMQs** weekly
-- Civil servants are **politically neutral**
-- **London has 33 local authorities**; local elections in **May**
-
-@remember Devolution
-- Devolved since **1997**; Scottish Parliament and Welsh Assembly since **1999**
-- UK keeps **defence, foreign affairs, immigration, taxation, social security**
-- **Wales**: Cardiff (Senedd), **60** members, elections every **4** years
-- **Scotland**: Holyrood, Edinburgh, **129 MSPs**; includes **civil and criminal law** and extra tax powers
-- **Northern Ireland**: Stormont, Belfast, **90 MLAs**, **power-sharing**
-- All three use **proportional representation**
-- Parliament's debates are recorded in **Hansard**
-
-@remember Voting
-- **UK, Commonwealth and Irish** citizens resident here can vote in **all** elections
-- Electoral register updated every **September or October**
-- Polling stations open **7 am to 10 pm**; NI voters need **photo ID**
-- Can stand for office at **18**; not armed forces, civil servants or certain criminals
-- Peers **cannot** stand for the House of Commons
-
-@remember The UK and the world
-- **Commonwealth**: monarch is head; voluntary; can **suspend** members; democracy, good government, rule of law
-- **EEC** founded by 6 countries, **Treaty of Rome 1957**; UK joined **1973**, left **31 January 2020**
-- **Council of Europe** – separate from the EU; human rights; **cannot make laws**; created the **ECHR**
-- **UN Security Council** – 15 members, UK one of **5 permanent**
-- **NATO** – members help each other if attacked
-
-@remember Rights and the law
-- Roots of rights: **Magna Carta, Habeas Corpus, Bill of Rights**
-- UK signed the **ECHR in 1950**; **Human Rights Act 1998** made it UK law
-- **FGM** and **forced marriage** are crimes; forced marriage protection order breach = up to **2 years** jail
-- **Criminal law** = crimes; **civil law** = disputes (housing, consumer, employment, debt)
-- Carrying **any weapon** is a crime, even for self-defence
-- Police: **protect life and property, keep the peace, prevent and detect crime**
-- **PCCs** elected since **November 2012**; they appoint the Chief Constable
-
-@remember Courts
-- Minor crime: **Magistrates' Court** (Scotland: **Justice of the Peace Court**)
-- Serious crime: **Crown Court** (Scotland: **Sheriff Court**; murder: **High Court**)
-- Jury: **12** members (**15** in Scotland); Scotland has a **"not proven"** verdict
-- **Youth Court**: ages **10–17**; Scotland: **Children's Hearings**; NI: **youth conferencing**
-- Civil: **County Court**; serious civil: **High Court** / **Court of Session**
-- Small claims: under **£10,000** (England & Wales), **£5,000** (Scotland & NI)
-
-@remember Tax, driving and community
-- Income tax via **PAYE** to **HMRC**; self-employed use **self-assessment**
-- **National Insurance** pays for benefits, the state pension and the **NHS**; number sent just before **16**
-- Drive at **17** (moped **16**); licence to **70**, then every **3** years
-- Foreign (non-EU) licence valid for **12 months**; NI new drivers show an **R plate** for 1 year
-- **MOT** every year for vehicles over **3 years** old; driving uninsured is a crime
-- **Jury service**: ages **18–70** on the electoral register
-- School governors: **18+**, no upper age limit
+@remember
+- **Jury service**: on the electoral register, aged **18–70**
+- School governors: **18+**, no upper age limit; set direction, ensure accountability, monitor performance
 - You **don't have to tell a canvasser** how you will vote
-- **National Citizen Service**: ages **16–17**
+- Volunteer as a **special constable**, **lay representative** or **magistrate**
+- Giving blood takes about **an hour**; living donors can give a **kidney**
+- **NSPCC** – children; **Age UK** – older people; **Crisis/Shelter** – homeless; **PDSA** – animals
+- **National Citizen Service** – ages **16–17**
+- Recycle, **shop locally**, walk or use public transport

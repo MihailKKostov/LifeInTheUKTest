@@ -18,9 +18,17 @@ class ContentTest {
         repo.chapters.forEach { ch ->
             assertTrue("chapter ${ch.number} title", ch.title.isNotBlank())
             assertTrue("chapter ${ch.number} sections", ch.sections.isNotEmpty())
-            assertTrue("chapter ${ch.number} remember", ch.remember.all { it.items.isNotEmpty() })
-            ch.sections.forEach { s -> assertTrue("empty section ${s.id}", s.blocks.isNotEmpty()) }
+            ch.sections.forEach { s ->
+                assertTrue("empty section ${s.id}", s.blocks.isNotEmpty())
+                assertTrue("no key facts in ${s.id}", s.remember.isNotEmpty())
+            }
         }
+    }
+
+    @Test
+    fun keyFactIdsAreUnique() {
+        val ids = repo.allSections.flatMap { s -> s.remember.map { it.id } }
+        assertEquals(ids.size, ids.toSet().size)
     }
 
     @Test

@@ -52,6 +52,8 @@ class ScreenshotTest {
     @Test fun chapter() { val p = progress(); snap { ChapterScreen(repo, p, nav, 3) } }
     @Test fun readerHistory() { val p = progress(); snap { ReaderScreen(repo, p, nav, "3.3") } }
     @Test fun readerValues() { val p = progress(); snap { ReaderScreen(repo, p, nav, "1.1") } }
+    @Test fun readerShortWithFacts() { val p = progress(); snap { ReaderScreen(repo, p, nav, "1.2") } }
+    @Test fun readerChapterEnd() { val p = progress(); snap { ReaderScreen(repo, p, nav, "2.2") } }
     @Test fun readerInventions() { val p = progress(); snap { ReaderScreen(repo, p, nav, "3.10") } }
     @Test fun remember() { val p = progress(); snap { RememberScreen(repo, p, nav, 2) } }
     @Test fun cardsHome() { val p = progress(); snap { CardsHomeScreen(repo, p, nav) } }

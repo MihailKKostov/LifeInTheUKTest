@@ -46,6 +46,15 @@ The population is **ethnically diverse**, especially in large cities like London
 
 Men and women have **equal rights** to work, own property, marry and divorce, and married parents are **equally responsible** for their children. Women make up **about half the workforce**, girls leave school with **better qualifications** than boys on average, and **more women than men study at university**.
 
+@remember
+- Located in the **north west of Europe**; John O'Groats to Land's End ≈ **870 miles**
+- Capitals: **London, Edinburgh, Cardiff, Belfast**
+- Scottish and NI banknotes are **valid** everywhere but shops **don't have to accept** them
+- **Welsh** in Wales; **Gaelic** in the Highlands and Islands; **Irish Gaelic** in NI
+- Population: **just over 62 million (2010)**; about **67.6 million (2022)**
+- **England 84%, Scotland 8%, Wales 5%, NI under 3%**
+- Women are **half the workforce**; more women than men at **university**
+
 @section Religion and patron saints
 The UK is historically a **Christian** country. In the **2009 Citizenship Survey**:
 | Christian | **70%**
@@ -85,6 +94,15 @@ Only **Scotland and Northern Ireland** have their patron saint's day as an **off
 | Wales | **Daffodil**
 | Northern Ireland | **Shamrock**
 
+@remember
+- **70% Christian**, **21% no religion**, Muslim 4%, Hindu 2%, Sikh 1%
+- Church of England: **monarch is head**, **Archbishop of Canterbury** spiritual leader; bishops in the **Lords**
+- **Church of Scotland**: Presbyterian; **Moderator** serves **one year**
+- **No established Church** in Wales or Northern Ireland
+- **St David 1 Mar**, **St Patrick 17 Mar**, **St George 23 Apr**, **St Andrew 30 Nov**
+- Only **Scotland and NI** have their saint's day as an official holiday
+- Flowers: **rose** (England), **thistle** (Scotland), **daffodil** (Wales), **shamrock** (NI)
+
 @section Festivals and traditions
 ## Christian festivals
 - **Christmas Day, 25 December** – the birth of Jesus Christ; a public holiday. Many go to church on **Christmas Eve (24 December)**. Traditional food: **roast turkey, Christmas pudding and mince pies**. Children believe **Father Christmas (Santa Claus)** brings presents.
@@ -111,6 +129,17 @@ Only **Scotland and Northern Ireland** have their patron saint's day as an **off
 
 ## Bank holidays
 Public holidays with **no religious significance**, when banks and many businesses close: **early May, late May/early June, and August**. In Northern Ireland the **Battle of the Boyne** anniversary in **July** is also a holiday.
+
+@remember
+- **Boxing Day 26 Dec**; **Good Friday and Easter Monday** are public holidays
+- **Lent** = 40 days before Easter; **Shrove Tuesday** = Pancake Day; **Ash Wednesday** starts Lent
+- **Diwali** – Hindus and Sikhs, Festival of Lights, **Leicester**
+- **Hannukah** – Jewish, 8 days, **menorah**; **Eid al-Fitr** – end of Ramadan
+- **Vaisakhi** – Sikh, **14 April**, the **Khalsa**
+- **Hogmanay** – 31 Dec in Scotland; **2 January** also a holiday there
+- **Bonfire Night 5 Nov** – Guy Fawkes, **1605**
+- **Remembrance Day 11 Nov** – poppies, silence at **11 am**, **Cenotaph**
+- Bank holidays have **no religious significance**
 
 @section Sport
 Many famous sports began in Britain, including **cricket, football, lawn tennis, golf and rugby**. Major stadiums include **Wembley Stadium** (London) and the **Millennium Stadium** (Cardiff).
@@ -149,6 +178,17 @@ The **Paralympics** began with the work of **Dr Sir Ludwig Guttmann**, a German 
 - **Motor sport**: car racing in the UK started in **1902**. A **Formula 1 Grand Prix** is held every year; recent British champions include **Damon Hill, Lewis Hamilton and Jensen Button**.
 - **Skiing**: there are **five ski centres in Scotland** and **Europe's longest dry ski slope near Edinburgh**.
 
+@remember
+- Olympics hosted **1908, 1948, 2012**; Paralympics began at **Stoke Mandeville**
+- **Football** most popular; England's only win – **1966 World Cup** (Bobby Moore)
+- **Ashes** – cricket, England v Australia
+- **Six Nations** – England, Ireland, Scotland, Wales, **France, Italy**
+- **Grand National** – Aintree; **Royal Ascot** – Berkshire; museum – **Newmarket**
+- **St Andrews** – home of golf; **The Open** – only Major outside the USA
+- **Wimbledon** – oldest tournament, only Grand Slam on **grass**; first club **Leamington Spa 1872**
+- **Bannister** – 4-minute mile; **Redgrave** – 5 rowing golds; **Wiggins** – Tour de France
+- **Farah** – 5,000m and 10,000m; **Ennis** – heptathlon; **Murray** – US Open 2012
+
 @section Music and theatre
 ## Classical music
 **The Proms** is an **eight-week summer** season of orchestral music, including at the **Royal Albert Hall**, organised by the **BBC since 1927**. The **Last Night of the Proms** is the best-known concert.
@@ -183,6 +223,16 @@ London's **West End** is known as **"Theatreland"**. **The Mousetrap**, a murder
 - The **Edinburgh Festival** takes place every **summer**; its biggest part is the **Edinburgh Festival Fringe**, mainly theatre and comedy, often experimental.
 - The **Laurence Olivier Awards** are held annually in **London**, named after the actor best known for Shakespeare roles.
 
+@remember
+- **Proms** – 8 weeks, Royal Albert Hall, **BBC** since 1927
+- **Handel** – Water Music, Messiah; **Elgar** – Land of Hope and Glory; **Holst** – The Planets
+- **Britten** – Peter Grimes, Aldeburgh; **Purcell** – Westminster Abbey organist
+- **Eisteddfod** – Welsh festival; **Mercury Prize** – best album; **Brit Awards**
+- **The Mousetrap** – longest initial run, since 1952
+- **Gilbert and Sullivan** – HMS Pinafore, The Mikado
+- **Lloyd Webber** – Cats, Phantom, Evita, Jesus Christ Superstar
+- Pantomime **Dame** = a woman played by a man; **Edinburgh Fringe**; **Olivier Awards**
+
 @section Art, architecture and design
 ## Art
 In the Middle Ages most art was **religious**. In the 16th and 17th centuries many painters in Britain came from abroad, like **Hans Holbein** and **Sir Anthony Van Dyck**. British **portrait and landscape** painters became famous from the 18th century.
@@ -215,6 +265,16 @@ The **Turner Prize** for **contemporary art** was set up in **1984**, named afte
 **Lancelot "Capability" Brown** (18th century) designed natural-looking grounds for country houses. **Gertrude Jekyll** designed colourful gardens, often with **Lutyens**. The annual **Chelsea Flower Show** showcases garden design.
 
 Designers: **Thomas Chippendale** (18th-century **furniture**), **Clarice Cliff** (**Art Deco ceramics**), **Sir Terence Conran** (**interior** design). Fashion: **Mary Quant, Alexander McQueen, Vivienne Westwood**.
+
+@remember
+- **Turner Prize** – contemporary art, since **1984**, at **Tate Britain**
+- **Constable** – Dedham Vale; **Gainsborough** – portraits; **Turner** – landscapes
+- **Henry Moore** – bronze sculptures; **Hockney** – pop art; **Petts** – Welsh stained glass
+- **Wren** – St Paul's; **Inigo Jones** – Queen's House, Banqueting House
+- **Robert Adam** – Dumfries House; **Lutyens** – Cenotaph, New Delhi
+- Gothic revival: **Houses of Parliament**, **St Pancras**
+- **Capability Brown** – natural landscapes; **Gertrude Jekyll** – colourful gardens
+- **Chippendale** – furniture; **Mary Quant, McQueen, Westwood** – fashion
 
 @section Literature and poetry
 **Nobel Prize in Literature** winners include novelist **Sir William Golding**, poet **Seamus Heaney** and playwright **Harold Pinter**. **Agatha Christie**'s detective stories are read worldwide and **Ian Fleming** created **James Bond**. In **2003** **The Lord of the Rings** by **JRR Tolkien** was voted the **country's best-loved novel**.
@@ -255,6 +315,16 @@ The **Man Booker Prize** (since **1968**) is for the best fiction by an author f
 " What passing-bells for these who die as cattle?
 "— Wilfred Owen, Anthem for Doomed Youth
 
+@remember
+- Nobel: **Golding, Heaney, Pinter**; **Lord of the Rings** voted best-loved (2003)
+- **Man Booker** – since 1968; Commonwealth, Ireland, Zimbabwe
+- **Austen** – Pride and Prejudice; **Dickens** – Oliver Twist; **Conan Doyle** – Sherlock Holmes
+- **Stevenson** – Treasure Island; **Hardy** – Far from the Madding Crowd; **Waugh** – Brideshead
+- **Beowulf** – Anglo-Saxon; **Milton** – Paradise Lost; sonnet = **14 lines**
+- **Wordsworth** – daffodils; **Blake** – The Tyger; **Byron** – She Walks in Beauty
+- WWI poets: **Wilfred Owen, Siegfried Sassoon**
+- **Poets' Corner** – Westminster Abbey
+
 @section Leisure, film and media
 ## Gardens, shopping and food
 Many people garden; some rent an **allotment** to grow fruit and vegetables. Famous gardens: **Kew Gardens, Sissinghurst and Hidcote** (England), **Crathes Castle and Inveraray Castle** (Scotland), **Bodnant Garden** (Wales) and **Mount Stewart** (Northern Ireland).
@@ -294,6 +364,17 @@ The licence fee pays for the **BBC**, the **largest broadcaster in the world** a
 - You must be **18** to enter betting shops or gambling clubs, and to play the **National Lottery**.
 - It is illegal to treat a pet **cruelly or neglect** it. Dogs in public must wear a **collar with the owner's name and address**, and owners must **clean up** after them. **Vets** provide animal care; charities help those who can't pay.
 
+@remember
+- Foods: **roast beef** (England), **Welsh cakes**, **haggis** (Scotland), **Ulster fry** (NI)
+- **Chaplin** – tramp; **Hitchcock**, **David Lean**; **Nick Park** – Wallace and Gromit
+- **Ealing Studios** – oldest working studio; **BAFTAs** = British Oscars
+- **Harry Potter** and **James Bond** – top film franchises
+- **Monty Python** – 1969; **Punch** – 1840s satire
+- TV licence: free for **over-75s** (apply), **50% off** for blind people, fine up to **£1,000**
+- **BBC** – funded by the licence, independent of government
+- Alcohol at **18**; beer or wine with a meal at **16**; betting and Lottery at **18**
+- Dogs need a **collar with the owner's name and address**
+
 @section Places of interest
 There are **15 national parks** in England, Wales and Scotland. The **National Trust** (founded in **1895 by three volunteers**) and the **National Trust for Scotland** are **charities** that preserve buildings, coastline and countryside; more than **61,000 volunteers** help.
 
@@ -307,65 +388,11 @@ There are **15 national parks** in England, Wales and Scotland. The **National T
 | Tower of London | First built by **William the Conqueror**. Tours by **Yeoman Warders (Beefeaters)**; home of the **Crown Jewels**.
 | Lake District | **England's largest national park**. Biggest lake: **Windermere**. **Wastwater** was voted **Britain's favourite view** (2007).
 
-@remember The UK today
-- Located in the **north west of Europe**; John O'Groats to Land's End ≈ **870 miles**
-- Capitals: **London, Edinburgh, Cardiff, Belfast**
-- Population: **just over 62 million (2010)**, about 67.6 million (2022); **England 84%, Scotland 8%, Wales 5%, NI under 3%**
-- Scottish and NI banknotes are **valid** across the UK but shops **don't have to accept** them
-- **Welsh** in Wales; **Gaelic** in the Scottish Highlands and Islands; **Irish Gaelic** in NI
-
-@remember Religion and saints
-- **70% Christian**, 21% no religion, Muslim 4%, Hindu 2%, Sikh 1%
-- **Church of England**: Protestant; **monarch is head**, **Archbishop of Canterbury** spiritual leader
-- **Church of Scotland**: Presbyterian; led by a **Moderator** appointed for **one year**
-- **No established Church** in Wales or Northern Ireland
-- **St David 1 March** (Wales), **St Patrick 17 March** (NI), **St George 23 April** (England), **St Andrew 30 November** (Scotland)
-- National flowers: **rose** (England), **thistle** (Scotland), **daffodil** (Wales), **shamrock** (NI)
-
-@remember Festivals
-- **Boxing Day** 26 December; **Good Friday and Easter Monday** are public holidays
-- **Lent** = 40 days before Easter; starts **Ash Wednesday**; day before = **Shrove Tuesday (Pancake Day)**
-- **Diwali** – Hindus and Sikhs, Festival of Lights, **Leicester**
-- **Hannukah** – Jewish, eight days, **menorah**
-- **Eid al-Fitr** – end of **Ramadan**; **Eid ul Adha** – Ibrahim's sacrifice
-- **Vaisakhi** – Sikh, **14 April**, founding of the **Khalsa**
-- **Hogmanay** – New Year's Eve in Scotland; **2 January** is also a holiday there
-- **Bonfire Night 5 November** – Guy Fawkes, **1605**
-- **Remembrance Day 11 November** – poppies, two-minute silence at **11 am**, **Cenotaph**
-- **Mothering Sunday** – three weeks before Easter; **Father's Day** – third Sunday in June
-
-@remember Sport
-- Olympics hosted **1908, 1948, 2012**; Paralympics began at **Stoke Mandeville** (Ludwig Guttmann)
-- **Football** = most popular sport; England won the **1966 World Cup** (captain **Bobby Moore**)
-- **The Ashes** = cricket, England v Australia
-- **Six Nations** = rugby union: England, Ireland, Scotland, Wales, France, Italy
-- **Grand National** at **Aintree**; **Royal Ascot** in Berkshire; racing museum in **Newmarket**
-- **St Andrews** = home of golf; **The Open** = only Major outside the USA
-- **Wimbledon** = oldest tennis tournament, only Grand Slam on **grass**; first tennis club **Leamington Spa 1872**
-- **Roger Bannister** – four-minute mile; **Steve Redgrave** – 5 rowing golds; **Mo Farah** – 5,000m & 10,000m; **Jessica Ennis** – heptathlon; **Bradley Wiggins** – Tour de France; **Andy Murray** – US Open 2012
-
-@remember Arts and culture
-- **The Proms** – 8 weeks, Royal Albert Hall, run by the **BBC** since 1927
-- **Handel** – Water Music, Messiah; **Elgar** – Land of Hope and Glory; **Holst** – The Planets; **Britten** – Peter Grimes, Aldeburgh
-- **The Mousetrap** (Agatha Christie) – longest initial run, since 1952
-- **Gilbert and Sullivan** – HMS Pinafore, The Mikado; **Lloyd Webber** – Cats, Phantom, Evita
-- **Edinburgh Fringe**; **National Eisteddfod** (Wales, in Welsh); **Mercury Prize**; **Brit Awards**
-- **Turner Prize** – contemporary art, since 1984, shown at Tate Britain
-- **Constable** – Dedham Vale; **Henry Moore** – bronze sculptures; **Hockney** – pop art
-- **Wren** – St Paul's; **Lutyens** – Cenotaph, New Delhi; **Robert Adam** – Dumfries House
-- **Capability Brown** – natural landscapes; **Gertrude Jekyll** – colourful gardens
-- **Man Booker Prize** – since 1968; **Lord of the Rings** voted best-loved novel (2003)
-- Nobel literature: **Golding, Heaney, Pinter**; Kipling also won (1907)
-
-@remember Leisure and places
-- **TV licence**: free for over-75s (apply), 50% off for blind people, fine up to **£1,000**
-- **BBC** is funded by the licence fee and is **independent of government**
-- **18** to buy alcohol; **16** can drink beer or wine **with a meal** with someone over 18
-- **18** for betting shops and the **National Lottery**
-- Dogs in public need a **collar with the owner's name and address**
+@remember
 - **15 national parks**; **National Trust** founded **1895** by three volunteers
 - **Big Ben** = the bell; tower = **Elizabeth Tower**
-- **Giant's Causeway** – NI; **Eden Project** – Cornwall; **Snowdon** – highest in Wales
-- **Lake District** – England's largest national park; **Windermere**; **Wastwater** favourite view
+- **Eden Project** – Cornwall; **Giant's Causeway** – NI
+- **Snowdon** – highest in Wales; **Lake District** – England's largest park, **Windermere**
 - **Loch Lomond** – largest fresh water in mainland Britain
-- **Ealing Studios** – oldest working film studio; **Nick Park** – Wallace and Gromit
+- **London Eye** – millennium; **Tower of London** – Beefeaters, Crown Jewels
+- **Wastwater** – Britain's favourite view (2007)

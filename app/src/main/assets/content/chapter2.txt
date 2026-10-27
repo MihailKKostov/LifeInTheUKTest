@@ -14,6 +14,12 @@ The official name is **the United Kingdom of Great Britain and Northern Ireland*
 | UK | England, Scotland, Wales, Northern Ireland
 | Great Britain | England, Scotland, Wales
 
+@remember
+- The UK = **England, Scotland, Wales and Northern Ireland**
+- Official name: **the United Kingdom of Great Britain and Northern Ireland**
+- **Great Britain** = England, Scotland and Wales only (**not** Northern Ireland)
+- The rest of Ireland is an **independent country**
+
 @section Crown dependencies and overseas territories
 Some islands are closely linked to the UK but are **not part of it**:
 
@@ -23,13 +29,7 @@ Some islands are closely linked to the UK but are **not part of it**:
 ## How the UK is governed
 The UK is governed by **the Parliament sitting in Westminster**. Scotland, Wales and Northern Ireland also have their **own parliaments or assemblies** with **devolved powers** in defined areas.
 
-@remember The UK
-- The UK = **England, Scotland, Wales and Northern Ireland**
-- Official name: **the United Kingdom of Great Britain and Northern Ireland**
-- **Great Britain** = England, Scotland and Wales only (**not** Northern Ireland)
-- The rest of Ireland is an **independent country**
-
-@remember Linked but not part of the UK
-- **Crown dependencies**: the **Channel Islands** and the **Isle of Man** – they have their own governments
-- **Overseas territories**: e.g. **St Helena** and the **Falkland Islands**
+@remember
+- **Crown dependencies**: the **Channel Islands** and the **Isle of Man** – own governments, **not part of the UK**
+- **Overseas territories**: e.g. **St Helena** and the **Falkland Islands** – also **not part of the UK**
 - The UK is governed from **Westminster**; Scotland, Wales and NI have **devolved** parliaments or assemblies

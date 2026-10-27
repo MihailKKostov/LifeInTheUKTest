@@ -12,7 +12,7 @@ package uk.lifeintheuk.study.data
  *   ! text                         exam tip
  *   " line                         quote line;  "— source  ends the quote
  *   | left | right                 table row
- *   @remember <group title>        starts a "remember" group; following "- " lines are items
+ *   @remember                      ends the section text; following "- " lines are its key facts
  *   anything else                  paragraph text (blank line separates paragraphs)
  */
 object ContentParser {
@@ -22,7 +22,6 @@ object ContentParser {
         var subtitle = ""
         var intro = ""
         val sections = mutableListOf<Section>()
-        val remember = mutableListOf<RememberGroup>()
 
         var sectionTitle: String? = null
         var blocks = mutableListOf<Block>()
@@ -30,7 +29,7 @@ object ContentParser {
         var bullets = mutableListOf<String>()
         var quote = mutableListOf<String>()
         var table = mutableListOf<Pair<String, String>>()
-        var rememberTitle: String? = null
+        var inRemember = false
         var rememberItems = mutableListOf<RememberItem>()
 
         fun flushPara() {
@@ -51,16 +50,11 @@ object ContentParser {
         fun flushSection() {
             flushInline()
             sectionTitle?.let {
-                sections += Section("$number.${sections.size + 1}", it, blocks.toList())
+                sections += Section("$number.${sections.size + 1}", it, blocks.toList(), rememberItems.toList())
             }
             blocks = mutableListOf()
             sectionTitle = null
-        }
-        fun flushRemember() {
-            rememberTitle?.let {
-                remember += RememberGroup(it, rememberItems.toList())
-            }
-            rememberTitle = null
+            inRemember = false
             rememberItems = mutableListOf()
         }
 
@@ -71,18 +65,16 @@ object ContentParser {
                 line.startsWith("@subtitle ") -> subtitle = line.removePrefix("@subtitle ").trim()
                 line.startsWith("@intro ") -> intro = line.removePrefix("@intro ").trim()
                 line.startsWith("@section ") -> {
-                    flushRemember()
                     flushSection()
                     sectionTitle = line.removePrefix("@section ").trim()
                 }
-                line.startsWith("@remember ") -> {
-                    flushSection()
-                    flushRemember()
-                    rememberTitle = line.removePrefix("@remember ").trim()
+                line == "@remember" -> {
+                    flushInline()
+                    inRemember = true
                 }
-                rememberTitle != null -> {
+                inRemember -> {
                     if (line.startsWith("- ")) {
-                        val id = "r$number.${remember.size}.${rememberItems.size}"
+                        val id = "f$number.${sections.size + 1}.${rememberItems.size}"
                         rememberItems += RememberItem(id, line.removePrefix("- ").trim())
                     }
                 }
@@ -125,8 +117,7 @@ object ContentParser {
             }
         }
         flushSection()
-        flushRemember()
-        return Chapter(number, title, subtitle, intro, sections, remember)
+        return Chapter(number, title, subtitle, intro, sections)
     }
 
     /** Cards file: "# <chapter>" headers followed by "front | back" lines. */

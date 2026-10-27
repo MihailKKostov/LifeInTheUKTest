@@ -62,6 +62,7 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import uk.lifeintheuk.study.data.ProgressStore
+import uk.lifeintheuk.study.data.RememberItem
 import uk.lifeintheuk.study.data.Repository
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -396,6 +397,11 @@ fun ReaderScreen(repo: Repository, progress: ProgressStore, nav: Navigator, sect
             section.blocks.forEach { BlockView(it, scale) }
             Spacer(Modifier.height(12.dp))
 
+            if (section.remember.isNotEmpty()) {
+                KeyFactsCard(section.remember, progress)
+                Spacer(Modifier.height(24.dp))
+            }
+
             if (next != null) {
                 Button(
                     onClick = { progress.markRead(sectionId); nav.replace(Screen.Reader(next.id)) },
@@ -408,11 +414,7 @@ fun ReaderScreen(repo: Repository, progress: ProgressStore, nav: Navigator, sect
                     }
                 }
             } else {
-                Button(
-                    onClick = { progress.markRead(sectionId); nav.replace(Screen.Remember(chapter.number)) },
-                    modifier = Modifier.fillMaxWidth().height(56.dp),
-                    shape = RoundedCornerShape(16.dp),
-                ) { Text("Review the key facts for this chapter") }
+                ChapterEndActions(repo, nav, chapter.number, onContinue = { progress.markRead(sectionId) })
             }
             TextButton(
                 onClick = { nav.pop() },
@@ -443,7 +445,7 @@ fun RememberScreen(repo: Repository, progress: ProgressStore, nav: Navigator, ch
                 Text("Remember these", style = MaterialTheme.typography.headlineMedium)
                 Spacer(Modifier.height(6.dp))
                 Text(
-                    "Tick each fact once you are confident you know it.",
+                    "The key facts from every section in one place. Tick each one you know.",
                     style = MaterialTheme.typography.bodyLarge,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
@@ -466,67 +468,24 @@ fun RememberScreen(repo: Repository, progress: ProgressStore, nav: Navigator, ch
                 }
                 ch.remember.forEach { group ->
                     item { SectionLabel(group.title) }
-                    item {
-                        StudyCard {
-                            Column {
-                                group.items.forEachIndexed { i, fact ->
-                                    val checked = fact.id in progress.checkedFacts
-                                    Row(
-                                        Modifier
-                                            .fillMaxWidth()
-                                            .clickable { progress.toggleFact(fact.id) }
-                                            .padding(horizontal = 16.dp, vertical = 12.dp),
-                                    ) {
-                                        Box(
-                                            Modifier
-                                                .padding(top = 2.dp)
-                                                .size(22.dp)
-                                                .clip(CircleShape)
-                                                .background(if (checked) colors.success else MaterialTheme.colorScheme.surfaceVariant),
-                                            contentAlignment = Alignment.Center,
-                                        ) {
-                                            if (checked) Icon(
-                                                Icons.Filled.Check, null,
-                                                tint = MaterialTheme.colorScheme.surface,
-                                                modifier = Modifier.size(15.dp),
-                                            )
-                                        }
-                                        Spacer(Modifier.width(14.dp))
-                                        HighlightedText(
-                                            fact.text,
-                                            MaterialTheme.typography.bodyLarge,
-                                            color = if (checked) MaterialTheme.colorScheme.onSurfaceVariant else MaterialTheme.colorScheme.onSurface,
-                                        )
-                                    }
-                                    if (i < group.items.lastIndex) {
-                                        Box(
-                                            Modifier
-                                                .padding(start = 52.dp)
-                                                .fillMaxWidth()
-                                                .height(1.dp)
-                                                .background(MaterialTheme.colorScheme.outlineVariant)
-                                        )
-                                    }
-                                }
-                            }
-                        }
-                    }
+                    item { StudyCard { FactRows(group.items, progress) } }
                 }
             }
             if (chapter != null) {
-                item { RememberFooter(repo, nav, chapter) }
+                item { Spacer(Modifier.height(28.dp)); ChapterEndActions(repo, nav, chapter) }
             }
         }
     }
 }
 
-/** Where to go after reviewing a chapter's key facts: the next chapter, or practice. */
+/** End-of-chapter choices: move on to the next chapter (or a mock test), or practise this one. */
 @Composable
-private fun RememberFooter(repo: Repository, nav: Navigator, chapter: Int) {
+private fun ChapterEndActions(repo: Repository, nav: Navigator, chapter: Int, onContinue: () -> Unit = {}) {
     val next = repo.chapters.firstOrNull { it.number == chapter + 1 }
-    Column(Modifier.padding(top = 28.dp)) {
+    Column {
         Button(
             onClick = {
+                onContinue()
                 if (next != null) nav.replace(Screen.Reader(next.sections.first().id))
                 else nav.replace(Screen.Quiz("Mock test", repo.mockTest().map { it.id }, mock = true))
             },
@@ -565,6 +524,79 @@ private fun RememberFooter(repo: Repository, nav: Navigator, chapter: Int) {
                 Icon(Icons.Outlined.Quiz, null, Modifier.size(18.dp))
                 Spacer(Modifier.width(8.dp))
                 Text("Chapter quiz")
+            }
+        }
+    }
+}
+
+/** Key facts at the end of a section, each of which can be ticked off once known. */
+@Composable
+private fun KeyFactsCard(facts: List<RememberItem>, progress: ProgressStore) {
+    val ticked = facts.count { it.id in progress.checkedFacts }
+    StudyCard {
+        Column {
+            Row(
+                Modifier.padding(start = 16.dp, end = 16.dp, top = 16.dp, bottom = 4.dp),
+                verticalAlignment = Alignment.CenterVertically,
+            ) {
+                IconBadge(Icons.Outlined.Checklist)
+                Spacer(Modifier.width(12.dp))
+                Column(Modifier.weight(1f)) {
+                    Text("Key facts to remember", style = MaterialTheme.typography.titleMedium)
+                    Text(
+                        "Tick each one you know",
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    )
+                }
+                Text("$ticked/${facts.size}", style = MaterialTheme.typography.labelLarge)
+            }
+            FactRows(facts, progress)
+        }
+    }
+}
+
+@Composable
+private fun FactRows(facts: List<RememberItem>, progress: ProgressStore) {
+    val colors = LocalStudyColors.current
+    Column {
+        facts.forEachIndexed { i, fact ->
+            val checked = fact.id in progress.checkedFacts
+            Row(
+                Modifier
+                    .fillMaxWidth()
+                    .clickable { progress.toggleFact(fact.id) }
+                    .padding(horizontal = 16.dp, vertical = 12.dp),
+            ) {
+                Box(
+                    Modifier
+                        .padding(top = 2.dp)
+                        .size(22.dp)
+                        .clip(CircleShape)
+                        .background(if (checked) colors.success else MaterialTheme.colorScheme.surfaceVariant),
+                    contentAlignment = Alignment.Center,
+                ) {
+                    if (checked) Icon(
+                        Icons.Filled.Check, null,
+                        tint = MaterialTheme.colorScheme.surface,
+                        modifier = Modifier.size(15.dp),
+                    )
+                }
+                Spacer(Modifier.width(14.dp))
+                HighlightedText(
+                    fact.text,
+                    MaterialTheme.typography.bodyLarge,
+                    color = if (checked) MaterialTheme.colorScheme.onSurfaceVariant else MaterialTheme.colorScheme.onSurface,
+                )
+            }
+            if (i < facts.lastIndex) {
+                Box(
+                    Modifier
+                        .padding(start = 52.dp)
+                        .fillMaxWidth()
+                        .height(1.dp)
+                        .background(MaterialTheme.colorScheme.outlineVariant)
+                )
             }
         }
     }

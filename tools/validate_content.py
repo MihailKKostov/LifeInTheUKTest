@@ -15,9 +15,15 @@ def check_marks(name, lineno, text):
 for n in range(1, 6):
     path = root / f"chapter{n}.txt"
     sections = 0
-    for i, line in enumerate(path.read_text().splitlines(), 1):
+    text = path.read_text()
+    for i, line in enumerate(text.splitlines(), 1):
         check_marks(path.name, i, line)
         sections += line.startswith("@section ")
+    for chunk in text.split("@section ")[1:]:
+        title = chunk.splitlines()[0]
+        facts = chunk.split("\n@remember\n", 1)
+        if len(facts) < 2 or not re.search(r"^- ", facts[1], re.M):
+            errors.append(f"{path.name}: section '{title}' has no @remember key facts")
     print(f"chapter{n}: {sections} sections")
 
 cards = 0
