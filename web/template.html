@@ -254,6 +254,18 @@ button.card:active { background: var(--surface-2); }
 .dialog .acts { display: flex; justify-content: flex-end; gap: 6px; margin-top: 20px; }
 .dialog .acts button { padding: 10px 14px; border-radius: 12px; font-weight: 650; color: var(--primary); }
 
+.field { display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: var(--muted); }
+.field input {
+  width: 100%; height: 52px; border-radius: 14px; border: 1px solid var(--line); background: var(--surface); color: var(--fg);
+  padding: 0 14px; font: inherit; font-size: 17px; font-weight: 400;
+}
+.field input:focus { outline: 2px solid var(--primary); outline-offset: 0; border-color: transparent; }
+.divider { display: flex; align-items: center; gap: 12px; color: var(--muted); font-size: 13px; margin: 6px 0; }
+.divider::before, .divider::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+.notice { padding: 12px 14px; border-radius: 14px; font-size: 15px; }
+.notice.bad { background: var(--bad-soft); color: var(--bad); }
+.notice.good { background: var(--ok-soft); color: var(--ok); }
+.menu-note { padding: 12px 16px 4px; font-size: 13px; color: var(--muted); overflow-wrap: anywhere; }
 .foot-note { font-size: 13px; color: var(--muted); padding: 16px 4px 0; }
 .menu { position: absolute; right: 0; top: 46px; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; box-shadow: 0 8px 24px rgba(0,0,0,.15); z-index: 8; min-width: 200px; overflow: hidden; }
 .menu button { display: block; width: 100%; padding: 14px 16px; }
@@ -266,6 +278,7 @@ button.card:active { background: var(--surface-2); }
 <script>
 "use strict";
 const CONTENT = /*__CONTENT__*/null;
+const FIREBASE_CONFIG = /*__FIREBASE__*/null;
 
 /* ---------- content parsing (mirrors the Android ContentParser) ---------- */
 function parseChapter(n, raw) {
@@ -376,7 +389,7 @@ function mockTest() {
 const LS_KEY = "uk-study-progress-v1";
 const P = { read: new Set(), cards: new Set(), facts: new Set(), missed: new Set(), answered: new Set(), last: null, results: [], scale: 1, updated: 0 };
 const SET_KEYS = ["read", "cards", "facts", "missed", "answered"];
-let syncState = "device"; // "device" | "account"
+let syncState = "device"; // "device" | "account" (claude.ai) | "firebase"
 
 function toPlain() {
   const o = { last: P.last, results: P.results, scale: P.scale, updated: P.updated };
@@ -393,16 +406,19 @@ function applyPlain(o) {
 }
 try { applyPlain(JSON.parse(localStorage.getItem(LS_KEY) || "null")); } catch (e) { /* storage unavailable */ }
 
-let remoteRef = null, writeChain = Promise.resolve(), writeTimer = null;
+let remote = null, writeChain = Promise.resolve(), writeTimer = null;
+function persistLocal() {
+  try { localStorage.setItem(LS_KEY, JSON.stringify(toPlain())); } catch (e) { /* storage unavailable */ }
+}
 function save() {
   P.updated = Date.now();
-  try { localStorage.setItem(LS_KEY, JSON.stringify(toPlain())); } catch (e) { /* storage unavailable */ }
-  if (remoteRef) {
+  persistLocal();
+  if (remote) {
     clearTimeout(writeTimer);
     writeTimer = setTimeout(() => {
-      const body = toPlain();
-      writeChain = writeChain.then(() => remoteRef && remoteRef.set(body)).catch(err => {
-        if (err && err.code !== "unavailable") { remoteRef = null; syncState = "device"; }
+      const body = toPlain(), target = remote;
+      writeChain = writeChain.then(() => target.write(body)).catch(err => {
+        if (err && err.code !== "unavailable" && remote === target) { remote = null; syncState = "device"; render(false); }
       });
     }, 1200);
   }
@@ -415,8 +431,10 @@ function mergeRemote(o) {
   P.results = P.results.slice(-50);
   if ((o.updated || 0) > P.updated) { P.last = o.last || P.last; if (typeof o.scale === "number") P.scale = o.scale; }
 }
+
+/* claude.ai: the viewer's private per-user store, when the page is opened as an artifact. */
 async function connectAccount() {
-  if (!window.claude || typeof window.claude.use !== "function") return;
+  if (FIREBASE_CONFIG || !window.claude || typeof window.claude.use !== "function") return;
   try {
     const [db, user] = await Promise.all([window.claude.use("db"), window.claude.use("user")]);
     if (!db || !user) return;
@@ -425,10 +443,89 @@ async function connectAccount() {
     const ref = db.doc("data/users/" + id + "/progress");
     const snap = await Promise.race([ref.get(), new Promise((_, rej) => setTimeout(() => rej(new Error("timeout")), 10000))]);
     if (snap.exists) mergeRemote(snap.data());
-    remoteRef = ref; syncState = "account";
+    remote = { write: body => ref.set(body) }; syncState = "account";
     save();
     render(false);
   } catch (e) { /* keep device-only progress */ }
+}
+
+/* Firebase: sign-in plus a Firestore document per user (users/{uid}), synced live between devices. */
+const FB_VERSION = "10.14.1";
+const LS_LINK_KEY = "uk-study-linked-uid";
+let fb = null, fbUser = null, fbFailed = false, unsubDoc = null;
+function loadScript(src) {
+  return new Promise((resolve, reject) => {
+    const el = document.createElement("script");
+    el.src = src; el.onload = resolve; el.onerror = () => reject(new Error("Could not load " + src));
+    document.head.appendChild(el);
+  });
+}
+async function connectFirebase() {
+  if (!FIREBASE_CONFIG) return;
+  try {
+    const base = "https://www.gstatic.com/firebasejs/" + FB_VERSION + "/";
+    await loadScript(base + "firebase-app-compat.js");
+    await Promise.all([loadScript(base + "firebase-auth-compat.js"), loadScript(base + "firebase-firestore-compat.js")]);
+    firebase.initializeApp(FIREBASE_CONFIG);
+    fb = { auth: firebase.auth(), db: firebase.firestore() };
+    fb.auth.getRedirectResult().catch(err => showAuthError(err));
+    fb.auth.onAuthStateChanged(onFirebaseUser);
+  } catch (e) {
+    fbFailed = true; render(false);
+  }
+}
+async function onFirebaseUser(user) {
+  if (unsubDoc) { unsubDoc(); unsubDoc = null; }
+  fbUser = user; remote = null; syncState = "device";
+  if (!user) { render(false); return; }
+  const ref = fb.db.collection("users").doc(user.uid);
+  try {
+    const snap = await ref.get();
+    const server = snap.exists ? (snap.data() || {}).progress : null;
+    let linked = null;
+    try { linked = localStorage.getItem(LS_LINK_KEY); } catch (e) { /* storage unavailable */ }
+    let push = true;
+    if (server) {
+      if (linked === user.uid && (server.updated || 0) >= P.updated) { applyPlain(server); persistLocal(); push = false; }
+      else mergeRemote(server); // first sign-in on this device: keep progress from both
+    }
+    try { localStorage.setItem(LS_LINK_KEY, user.uid); } catch (e) { /* storage unavailable */ }
+    remote = { write: body => ref.set({ progress: body, updatedAt: firebase.firestore.FieldValue.serverTimestamp() }) };
+    syncState = "firebase";
+    if (push) save();
+    unsubDoc = ref.onSnapshot(s => {
+      if (s.metadata.hasPendingWrites || !s.exists) return;
+      const p = (s.data() || {}).progress;
+      if (p && (p.updated || 0) > P.updated) { applyPlain(p); persistLocal(); render(false); }
+    }, () => { /* keep working from local progress */ });
+  } catch (e) {
+    remote = null; syncState = "device";
+  }
+  const cur = curScreen();
+  if (cur && cur.name === "signin") pop(); else render(false);
+}
+const AUTH_ERRORS = {
+  "auth/invalid-credential": "Email or password is incorrect.",
+  "auth/wrong-password": "Email or password is incorrect.",
+  "auth/user-not-found": "Email or password is incorrect.",
+  "auth/invalid-login-credentials": "Email or password is incorrect.",
+  "auth/email-already-in-use": "An account with this email already exists. Sign in instead.",
+  "auth/weak-password": "Use at least 6 characters for the password.",
+  "auth/invalid-email": "Enter a valid email address.",
+  "auth/missing-password": "Enter your password.",
+  "auth/too-many-requests": "Too many attempts. Wait a minute and try again.",
+  "auth/network-request-failed": "No connection. Check your internet and try again.",
+  "auth/unauthorized-domain": "This web address isn't allowed to sign in yet. Add it in Firebase under Authentication → Settings → Authorised domains.",
+  "auth/operation-not-allowed": "This sign-in method isn't switched on in Firebase yet (Authentication → Sign-in method).",
+};
+function showAuthError(err) {
+  if (!err || err.code === "auth/popup-closed-by-user" || err.code === "auth/cancelled-popup-request") return;
+  const s = curScreen();
+  const msg = AUTH_ERRORS[err.code]
+    || (String(err.code).startsWith("auth/api-key-not-valid") ? "The Firebase settings for this site aren't valid. Check web/firebase-config.json." : "")
+    || (err.message || "Sign-in failed. Try again.");
+  if (s && s.name === "signin") { s.error = msg; s.info = ""; s.busy = false; render(false); }
+  else { push({ name: "signin", mode: "signin", email: "", password: "", error: msg, info: "", busy: false }); }
 }
 
 /* ---------- helpers ---------- */
@@ -515,7 +612,9 @@ function viewLearn() {
   let h = '<div class="stack">';
   h += '<div style="display:flex;align-items:flex-start;gap:8px;position:relative"><div style="flex:1;min-width:0"><h1 class="h-page">Life in the UK</h1><div class="sub">Study companion</div></div>' +
     '<button class="icon-btn" data-act="menu" aria-label="More">' + icon("more") + "</button>" +
-    (menuOpen ? '<div class="menu"><button data-act="reset">Reset progress</button></div>' : "") + "</div>";
+    (menuOpen ? '<div class="menu">' + (FIREBASE_CONFIG && fb ? (fbUser
+      ? '<div class="menu-note">Signed in as ' + esc(fbUser.email || "your account") + '</div><button data-act="signout">Sign out</button>'
+      : '<button data-act="signin">Sign in to sync</button>') : "") + '<button data-act="reset">Reset progress</button></div>' : "") + "</div>";
   h += '<section class="hero" style="margin-top:12px"><div style="display:flex;align-items:center;gap:16px">' +
     ring(read / total, 64, 6, "var(--on-primary)", "color-mix(in srgb, var(--on-primary) 22%, transparent)", Math.round(read * 100 / total) + "%") +
     '<div><h2 style="font-size:20px">' + (read === 0 ? "Let's get started" : read === total ? "Handbook complete" : "Keep going") + '</h2><div class="muted">' + read + " of " + total + " sections read</div></div></div>" +
@@ -526,6 +625,9 @@ function viewLearn() {
       '<div class="row-text"><div class="small" style="color:var(--primary);font-weight:650">' + (P.last ? "Continue reading" : "Start reading") + "</div>" +
       '<div class="row-title">' + esc(target.title) + '</div><div class="small">' + esc(chapterOf(target.id).title) + "</div></div>" +
       '<span style="color:var(--primary)">' + icon("arrow", "chev") + "</span></div></button>";
+  }
+  if (FIREBASE_CONFIG && fb && !fbUser) {
+    h += listRow({ title: "Sync across devices", sub: "Sign in to keep your progress on your phone and computer", lead: '<span class="badge">' + icon("person") + "</span>", act: "signin" });
   }
   h += '<div class="label">Chapters</div>';
   CHAPTERS.forEach(ch => {
@@ -538,7 +640,10 @@ function viewLearn() {
   h += '<div class="label">Revise</div>';
   h += listRow({ title: "All key facts", sub: facts.filter(f => P.facts.has(f.id)).length + " of " + facts.length + " ticked off", lead: '<span class="badge">' + icon("list") + "</span>", act: "remember", arg: "all" });
   h += '<p class="foot-note">Condensed from “Life in the United Kingdom: A guide for new residents” (3rd edition). Highlighted text marks facts that often come up in the test. ' +
-    (syncState === "account" ? "Your progress is saved to your account." : "Your progress is saved in this browser.") + "</p>";
+    (syncState === "firebase" ? "Your progress is synced to " + esc(fbUser.email || "your account") + "."
+      : syncState === "account" ? "Your progress is saved to your account."
+      : fbFailed ? "Sync is unavailable right now, so your progress is saved in this browser."
+      : "Your progress is saved in this browser.") + "</p>";
   return h + "</div>";
 }
 
@@ -696,6 +801,47 @@ function viewPractice() {
   return h + "</div>";
 }
 
+function viewSignin(s) {
+  const titles = { signin: "Sign in", signup: "Create account", reset: "Reset password" };
+  let h = topbar(titles[s.mode]) + '<main class="wrap"><div class="stack">';
+  h += '<h1 class="h-page">Sync your progress</h1><p class="sub">Sign in to keep sections, flashcards, ticked facts and test results in step between your iPhone and other devices. Progress you already have here is kept.</p>';
+  if (s.error) h += '<div class="notice bad" role="alert">' + esc(s.error) + "</div>";
+  if (s.info) h += '<div class="notice good">' + esc(s.info) + "</div>";
+  if (s.mode !== "reset") {
+    h += '<button class="btn btn-outline" data-act="google"' + (s.busy ? " disabled" : "") + ">Continue with Google</button>";
+    h += '<div class="divider">or use email</div>';
+  }
+  h += '<form id="authform" class="stack" novalidate>' +
+    '<label class="field" for="auth-email">Email<input id="auth-email" name="email" type="email" autocomplete="email" autocapitalize="off" spellcheck="false" value="' + esc(s.email) + '"></label>' +
+    (s.mode === "reset" ? "" : '<label class="field" for="auth-password">Password<input id="auth-password" name="password" type="password" autocomplete="' +
+      (s.mode === "signup" ? "new-password" : "current-password") + '" value="' + esc(s.password) + '"></label>') +
+    '<button class="btn btn-primary" type="submit"' + (s.busy ? " disabled" : "") + ">" +
+    (s.busy ? "Please wait…" : s.mode === "signup" ? "Create account" : s.mode === "reset" ? "Send reset link" : "Sign in") + "</button></form>";
+  h += s.mode === "signin"
+    ? '<button class="link-btn" data-act="authMode" data-arg="signup">New here? Create an account</button><button class="link-btn" style="padding-top:0" data-act="authMode" data-arg="reset">Forgot password?</button>'
+    : '<button class="link-btn" data-act="authMode" data-arg="signin">I already have an account</button>';
+  h += '<p class="foot-note">Google sign-in can be blocked when the app is opened from the Home Screen. If it doesn\'t work, use email and password.</p>';
+  return h + "</div></main>";
+}
+
+async function authSubmit() {
+  const s = curScreen();
+  if (!fb || !s || s.name !== "signin" || s.busy) return;
+  const email = (s.email || "").trim();
+  if (!email) { s.error = "Enter your email address."; render(false); return; }
+  s.busy = true; s.error = ""; s.info = ""; render(false);
+  try {
+    if (s.mode === "reset") {
+      await fb.auth.sendPasswordResetEmail(email);
+      s.busy = false; s.mode = "signin"; s.info = "Check your email for a link to reset your password."; render(false);
+    } else if (s.mode === "signup") {
+      await fb.auth.createUserWithEmailAndPassword(email, s.password || "");
+    } else {
+      await fb.auth.signInWithEmailAndPassword(email, s.password || "");
+    }
+  } catch (err) { showAuthError(err); }
+}
+
 /* ---------- quiz ---------- */
 function newQuiz(title, ids, mock, continueTo) {
   const items = ids.map(id => Q_BY_ID[id]).filter(Boolean).map(q => {
@@ -804,6 +950,7 @@ function render(toTop) {
   else if (s.name === "reader") html = viewReader(s);
   else if (s.name === "remember") html = viewRemember(s);
   else if (s.name === "complete") html = viewChapterComplete(s);
+  else if (s.name === "signin") html = viewSignin(s);
   else if (s.name === "cards") html = viewCards(s);
   else if (s.name === "quiz") html = viewQuiz(s);
   app.innerHTML = html;
@@ -844,6 +991,20 @@ const actions = {
     });
   },
   chapter: el => push({ name: "chapter", n: +el.dataset.arg }),
+  signin: () => { menuOpen = false; push({ name: "signin", mode: "signin", email: "", password: "", error: "", info: "", busy: false }); },
+  signout: () => { menuOpen = false; if (fb) fb.auth.signOut(); },
+  authMode: el => { const s = curScreen(); s.mode = el.dataset.arg; s.error = ""; s.info = ""; render(false); },
+  google: async () => {
+    const s = curScreen();
+    if (!fb || s.busy) return;
+    const provider = new firebase.auth.GoogleAuthProvider();
+    try { await fb.auth.signInWithPopup(provider); }
+    catch (err) {
+      if (err && (err.code === "auth/popup-blocked" || err.code === "auth/operation-not-supported-in-this-environment")) {
+        try { await fb.auth.signInWithRedirect(provider); } catch (e2) { showAuthError(e2); }
+      } else showAuthError(err);
+    }
+  },
   read: el => (el.dataset.replace ? replace : push)({ name: "reader", id: el.dataset.arg }),
   nextSection: el => { P.read.add(curScreen().id); save(); replace({ name: "reader", id: el.dataset.arg }); },
   finishChapter: el => { P.read.add(curScreen().id); save(); replace({ name: "complete", n: +el.dataset.arg }); },
@@ -910,6 +1071,15 @@ document.addEventListener("keydown", ev => {
   if ((ev.key === "Enter" || ev.key === " ") && ev.target.id === "flash") { ev.preventDefault(); actions.flip(); }
 });
 
+document.addEventListener("input", ev => {
+  const s = curScreen();
+  if (s && s.name === "signin" && ev.target.name) s[ev.target.name] = ev.target.value;
+});
+document.addEventListener("submit", ev => {
+  if (ev.target.id === "authform") { ev.preventDefault(); authSubmit(); }
+});
+
 render(true);
 connectAccount();
+connectFirebase();
 </script>
