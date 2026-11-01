@@ -4,7 +4,9 @@ Concise and exact learning for the Life in the UK test.
 
 An offline Android app that condenses *Life in the United Kingdom: A guide for new residents* (3rd edition) into a short, readable narrative that keeps only what is tested, with the facts that matter most highlighted.
 
-**Install:** download [`apk/LifeInTheUK-Study.apk`](apk/LifeInTheUK-Study.apk) to your phone, open it and allow installs from this source when Android asks. Requires Android 8.0 or newer.
+**Android:** download [`apk/LifeInTheUK-Study.apk`](apk/LifeInTheUK-Study.apk) to your phone, open it and allow installs from this source when Android asks. Requires Android 8.0 or newer.
+
+**iPhone or any browser:** [`web/index.html`](web/index.html) is the same app as a single web page with no install. It needs to be opened from a web address (for example the published claude.ai link, or any static host such as GitHub Pages), because iOS won't run scripts in an HTML file opened from the Files app. In Safari, *Share → Add to Home Screen* gives it an app icon.
 
 ## What's inside
 
@@ -26,6 +28,8 @@ app/src/main/assets/content/   Study content (plain text, easy to edit)
   cards.txt                    Flashcards  (front | back)
   questions1-5.txt             Question bank (Q:, + correct, - wrong, E: explanation)
 app/src/main/java/...          Kotlin + Jetpack Compose app
+web/template.html              Web version (HTML/CSS/JS); content is injected at build time
+tools/build_web.py             Builds web/index.html from the template and content files
 tools/validate_content.py      Checks the content files for mistakes
 ```
 
@@ -40,6 +44,7 @@ python3 tools/validate_content.py    # check the content
 ./gradlew testDebugUnitTest          # content + parser tests
 ./gradlew assembleRelease            # → app/build/outputs/apk/release/app-release.apk
 ./gradlew recordPaparazziDebug       # render screenshots of key screens
+python3 tools/build_web.py           # → web/index.html (rerun after editing content)
 ```
 
 Release builds are signed with `keystore/release.jks` (password `lifeintheuk`), so newer builds install over older ones. The key is only meant for this personal app.
