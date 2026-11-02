@@ -1,0 +1,381 @@
+@title The UK government, the law and your role
+@subtitle Parliament, elections, courts, rights and community
+@intro How the UK is run and how the law works. Expect questions on **the monarch's role**, **the two Houses of Parliament**, **who can vote**, **the devolved governments**, **the courts**, and the difference between **criminal and civil law**.
+
+@section How democracy developed
+**Democracy** is a system where the whole adult population has a say, either by voting directly or by choosing representatives.
+
+At the start of the 19th century only **men over 21 who owned a certain amount of property** could vote. In the **1830s and 1840s** the **Chartists** campaigned for six changes:
+- **every man** to have the vote
+- **elections every year**
+- **all regions equal** in the electoral system
+- **secret ballots**
+- **any man** able to stand as an MP
+- **MPs to be paid**
+
+The campaign was seen as a failure at the time, but by **1918** most of these reforms had been adopted.
+
+| 1918 | Women **over 30** get the vote
+| 1928 | Men and women **over 21** can vote
+| 1969 | Voting age lowered to **18**
+
+@remember
+- Early 1800s: only **men over 21 with property** could vote
+- Chartists wanted: votes for every man, annual elections, equal regions, **secret ballots**, any man as MP, **paid MPs**
+- **1918** women over 30; **1928** everyone over 21; **1969** voting age **18**
+
+@section The constitution and the monarchy
+A **constitution** is the set of principles by which a country is governed. The British constitution is **not written down in any single document**, so it is called **"unwritten"** – mainly because the UK has never had a revolution that created a totally new system.
+
+The main constitutional institutions are: **the monarchy, Parliament (the House of Commons and House of Lords), the Prime Minister, the cabinet, the judiciary (courts), the police, the civil service and local government**.
+
+## The monarch
+The UK is a **constitutional monarchy**: the king or queen **does not rule** the country but **appoints the government** the people have chosen. The monarch invites the leader of the largest party (or a coalition) to become **Prime Minister**, meets the PM regularly and can **advise, warn and encourage** – but **decisions are made by the PM and cabinet**.
+
+**Queen Elizabeth II** reigned from **1952**, celebrated her **Diamond Jubilee (60 years) in 2012** and died on **8 September 2022**. Her eldest son **King Charles III** is the monarch. His heir is **Prince William, Prince of Wales**, followed by **Prince George, Princess Charlotte and Prince Louis**.
+
+The monarch's roles include:
+- **opening each new parliamentary session** with a speech setting out the government's policies
+- giving assent: **all Acts of Parliament are made in the monarch's name**
+- **representing the UK** abroad: receiving ambassadors, hosting heads of state, making state visits
+- providing **stability and continuity** and a focus for national identity
+
+## The national anthem and the oath
+The national anthem is **"God Save the King"** (or Queen).
+
+" God save our gracious King! Long live our noble King! God save the King!
+"— The national anthem, first lines
+
+New citizens **swear (oath) or affirm (affirmation)** loyalty to the King at the citizenship ceremony: "…I will be **faithful and bear true allegiance** to His Majesty King Charles the Third, his Heirs and Successors, according to law."
+
+! The **oath** mentions "Almighty God"; the **affirmation** is the non-religious version. Both promise allegiance to the monarch.
+
+@remember
+- The constitution is **unwritten** (no single document)
+- The monarch **appoints** the government but **does not rule**; can **advise, warn and encourage**
+- The monarch **opens each parliamentary session**; Acts are made in the monarch's name
+- **King Charles III**; heir **Prince William, Prince of Wales**
+- Anthem: **God Save the King**
+- New citizens **swear an oath or make an affirmation** of allegiance
+
+@section Parliament and elections
+The UK is a **parliamentary democracy**, divided into **constituencies**. Voters in each elect a **Member of Parliament (MP)** at a **General Election**. All MPs together form the **House of Commons**. The party with the majority of MPs forms the government; if no party has a majority, two can form a **coalition**.
+
+## The House of Commons
+The Commons is the **more important** chamber because its members are **democratically elected**. The PM and almost all the cabinet are MPs. MPs:
+- **represent everyone** in their constituency
+- **help create new laws**
+- **scrutinise and comment** on what the government is doing
+- **debate important national issues**
+
+## The House of Lords
+Members are called **peers**. They are **not elected** and do not represent a constituency.
+- **Until 1958** all peers were **hereditary**, **senior judges** or **Church of England bishops**.
+- **Since 1958** the PM can nominate **life peers**, appointed by the **monarch on the advice of the Prime Minister** (some are nominated by other party leaders or an **independent Appointments Commission**).
+- **Since 1999** hereditary peers have **lost the automatic right** to attend; they elect a few of their number.
+
+The Lords is usually **more independent of the government**. It can suggest amendments or propose new laws, **checks laws passed by the Commons** and holds the government to account. The **Commons can overrule the Lords**, but rarely does.
+
+## The Speaker
+Debates in the Commons are chaired by **the Speaker**, an MP who is **politically neutral**. The Speaker is **chosen by other MPs in a secret ballot**, keeps order, makes sure **the opposition gets time** to debate, and represents Parliament on ceremonial occasions. The Speaker still represents a constituency like any MP.
+
+## Elections
+- MPs are elected at a **General Election** held **at least every five years**.
+- If an MP dies or resigns, there is a **by-election** in that constituency.
+- The system is **"first past the post"**: the candidate with **the most votes** wins.
+- European Parliament elections (while the UK was in the EU) used **proportional representation**, where seats match the share of votes.
+
+## Contacting your representatives
+You can write to or phone your MP at their constituency office or at the **House of Commons, Westminster, London SW1A 0AA**. Many MPs hold local **"surgeries"** where constituents can raise issues in person.
+
+@remember
+- **Commons** = elected MPs (more important); **Lords** = unelected **peers**
+- **Life peers** since **1958** (monarch appoints on PM's advice); hereditary peers lost automatic right in **1999**
+- The Commons can **overrule** the Lords
+- **Speaker** – neutral, chosen by MPs in a **secret ballot**
+- General Election **at least every five years**; **by-election** if an MP dies or resigns
+- **First past the post** – most votes wins
+- MPs hold **surgeries** for constituents
+
+@section The government
+## The Prime Minister
+The **PM** is the **leader of the party in power**, appoints the cabinet and controls many public appointments. The PM's official home is **10 Downing Street**; the country house is **Chequers**. The PM can be changed by MPs of the governing party, or resign, and usually resigns after losing a General Election.
+
+## The cabinet
+About **20 senior MPs** run government departments, including:
+- **Chancellor of the Exchequer** – the **economy**
+- **Home Secretary** – **crime, policing and immigration**
+- **Foreign Secretary** – relationships with **foreign countries**
+- **Secretaries of State** for areas such as education, health and defence
+
+The cabinet usually **meets weekly** to make important policy decisions; many need Parliament's approval.
+
+## The opposition
+The **second-largest party** in the Commons is **the opposition**. Its leader challenges the government, especially at **Prime Minister's Questions** every week, and appoints **shadow ministers** who form the **shadow cabinet**.
+
+## Parties and pressure groups
+**Anyone aged 18 or over** can stand as an MP, but is unlikely to win without a major party: the **Conservatives, Labour, the Liberal Democrats**, or parties for Scottish, Welsh or Northern Irish interests. MPs with no party are **independents**.
+
+**Pressure and lobby groups** try to influence government policy, e.g. the **CBI** (British business), **Greenpeace** (environment) and **Liberty** (human rights).
+
+## The civil service
+Civil servants **support the government** and deliver public services. They are **chosen on merit** and are **politically neutral**. Core values: **integrity, honesty, objectivity and impartiality**.
+
+## Local government
+Towns, cities and rural areas are run by elected **councils** ("**local authorities**"), funded by **central government and local taxes**. Many appoint a ceremonial **mayor**. **London has 33 local authorities**, coordinated by the **Greater London Authority** and the **Mayor of London**. Local elections for councillors are usually held in **May** every year.
+
+@remember
+- PM: **10 Downing Street**; country house **Chequers**
+- Cabinet of about **20**; **Chancellor** = economy; **Home Secretary** = crime, policing, immigration; **Foreign Secretary**
+- **Opposition** = second-largest party; **shadow cabinet**; **PMQs** weekly
+- Stand as MP at **18**; non-party MPs are **independents**
+- Pressure groups: **CBI, Greenpeace, Liberty**
+- Civil service: **politically neutral**; integrity, honesty, objectivity, impartiality
+- **London has 33 local authorities**; local elections in **May**
+
+@section Devolved government
+Since **1997** some powers have been **devolved** to Wales, Scotland and Northern Ireland. The **Welsh Assembly** and **Scottish Parliament** have existed since **1999**.
+
+**Defence, foreign affairs, immigration, taxation and social security** stay with the **UK government**. Services like **education** are run by the devolved administrations, which each have **their own civil service**.
+
+| Wales | **Welsh Assembly (Senedd)** in **Cardiff**. **60 members (AMs)**, elected every **four years** by **proportional representation**. Can make laws in **20 areas**, e.g. education, health, economic development, housing – since **2011** without the UK Parliament's agreement. Members can speak **Welsh or English**.
+| Scotland | **Scottish Parliament** at **Holyrood, Edinburgh** (formed **1999**). **129 MSPs**, elected by **proportional representation**. Can legislate on everything not reserved to Westminster, e.g. **civil and criminal law, health, education, planning** and **additional tax-raising powers**.
+| Northern Ireland | **NI Assembly** at **Stormont, Belfast**, set up after the **Good Friday (Belfast) Agreement 1998**. **90 MLAs**, elected by **proportional representation**, with **power-sharing** between the main parties. Decides on education, agriculture, the environment, health and social services.
+
+A **Northern Ireland Parliament** was set up in **1922** and **abolished in 1972**, soon after the Troubles began. The UK government **can suspend** the devolved assemblies and has done so several times in Northern Ireland; it has run successfully since **2007**.
+
+## The media
+Parliament's proceedings are broadcast on TV and published in **Hansard**. The UK has a **free press** – newspapers are free from government control and may support particular parties. **Radio and TV coverage of political parties must be balanced**, giving equal time to rival views.
+
+@remember
+- Devolution since **1997**; Scottish Parliament and Welsh Assembly since **1999**
+- UK keeps **defence, foreign affairs, immigration, taxation, social security**
+- **Wales**: Cardiff, **60** members, elections every **4** years
+- **Scotland**: Holyrood, **129 MSPs**; civil and criminal law, extra tax powers
+- **Northern Ireland**: Stormont, **90 MLAs**, **power-sharing**
+- All use **proportional representation**; UK can **suspend** them
+- **Hansard** records Parliament; broadcast coverage must be **balanced**
+
+@section Voting and standing for office
+The UK has had a **fully democratic voting system since 1928**, and the voting age of **18** was set in **1969**.
+
+## Who can vote
+- **UK citizens**, and **Commonwealth and Irish Republic citizens** resident in the UK, can vote in **all public elections**.
+- Under the handbook's rules, citizens of other **EU** states resident in the UK could vote in all elections **except General Elections**.
+
+## Registering
+You must be on the **electoral register**. Register through your **local council electoral registration office**. The register is **updated every year in September or October** – a form is sent to every household. In **Northern Ireland** each person registers **individually**. The register can be inspected, under supervision, at registration offices and some **libraries**.
+
+## How to vote
+You vote at a **polling station** (a **polling place** in Scotland). A **poll card** tells you where and when. Polling stations open from **7.00 am to 10.00 pm**. In **Northern Ireland** you must show **photographic ID**. You mark your **ballot paper** privately in a booth – **no one can make you vote for a particular candidate**. If you can't get there, you can register for a **postal ballot**.
+
+## Standing for office
+Most citizens of the **UK, Irish Republic or Commonwealth aged 18 or over** can stand for public office, except:
+- members of the **armed forces**
+- **civil servants**
+- people found guilty of certain **criminal offences**
+
+Members of the **House of Lords cannot stand for the House of Commons**.
+
+## Visiting Parliament
+You can watch debates free from the **public galleries** in both Houses – write to your MP for tickets or queue on the day; the Lords is usually easier to get into. You can also visit **Stormont** (NI), **Holyrood** (Scotland) and the **Senedd in Cardiff Bay** (Wales).
+
+@remember
+- **UK, Commonwealth and Irish** citizens living here vote in **all** elections
+- Electoral register updated every **September or October**; NI registers **individually**
+- Polling stations open **7 am – 10 pm**; NI voters need **photo ID**
+- Can't get there? Use a **postal ballot**
+- Stand for office at **18**; not **armed forces, civil servants** or certain criminals
+- Peers **cannot** stand for the Commons
+
+@section The UK and the world
+## The Commonwealth
+An association of countries, most **once part of the British Empire**, working towards democracy and development. The **monarch is its ceremonial head**. Membership is **voluntary**; it has **no power over members** but **can suspend** them. Core values: **democracy, good government and the rule of law**. It now has **56 members** (the original handbook says 54).
+
+## The European Union
+The EEC was founded by **six countries** – **Belgium, France, Germany, Italy, Luxembourg and the Netherlands** – who signed the **Treaty of Rome on 25 March 1957**. The UK **joined in 1973** and **left on 31 January 2020** after the Brexit vote. The EU now has **27** members.
+
+## The Council of Europe
+**Separate from the EU**. It protects and promotes **human rights**. It **cannot make laws** but draws up conventions – most famously the **European Convention on Human Rights**.
+
+## The United Nations
+Set up **after the Second World War** to prevent war and promote peace, with **more than 190 members**. The **Security Council** has **15 members**; the **UK is one of five permanent members**.
+
+## NATO
+A group of **European and North American** countries who agree to **help each other if attacked**. The UK joined after the war.
+
+@remember
+- **Commonwealth**: monarch is head; voluntary; can **suspend** members; democracy, good government, rule of law
+- **Treaty of Rome 1957** – 6 founders; UK joined **1973**, left **31 January 2020**
+- **Council of Europe** – separate from EU; human rights; **cannot make laws**
+- **UN Security Council** – 15 members, UK one of **5 permanent**
+- **NATO** – members help each other if attacked
+
+@section Rights and responsibilities
+Britain's tradition of rights has its roots in **Magna Carta, the Habeas Corpus Act and the Bill of Rights (1689)**.
+
+British lawyers helped draft the **European Convention on Human Rights**, and the UK was **one of the first to sign it, in 1950**. It includes:
+- **right to life**
+- **prohibition of torture**
+- **prohibition of slavery and forced labour**
+- **right to liberty and security**
+- **right to a fair trial**
+- **freedom of thought, conscience and religion**
+- **freedom of expression (speech)**
+
+The **Human Rights Act 1998** brought the Convention into **UK law**.
+
+## Equal opportunities
+It is illegal to treat people unfairly because of **age, disability, sex, pregnancy and maternity, race, religion or belief, sexuality or marital status**. Help is available from **Citizens Advice** and the **Equality and Human Rights Commission**.
+
+## Protecting people
+- **Domestic violence** is a serious crime, whether the victim is a man or woman, married or not. A man who forces a woman to have sex – **including her husband** – can be charged with **rape**. **Refuges or shelters** offer safe places to stay.
+- **Female genital mutilation (FGM)** is **illegal**, as is **taking a girl abroad** for it.
+- **Forced marriage** is a **criminal offence**; **arranged marriages** with both people's consent are acceptable. **Forced Marriage Protection Orders** were introduced in **2008** (England, Wales and NI) and **2011** (Scotland). Breaking an order can mean **up to two years in jail**.
+
+@remember
+- Roots: **Magna Carta, Habeas Corpus, Bill of Rights**
+- UK signed the **ECHR in 1950**; **Human Rights Act 1998**
+- No discrimination by age, disability, sex, pregnancy, race, religion, sexuality or marital status
+- **Domestic violence** is a crime; a husband can be charged with **rape**
+- **FGM** is illegal – including taking a girl **abroad** for it
+- **Forced marriage** is a crime; breaching a protection order = up to **2 years** in jail
+
+@section Respecting the law
+**Everyone receives equal treatment under the law.** Some things allowed elsewhere are **not acceptable in the UK**.
+
+## Criminal and civil law
+**Criminal law** covers crimes, investigated by the **police** and punished by the courts. **Civil law** settles **disputes between people or groups**.
+
+Examples of **criminal** offences:
+- carrying **any weapon**, even for **self-defence**
+- **buying or selling drugs** such as heroin, cocaine, ecstasy and cannabis
+- **racial crime** – harassment because of religion or ethnic origin
+- selling **tobacco** to anyone **under 18**
+- **smoking** in nearly every **enclosed public place**
+- selling alcohol to, or buying it for, anyone **under 18** (16-year-olds may drink with a meal in a hotel or restaurant)
+- drinking in **alcohol-free zones**
+
+Examples of **civil** law: **housing** (landlord–tenant disputes), **consumer rights** (faulty goods), **employment** (unfair dismissal, discrimination) and **debt**.
+
+## The police
+The police **protect life and property**, **prevent disturbances (keep the peace)** and **prevent and detect crime**. Forces are led by **Chief Constables** and are **independent of government**.
+
+Since **November 2012**, **Police and Crime Commissioners (PCCs)** have been **elected** in England and Wales. They set local police priorities and budgets and **appoint the Chief Constable**.
+
+Police officers must obey the law themselves. They are supported by **Police Community Support Officers (PCSOs)**. If arrested, you will be **told why** and can **seek legal advice**. Complaints can go to a police station, the Chief Constable, or an independent body: the **Independent Police Complaints Commission** (England and Wales), the **Police Complaints Commissioner for Scotland** or the **Police Ombudsman for Northern Ireland**.
+
+## Terrorism and extremism
+The most serious terrorist threat is from **Al Qa'ida** and similar groups; there is also **Northern Ireland-related** terrorism. **Extremism** means **vocal or active opposition to fundamental British values**. If someone tries to recruit you, tell your **local police**.
+
+@remember
+- **Criminal law** = crimes; **civil law** = disputes (housing, consumer, employment, debt)
+- Carrying **any weapon** is a crime – even for self-defence
+- Tobacco and alcohol: not sold to under-**18**s
+- Police: **protect life and property, keep the peace, prevent and detect crime**
+- Forces led by **Chief Constables**; **PCCs** elected since **November 2012**
+- **PCSOs** support police officers
+- Extremism = opposition to **fundamental British values**
+
+@section The courts
+**Judges** (the **judiciary**) interpret the law and make sure trials are fair; **the government cannot interfere**. If judges find the government acted illegally, it must **change its policies or ask Parliament to change the law**.
+
+## Criminal courts
+| Minor crimes | **Magistrates' Court** (England, Wales, NI); **Justice of the Peace Court** (Scotland)
+| Serious crimes | **Crown Court** with a judge and jury (England, Wales, NI); **Sheriff Court** (Scotland)
+| Most serious, Scotland | **High Court** with judge and jury (e.g. murder)
+
+**Magistrates and JPs** are members of the local community who usually work **unpaid** and **need no legal qualifications**. In Northern Ireland, cases are heard by a **District Judge**, who is legally qualified and paid.
+
+A **jury** is chosen **at random from the electoral register**. It has **12 members** in England, Wales and NI, and **15 in Scotland**. The jury decides **"guilty" or "not guilty"** – in Scotland also **"not proven"**. If guilty, **the judge decides the penalty**. Everyone summoned must serve unless ineligible or excused for a good reason.
+
+## Youth justice
+- England, Wales and NI: people aged **10 to 17** go to a **Youth Court** (up to three magistrates or a District Judge). The **public is not allowed in**, and the young person's **name and photo cannot be published**. Parents are expected to attend.
+- Scotland: the **Children's Hearings System**.
+- Northern Ireland: **youth conferencing**.
+
+## Civil courts
+- **County Courts** handle civil disputes: money owed, personal injury, family matters, breach of contract and **divorce**. In Scotland these go to the **Sheriff Court**.
+- Serious civil cases go to the **High Court** (England, Wales, NI) or the **Court of Session in Edinburgh** (Scotland).
+- The **small claims procedure** is an informal way to settle disputes without a lawyer: claims under **£10,000 in England and Wales** and **£5,000 in Scotland and NI**. The hearing is held around a table in front of a judge; claims can be made through **Money Claims Online**.
+
+## Legal advice
+**Solicitors** give legal advice and represent clients. **Citizens Advice** and the **Law Society** can recommend one. Charges are usually based on **time spent**, so ask about costs at the start.
+
+@remember
+- The government **cannot interfere** with judges
+- Minor crime: **Magistrates' Court** (Scotland: **Justice of the Peace Court**)
+- Serious crime: **Crown Court** (Scotland: **Sheriff Court**; murder: **High Court**)
+- Jury: **12** (**15** in Scotland); Scotland also has **"not proven"**
+- **Youth Court** 10–17; Scotland: **Children's Hearings**; NI: **youth conferencing**
+- Civil: **County Court**; serious civil: **High Court** / **Court of Session**
+- Small claims under **£10,000** (England & Wales), **£5,000** (Scotland & NI)
+
+@section Tax, National Insurance and driving
+## Income tax
+You pay income tax on **wages, self-employment profits, taxable benefits, pensions** and income from **property, savings and dividends**. It pays for services like **roads, education, police and the armed forces**.
+
+Most employees pay automatically through **PAYE (Pay As You Earn)** – the employer pays it to **HM Revenue & Customs (HMRC)**. The **self-employed** pay through **self-assessment**, completing a **tax return**.
+
+## National Insurance
+Almost everyone in paid work pays **National Insurance Contributions**, which fund **state benefits**, the **state retirement pension** and the **NHS**. Without enough contributions you may not get benefits such as **Jobseeker's Allowance** or a **full state pension**.
+
+Young people are sent a **National Insurance number just before their 16th birthday**. Others apply through the **Department for Work and Pensions (DWP)**. An NI number **does not on its own prove your right to work**.
+
+## Driving
+- Minimum age: **17** for a car or motorcycle; **16** for a **moped**.
+- Get a **provisional licence**, then pass a **theory test** (multiple choice and **hazard perception**) and a **practical test**.
+- A licence lasts until you are **70**, then must be renewed **every three years**.
+- In Northern Ireland, new drivers display an **"R" plate** (restricted) for **one year**.
+- A licence from the **EU, Iceland, Liechtenstein or Norway** is valid as long as it is valid. Other foreign licences can be used for **12 months**.
+- Vehicles must be **registered with the DVLA**, have **road tax** and **insurance** (driving uninsured is a **serious criminal offence**), and cars over **three years old** need an annual **MOT** test.
+
+@remember
+- Income tax through **PAYE** to **HMRC**; self-employed use **self-assessment**
+- **National Insurance** pays for benefits, the state pension and the **NHS**
+- NI number arrives just before you turn **16**; it doesn't prove right to work
+- Drive at **17** (moped **16**); licence to **70**, then every **3** years
+- Non-EU licence valid **12 months**; NI new drivers show an **R plate** for 1 year
+- **MOT** yearly for vehicles over **3 years** old; driving uninsured is a crime
+
+@section Your role in the community
+## Shared values and responsibilities
+- to **obey and respect the law**
+- to be aware of and **respect the rights of others**
+- to **treat others with fairness**
+- to **behave responsibly**
+- to **help and protect your family**
+- to **respect and preserve the environment**
+- to **treat everyone equally**, regardless of sex, race, religion, age, disability, class or sexual orientation
+- to **work to provide** for yourself and your family
+- to **help others**
+- to **vote** in local and national elections
+
+## Being a good neighbour
+Introduce yourself to neighbours, respect their privacy, **limit noise**, keep your garden tidy, and only put rubbish out **on collection day**.
+
+## Ways to get involved
+- **Jury service**: anyone on the electoral register aged **18 to 70** can be selected.
+- **Schools**: help in classrooms or join a **parent-teacher association (PTA)**.
+- **School governors** (school boards in Scotland) must be **18 or over**, with **no upper age limit**. Their three key roles: **setting the strategic direction**, **ensuring accountability**, and **monitoring and evaluating school performance**. In England, parents can apply to open a **free school**.
+- **Political parties**: members help at elections, e.g. **canvassing** door to door. **You don't have to tell a canvasser how you will vote.**
+- **Local services**: volunteer at hospitals or youth projects, become a **special constable**, a **lay (non-police) representative** or a **magistrate**.
+- **Blood and organ donation**: giving blood takes about **an hour**; you can join the **organ donor register**, and living people can donate a **kidney**.
+
+## Volunteering
+Volunteering is working for good causes **without payment** – it helps you meet people, practise English and gain skills for your CV. Charities include the **British Red Cross**, **Age UK** (older people), the **NSPCC** (children), **Crisis** and **Shelter** (homeless), **Cancer Research UK**, the **National Trust** and **Friends of the Earth** (environment), and the **PDSA** (animals).
+
+The **National Citizen Service** gives **16- and 17-year-olds** outdoor activities, skills and a community project.
+
+## Looking after the environment
+**Recycle** as much as you can – it uses less energy and reduces landfill. **Shop locally** to support local businesses and reduce your **carbon footprint**. **Walk or use public transport** to create less pollution.
+
+@remember
+- **Jury service**: on the electoral register, aged **18–70**
+- School governors: **18+**, no upper age limit; set direction, ensure accountability, monitor performance
+- You **don't have to tell a canvasser** how you will vote
+- Volunteer as a **special constable**, **lay representative** or **magistrate**
+- Giving blood takes about **an hour**; living donors can give a **kidney**
+- **NSPCC** – children; **Age UK** – older people; **Crisis/Shelter** – homeless; **PDSA** – animals
+- **National Citizen Service** – ages **16–17**
+- Recycle, **shop locally**, walk or use public transport

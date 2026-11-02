@@ -1,0 +1,1085 @@
+<title>Life in the UK Study</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+/* Layout: single reading column (max 680px) on warm paper; tab screens get a fixed bottom bar, inner screens a sticky top bar. */
+:root {
+  --bg: #f8f7f3; --surface: #ffffff; --surface-2: #f1efea; --line: #e2e0da;
+  --fg: #1b1c1e; --muted: #5d5e61;
+  --primary: #1d3557; --on-primary: #ffffff; --primary-soft: #dce5f3; --on-primary-soft: #0f1f36;
+  --mark: #ffe89a; --on-mark: #2b2300;
+  --ok: #2e7d4f; --ok-soft: #ddf1e4; --bad: #b3261e; --bad-soft: #f9dedc;
+  --tip: #e8eef8; --on-tip: #1d3557; --accent: #c8102e;
+  --font-ui: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-read: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --read-scale: 1;
+  --radius: 18px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #121316; --surface: #1b1c20; --surface-2: #232428; --line: #34353a;
+    --fg: #e4e2de; --muted: #b3b2ae;
+    --primary: #a9c2e8; --on-primary: #0f2440; --primary-soft: #263b5a; --on-primary-soft: #dce5f3;
+    --mark: #5a4a12; --on-mark: #fff4cc;
+    --ok: #7bd19a; --ok-soft: #1e3a29; --bad: #f2b8b5; --bad-soft: #4a1f1c;
+    --tip: #1f2a3a; --on-tip: #c9d8f0; --accent: #ff8a80;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #121316; --surface: #1b1c20; --surface-2: #232428; --line: #34353a;
+  --fg: #e4e2de; --muted: #b3b2ae;
+  --primary: #a9c2e8; --on-primary: #0f2440; --primary-soft: #263b5a; --on-primary-soft: #dce5f3;
+  --mark: #5a4a12; --on-mark: #fff4cc;
+  --ok: #7bd19a; --ok-soft: #1e3a29; --bad: #f2b8b5; --bad-soft: #4a1f1c;
+  --tip: #1f2a3a; --on-tip: #c9d8f0; --accent: #ff8a80;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--fg); font-family: var(--font-ui); font-size: 16px; line-height: 1.45;
+  -webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: transparent;
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; text-align: inherit; }
+button:focus-visible, [tabindex]:focus-visible { outline: 3px solid var(--primary); outline-offset: 2px; }
+h1, h2, h3 { margin: 0; text-wrap: balance; }
+p { margin: 0; }
+mark { background: var(--mark); color: var(--on-mark); font-weight: 600; border-radius: 3px; padding: 0 1px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+
+.wrap {
+  max-width: 680px; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 16px 32px;
+}
+.tabs-page .wrap { padding-bottom: calc(96px + env(safe-area-inset-bottom, 0px)); }
+.stack { display: flex; flex-direction: column; gap: 10px; }
+
+/* Top bar */
+.topbar {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg);
+  border-bottom: 1px solid var(--line);
+}
+.topbar-in {
+  max-width: 680px; margin: 0 auto; height: 56px; display: flex; align-items: center; gap: 4px;
+  padding-left: max(6px, env(safe-area-inset-left, 0px)); padding-right: max(10px, env(safe-area-inset-right, 0px));
+}
+.topbar-title { flex: 1; min-width: 0; font-weight: 600; font-size: 16px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.icon-btn { width: 44px; height: 44px; border-radius: 22px; display: grid; place-items: center; flex: none; }
+.icon-btn:active { background: var(--surface-2); }
+.icon-btn svg { width: 24px; height: 24px; }
+.text-btn-sm { height: 40px; padding: 0 10px; border-radius: 20px; font-weight: 600; font-size: 17px; color: var(--muted); }
+.readbar { height: 2px; background: var(--line); }
+.readbar > div { height: 2px; width: 0; background: var(--primary); }
+.timer { display: flex; align-items: center; gap: 4px; font-weight: 600; font-variant-numeric: tabular-nums; padding-right: 6px; }
+.timer.low { color: var(--bad); }
+.timer svg { width: 18px; height: 18px; }
+
+/* Bottom tabs */
+.tabbar {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 6; background: var(--surface-2); border-top: 1px solid var(--line);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  padding-left: env(safe-area-inset-left, 0px); padding-right: env(safe-area-inset-right, 0px);
+}
+.tabbar-in { max-width: 680px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); }
+.tab { display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 9px 0 8px; font-size: 12px; font-weight: 600; color: var(--muted); }
+.tab .pill { width: 60px; height: 30px; border-radius: 15px; display: grid; place-items: center; }
+.tab svg { width: 22px; height: 22px; }
+.tab.on { color: var(--fg); }
+.tab.on .pill { background: var(--primary-soft); color: var(--on-primary-soft); }
+
+/* Type */
+.h-page { font-size: 28px; font-weight: 650; letter-spacing: -0.4px; }
+.sub { color: var(--muted); font-size: 16px; }
+.label {
+  font-size: 12px; font-weight: 650; letter-spacing: 1.2px; text-transform: uppercase; color: var(--muted);
+  margin: 18px 4px 2px;
+}
+.small { font-size: 13px; color: var(--muted); }
+
+/* Cards and rows */
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
+button.card, .row { width: 100%; display: block; }
+button.card:active { background: var(--surface-2); }
+.row-in { display: flex; align-items: center; gap: 14px; padding: 14px 16px; }
+.row-text { flex: 1; min-width: 0; }
+.row-title { font-weight: 600; font-size: 16px; }
+.row-sub { color: var(--muted); font-size: 14px; }
+.chev { width: 20px; height: 20px; color: var(--muted); flex: none; }
+.badge {
+  width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; flex: none;
+  background: var(--primary-soft); color: var(--on-primary-soft); font-weight: 650; font-size: 16px;
+}
+.badge svg { width: 22px; height: 22px; }
+.badge.ok { background: var(--ok-soft); color: var(--ok); }
+.badge.bad { background: var(--bad-soft); color: var(--bad); }
+.dot { width: 28px; height: 28px; border-radius: 14px; display: grid; place-items: center; flex: none; background: var(--surface-2); color: var(--muted); font-size: 14px; font-weight: 600; }
+.dot.ok { background: var(--ok); color: var(--surface); }
+.dot svg { width: 17px; height: 17px; }
+.bar { height: 6px; border-radius: 3px; background: var(--surface-2); overflow: hidden; flex: 1; }
+.bar > div { height: 100%; border-radius: 3px; background: var(--primary); transition: width .3s; }
+.bar.ok > div { background: var(--ok); }
+.bar-row { display: flex; align-items: center; gap: 12px; font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+
+.hero { background: var(--primary); color: var(--on-primary); border-radius: 24px; padding: 20px; }
+.hero .muted { opacity: .78; }
+.hero-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); gap: 12px; margin-top: 16px; }
+.stat-v { font-size: 22px; font-weight: 650; font-variant-numeric: tabular-nums; }
+.stat-l { font-size: 13px; opacity: .78; }
+.ring { position: relative; flex: none; }
+.ring > svg { display: block; transform: rotate(-90deg); }
+.ring span { position: absolute; inset: 0; display: grid; place-items: center; font-weight: 650; font-size: 15px; }
+
+.btn {
+  display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; min-height: 54px; padding: 8px 16px;
+  border-radius: 16px; font-weight: 600; text-align: center;
+}
+.btn svg { width: 19px; height: 19px; }
+.btn-primary { background: var(--primary); color: var(--on-primary); }
+.btn-ok { background: var(--ok); color: var(--surface); }
+.btn-outline { border: 1px solid var(--line); background: var(--surface); }
+.btn-light { background: var(--on-primary); color: var(--primary); }
+.btn:disabled { opacity: .45; cursor: default; }
+.btn .two { display: flex; flex-direction: column; line-height: 1.25; min-width: 0; }
+.btn .two small { font-size: 12px; font-weight: 500; opacity: .85; }
+.btn .two b { font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.btn-row { display: flex; gap: 12px; }
+.btn-row > * { flex: 1; min-width: 0; }
+.link-btn { display: block; width: 100%; text-align: center; padding: 14px; color: var(--muted); font-weight: 600; font-size: 15px; }
+
+/* Reader */
+.reader { padding-top: 20px; }
+.eyebrow { font-size: 12px; font-weight: 650; letter-spacing: 1px; color: var(--primary); text-transform: uppercase; }
+.reader h1 { font-family: var(--font-read); font-weight: 600; font-size: calc(30px * var(--read-scale)); line-height: 1.2; margin: 6px 0 20px; }
+.prose { font-family: var(--font-read); font-size: calc(18.5px * var(--read-scale)); line-height: 1.62; }
+.prose > * + * { margin-top: 16px; }
+.prose h3 { font-family: var(--font-ui); color: var(--primary); font-size: calc(19px * var(--read-scale)); font-weight: 650; margin-top: 26px; }
+.prose ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.prose li { position: relative; padding-left: 20px; }
+.prose li::before { content: ""; position: absolute; left: 4px; top: .7em; width: 6px; height: 6px; border-radius: 3px; background: var(--primary); }
+.person { padding: 16px; font-size: .93em; }
+.person-head { display: flex; align-items: center; gap: 12px; font-family: var(--font-ui); font-weight: 650; font-size: calc(16px * var(--read-scale)); margin-bottom: 8px; }
+.person-head .av { width: 32px; height: 32px; border-radius: 16px; background: var(--primary-soft); color: var(--on-primary-soft); display: grid; place-items: center; flex: none; }
+.person-head svg { width: 18px; height: 18px; }
+.tip { display: flex; gap: 12px; padding: 16px; border-radius: var(--radius); background: var(--tip); color: var(--on-tip); font-family: var(--font-ui); font-size: calc(15px * var(--read-scale)); line-height: 1.5; }
+.tip svg { width: 20px; height: 20px; flex: none; margin-top: 1px; }
+.quote { border-left: 3px solid color-mix(in srgb, var(--accent) 60%, transparent); padding-left: 16px; font-style: italic; }
+.quote cite { display: block; margin-top: 6px; font-family: var(--font-ui); font-style: normal; font-size: 13px; font-weight: 600; color: var(--muted); }
+.table { padding: 4px 0; font-family: var(--font-ui); font-size: calc(15px * var(--read-scale)); line-height: 1.45; }
+.trow { display: grid; grid-template-columns: minmax(84px, 30%) 1fr; gap: 10px; padding: 9px 16px; }
+.table.narrow .trow { grid-template-columns: 22px 1fr; }
+.trow + .trow { border-top: 1px solid var(--line); }
+.trow > :first-child { color: var(--primary); font-weight: 650; }
+.trow > * { min-width: 0; overflow-wrap: anywhere; }
+
+/* Facts */
+.facts-head { display: flex; align-items: center; gap: 12px; padding: 16px 16px 4px; }
+.fact { display: flex; gap: 14px; width: 100%; padding: 12px 16px; font-size: 16px; line-height: 1.45; }
+.fact + .fact { border-top: 1px solid var(--line); }
+.fact .tick { width: 22px; height: 22px; border-radius: 11px; background: var(--surface-2); flex: none; margin-top: 1px; display: grid; place-items: center; color: var(--surface); }
+.fact .tick svg { width: 15px; height: 15px; visibility: hidden; }
+.fact.on .tick { background: var(--ok); }
+.fact.on .tick svg { visibility: visible; }
+.fact.on .ft { color: var(--muted); }
+
+/* Flashcards */
+.flash-wrap { perspective: 1400px; height: min(58vh, 460px); min-height: 300px; margin: 18px 0; }
+.flash { position: relative; width: 100%; height: 100%; transform-style: preserve-3d; transition: transform .4s ease; }
+.flash.flipped { transform: rotateY(180deg); }
+.face {
+  position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden; border-radius: 28px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 28px; gap: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.12);
+}
+.face.front { background: var(--surface); border: 1px solid var(--line); }
+.face.back { background: var(--primary); color: var(--on-primary); transform: rotateY(180deg); }
+.face .q { font-size: 23px; font-weight: 650; line-height: 1.3; text-wrap: balance; }
+
+/* Quiz */
+.qdots { display: flex; gap: 6px; overflow-x: auto; padding: 4px 0 6px; scrollbar-width: none; }
+.qdots::-webkit-scrollbar { display: none; }
+.qdot { width: 34px; height: 34px; border-radius: 17px; flex: none; display: grid; place-items: center; font-size: 14px; font-weight: 600; background: var(--surface-2); color: var(--muted); font-variant-numeric: tabular-nums; }
+.qdot.done { background: var(--primary-soft); color: var(--on-primary-soft); }
+.qdot.cur { background: var(--primary); color: var(--on-primary); }
+.qtext { font-size: 21px; font-weight: 650; line-height: 1.3; margin-top: 8px; }
+.opts { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; }
+.opt { display: flex; align-items: center; gap: 14px; width: 100%; padding: 14px 16px; border-radius: 16px; border: 1px solid var(--line); background: var(--surface); font-size: 16px; }
+.opt .key { width: 28px; height: 28px; border-radius: 14px; display: grid; place-items: center; flex: none; background: var(--surface-2); color: var(--muted); font-weight: 650; font-size: 14px; }
+.opt .key svg { width: 18px; height: 18px; }
+.opts.multi .opt .key { border-radius: 8px; }
+.opt.sel { border: 2px solid var(--primary); background: var(--primary-soft); padding: 13px 15px; }
+.opt.sel .key { background: var(--primary); color: var(--on-primary); }
+.opt.right { border: 2px solid var(--ok); background: var(--ok-soft); padding: 13px 15px; }
+.opt.right .key { background: var(--ok); color: var(--surface); }
+.opt.wrong { border: 2px solid var(--bad); background: var(--bad-soft); padding: 13px 15px; }
+.opt.wrong .key { background: var(--bad); color: var(--surface); }
+.explain { margin-top: 16px; padding: 16px; border-radius: 16px; }
+.explain.good { background: var(--ok-soft); }
+.explain.bad { background: var(--bad-soft); }
+.explain h3 { font-size: 16px; margin-bottom: 4px; }
+.explain.good h3 { color: var(--ok); }
+.explain.bad h3 { color: var(--bad); }
+.quiz-foot {
+  position: sticky; bottom: 0; background: var(--bg); padding-top: 12px;
+  padding-bottom: max(16px, env(safe-area-inset-bottom, 0px)); margin-top: 20px;
+}
+.result-top { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px; padding: 16px 0 8px; }
+.result-top .ring span { font-size: 26px; flex-direction: column; }
+.verdict { font-size: 22px; font-weight: 650; margin-top: 10px; }
+.verdict.good { color: var(--ok); }
+.verdict.bad { color: var(--bad); }
+.rv { padding: 16px; }
+.rv .yours { color: var(--bad); font-size: 14px; margin-top: 8px; }
+.rv .correct { color: var(--ok); font-size: 14px; font-weight: 600; }
+.chips { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 2px; }
+.chip { padding: 9px 14px; border-radius: 14px; flex: none; }
+.chip b { display: block; font-size: 16px; font-variant-numeric: tabular-nums; }
+.chip.good { background: var(--ok-soft); } .chip.good b { color: var(--ok); }
+.chip.bad { background: var(--bad-soft); } .chip.bad b { color: var(--bad); }
+
+/* Chapter complete */
+.done-top { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px; padding: 28px 0 8px; }
+.card.choice { display: flex; align-items: center; gap: 16px; padding: 18px; text-align: left; }
+.choice svg { width: 26px; height: 26px; flex: none; }
+.choice.primary { background: var(--primary); color: var(--on-primary); border-color: var(--primary); }
+.choice.primary .row-sub { color: var(--on-primary); opacity: .8; }
+
+/* Modal */
+.scrim { position: fixed; inset: 0; z-index: 20; background: rgba(0,0,0,.45); display: grid; place-items: center; padding: 24px; }
+.dialog { background: var(--surface); border-radius: 24px; padding: 22px; max-width: 360px; width: 100%; }
+.dialog h2 { font-size: 20px; margin-bottom: 8px; }
+.dialog p { color: var(--muted); }
+.dialog .acts { display: flex; justify-content: flex-end; gap: 6px; margin-top: 20px; }
+.dialog .acts button { padding: 10px 14px; border-radius: 12px; font-weight: 650; color: var(--primary); }
+
+.field { display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: var(--muted); }
+.field input {
+  width: 100%; height: 52px; border-radius: 14px; border: 1px solid var(--line); background: var(--surface); color: var(--fg);
+  padding: 0 14px; font: inherit; font-size: 17px; font-weight: 400;
+}
+.field input:focus { outline: 2px solid var(--primary); outline-offset: 0; border-color: transparent; }
+.divider { display: flex; align-items: center; gap: 12px; color: var(--muted); font-size: 13px; margin: 6px 0; }
+.divider::before, .divider::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+.notice { padding: 12px 14px; border-radius: 14px; font-size: 15px; }
+.notice.bad { background: var(--bad-soft); color: var(--bad); }
+.notice.good { background: var(--ok-soft); color: var(--ok); }
+.menu-note { padding: 12px 16px 4px; font-size: 13px; color: var(--muted); overflow-wrap: anywhere; }
+.foot-note { font-size: 13px; color: var(--muted); padding: 16px 4px 0; }
+.menu { position: absolute; right: 0; top: 46px; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; box-shadow: 0 8px 24px rgba(0,0,0,.15); z-index: 8; min-width: 200px; overflow: hidden; }
+.menu button { display: block; width: 100%; padding: 14px 16px; }
+@media (prefers-reduced-motion: reduce) { .flash, .bar > div { transition: none; } }
+</style>
+
+<div id="app"></div>
+<div id="modal"></div>
+
+<script>
+"use strict";
+const CONTENT = /*__CONTENT__*/null;
+const FIREBASE_CONFIG = /*__FIREBASE__*/null;
+
+/* ---------- content parsing (mirrors the Android ContentParser) ---------- */
+function parseChapter(n, raw) {
+  const ch = { number: n, title: "", subtitle: "", intro: "", sections: [] };
+  let secTitle = null, blocks = [], para = [], bullets = [], quote = [], table = [], inRem = false, rem = [];
+  const flushPara = () => { if (para.length) { blocks.push({ t: "p", text: para.join(" ") }); para = []; } };
+  const flushBullets = () => { if (bullets.length) { blocks.push({ t: "ul", items: bullets }); bullets = []; } };
+  const flushTable = () => { if (table.length) { blocks.push({ t: "table", rows: table }); table = []; } };
+  const flushInline = () => { flushPara(); flushBullets(); flushTable(); };
+  const flushSection = () => {
+    flushInline();
+    if (secTitle !== null) ch.sections.push({ id: n + "." + (ch.sections.length + 1), title: secTitle, blocks, remember: rem });
+    blocks = []; secTitle = null; inRem = false; rem = [];
+  };
+  for (const rawLine of raw.split("\n")) {
+    const line = rawLine.trim();
+    if (line.startsWith("@title ")) ch.title = line.slice(7).trim();
+    else if (line.startsWith("@subtitle ")) ch.subtitle = line.slice(10).trim();
+    else if (line.startsWith("@intro ")) ch.intro = line.slice(7).trim();
+    else if (line.startsWith("@section ")) { flushSection(); secTitle = line.slice(9).trim(); }
+    else if (line === "@remember") { flushInline(); inRem = true; }
+    else if (inRem) {
+      if (line.startsWith("- ")) rem.push({ id: "f" + n + "." + (ch.sections.length + 1) + "." + rem.length, text: line.slice(2).trim() });
+    }
+    else if (!line) flushInline();
+    else if (line.startsWith("## ")) { flushInline(); blocks.push({ t: "h", text: line.slice(3).trim() }); }
+    else if (line.startsWith("- ")) { flushPara(); flushTable(); bullets.push(line.slice(2).trim()); }
+    else if (line.startsWith("> ")) {
+      flushInline();
+      const body = line.slice(2), i = body.indexOf("::");
+      blocks.push(i > 0 ? { t: "person", name: body.slice(0, i).trim(), text: body.slice(i + 2).trim() } : { t: "person", name: body.trim(), text: "" });
+    }
+    else if (line.startsWith("! ")) { flushInline(); blocks.push({ t: "tip", text: line.slice(2).trim() }); }
+    else if (line.startsWith("\"— ")) { flushInline(); blocks.push({ t: "quote", lines: quote, source: line.slice(3).trim() }); quote = []; }
+    else if (line.startsWith("\" ")) { flushInline(); quote.push(line.slice(2).trim()); }
+    else if (line.startsWith("| ")) {
+      flushPara(); flushBullets();
+      const parts = line.replace(/^\|+|\|+$/g, "").split("|").map(s => s.trim());
+      table.push([parts[0], parts[1] || ""]);
+    }
+    else { flushBullets(); flushTable(); para.push(line); }
+  }
+  flushSection();
+  return ch;
+}
+
+function parseCards(raw) {
+  const cards = []; let chapter = 0, index = 0;
+  for (const rawLine of raw.split("\n")) {
+    const line = rawLine.trim();
+    if (!line) continue;
+    if (line.startsWith("# ")) { chapter = parseInt(line.slice(2), 10); index = 0; continue; }
+    const sep = line.indexOf(" | ");
+    if (sep < 0) continue;
+    cards.push({ id: "c" + chapter + "." + index, chapter, front: line.slice(0, sep).trim(), back: line.slice(sep + 3).trim() });
+    index++;
+  }
+  return cards;
+}
+
+function parseQuestions(raws) {
+  const out = [];
+  raws.forEach(raw => {
+    let chapter = 0, index = 0, q = null;
+    const flush = () => {
+      if (q && q.text && q.options.length) { q.id = "q" + chapter + "." + index; q.chapter = chapter; out.push(q); index++; }
+      q = null;
+    };
+    for (const rawLine of raw.split("\n")) {
+      const line = rawLine.trim();
+      if (line.startsWith("# ")) { flush(); chapter = parseInt(line.slice(2), 10); index = 0; continue; }
+      if (!line) { flush(); continue; }
+      q = q || { text: "", options: [], correct: [], explanation: "" };
+      if (line.startsWith("Q: ")) q.text = line.slice(3).trim();
+      else if (line.startsWith("+ ")) { q.correct.push(q.options.length); q.options.push(line.slice(2).trim()); }
+      else if (line.startsWith("- ")) q.options.push(line.slice(2).trim());
+      else if (line.startsWith("E: ")) q.explanation = line.slice(3).trim();
+    }
+    flush();
+  });
+  return out;
+}
+
+const CHAPTERS = CONTENT.chapters.map((raw, i) => parseChapter(i + 1, raw));
+const SECTIONS = CHAPTERS.flatMap(c => c.sections);
+const CARDS = parseCards(CONTENT.cards);
+const QUESTIONS = parseQuestions(CONTENT.questions);
+const CARD_BY_ID = Object.fromEntries(CARDS.map(c => [c.id, c]));
+const Q_BY_ID = Object.fromEntries(QUESTIONS.map(q => [q.id, q]));
+const chapterOf = id => CHAPTERS.find(c => c.sections.some(s => s.id === id));
+const sectionById = id => SECTIONS.find(s => s.id === id);
+const cardsFor = n => CARDS.filter(c => c.chapter === n);
+const questionsFor = n => QUESTIONS.filter(q => q.chapter === n);
+const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const allFacts = chs => chs.flatMap(c => c.sections.flatMap(s => s.remember));
+
+/** 24 questions split roughly like the real test: mostly history, society and government. */
+function mockTest() {
+  const quota = { 1: 2, 2: 1, 3: 8, 4: 6, 5: 7 };
+  let picked = [];
+  for (const ch in quota) picked = picked.concat(shuffle(questionsFor(+ch)).slice(0, quota[ch]));
+  const ids = new Set(picked.map(q => q.id));
+  picked = picked.concat(shuffle(QUESTIONS.filter(q => !ids.has(q.id))).slice(0, 24 - picked.length));
+  return shuffle(picked).map(q => q.id);
+}
+
+/* ---------- progress: browser storage, plus the viewer's private store when available ---------- */
+const LS_KEY = "uk-study-progress-v1";
+const P = { read: new Set(), cards: new Set(), facts: new Set(), missed: new Set(), answered: new Set(), last: null, results: [], scale: 1, updated: 0 };
+const SET_KEYS = ["read", "cards", "facts", "missed", "answered"];
+let syncState = "device"; // "device" | "account" (claude.ai) | "firebase"
+
+function toPlain() {
+  const o = { last: P.last, results: P.results, scale: P.scale, updated: P.updated };
+  SET_KEYS.forEach(k => { o[k] = [...P[k]]; });
+  return o;
+}
+function applyPlain(o) {
+  if (!o) return;
+  SET_KEYS.forEach(k => { P[k] = new Set(Array.isArray(o[k]) ? o[k] : []); });
+  P.last = o.last || null;
+  P.results = Array.isArray(o.results) ? o.results : [];
+  P.scale = typeof o.scale === "number" ? o.scale : 1;
+  P.updated = o.updated || 0;
+}
+try { applyPlain(JSON.parse(localStorage.getItem(LS_KEY) || "null")); } catch (e) { /* storage unavailable */ }
+
+let remote = null, writeChain = Promise.resolve(), writeTimer = null;
+function persistLocal() {
+  try { localStorage.setItem(LS_KEY, JSON.stringify(toPlain())); } catch (e) { /* storage unavailable */ }
+}
+function save() {
+  P.updated = Date.now();
+  persistLocal();
+  if (remote) {
+    clearTimeout(writeTimer);
+    writeTimer = setTimeout(() => {
+      const body = toPlain(), target = remote;
+      writeChain = writeChain.then(() => target.write(body)).catch(err => {
+        if (err && err.code !== "unavailable" && remote === target) { remote = null; syncState = "device"; render(false); }
+      });
+    }, 1200);
+  }
+}
+function mergeRemote(o) {
+  SET_KEYS.forEach(k => { (Array.isArray(o[k]) ? o[k] : []).forEach(v => P[k].add(v)); });
+  const seen = new Set(P.results.map(r => r.t));
+  (Array.isArray(o.results) ? o.results : []).forEach(r => { if (!seen.has(r.t)) P.results.push(r); });
+  P.results.sort((a, b) => a.t - b.t);
+  P.results = P.results.slice(-50);
+  if ((o.updated || 0) > P.updated) { P.last = o.last || P.last; if (typeof o.scale === "number") P.scale = o.scale; }
+}
+
+/* claude.ai: the viewer's private per-user store, when the page is opened as an artifact. */
+async function connectAccount() {
+  if (FIREBASE_CONFIG || !window.claude || typeof window.claude.use !== "function") return;
+  try {
+    const [db, user] = await Promise.all([window.claude.use("db"), window.claude.use("user")]);
+    if (!db || !user) return;
+    const id = await user.id();
+    if (!id) return;
+    const ref = db.doc("data/users/" + id + "/progress");
+    const snap = await Promise.race([ref.get(), new Promise((_, rej) => setTimeout(() => rej(new Error("timeout")), 10000))]);
+    if (snap.exists) mergeRemote(snap.data());
+    remote = { write: body => ref.set(body) }; syncState = "account";
+    save();
+    render(false);
+  } catch (e) { /* keep device-only progress */ }
+}
+
+/* Firebase: sign-in plus a Firestore document per user (users/{uid}), synced live between devices. */
+const FB_VERSION = "10.14.1";
+const LS_LINK_KEY = "uk-study-linked-uid";
+let fb = null, fbUser = null, fbFailed = false, unsubDoc = null;
+function loadScript(src) {
+  return new Promise((resolve, reject) => {
+    const el = document.createElement("script");
+    el.src = src; el.onload = resolve; el.onerror = () => reject(new Error("Could not load " + src));
+    document.head.appendChild(el);
+  });
+}
+async function connectFirebase() {
+  if (!FIREBASE_CONFIG) return;
+  try {
+    const base = "https://www.gstatic.com/firebasejs/" + FB_VERSION + "/";
+    await loadScript(base + "firebase-app-compat.js");
+    await Promise.all([loadScript(base + "firebase-auth-compat.js"), loadScript(base + "firebase-firestore-compat.js")]);
+    firebase.initializeApp(FIREBASE_CONFIG);
+    fb = { auth: firebase.auth(), db: firebase.firestore() };
+    fb.auth.getRedirectResult().catch(err => showAuthError(err));
+    fb.auth.onAuthStateChanged(onFirebaseUser);
+  } catch (e) {
+    fbFailed = true; render(false);
+  }
+}
+async function onFirebaseUser(user) {
+  if (unsubDoc) { unsubDoc(); unsubDoc = null; }
+  fbUser = user; remote = null; syncState = "device";
+  if (!user) { render(false); return; }
+  const ref = fb.db.collection("users").doc(user.uid);
+  try {
+    const snap = await ref.get();
+    const server = snap.exists ? (snap.data() || {}).progress : null;
+    let linked = null;
+    try { linked = localStorage.getItem(LS_LINK_KEY); } catch (e) { /* storage unavailable */ }
+    let push = true;
+    if (server) {
+      if (linked === user.uid && (server.updated || 0) >= P.updated) { applyPlain(server); persistLocal(); push = false; }
+      else mergeRemote(server); // first sign-in on this device: keep progress from both
+    }
+    try { localStorage.setItem(LS_LINK_KEY, user.uid); } catch (e) { /* storage unavailable */ }
+    remote = { write: body => ref.set({ progress: body, updatedAt: firebase.firestore.FieldValue.serverTimestamp() }) };
+    syncState = "firebase";
+    if (push) save();
+    unsubDoc = ref.onSnapshot(s => {
+      if (s.metadata.hasPendingWrites || !s.exists) return;
+      const p = (s.data() || {}).progress;
+      if (p && (p.updated || 0) > P.updated) { applyPlain(p); persistLocal(); render(false); }
+    }, () => { /* keep working from local progress */ });
+  } catch (e) {
+    remote = null; syncState = "device";
+  }
+  const cur = curScreen();
+  if (cur && cur.name === "signin") pop(); else render(false);
+}
+const AUTH_ERRORS = {
+  "auth/invalid-credential": "Email or password is incorrect.",
+  "auth/wrong-password": "Email or password is incorrect.",
+  "auth/user-not-found": "Email or password is incorrect.",
+  "auth/invalid-login-credentials": "Email or password is incorrect.",
+  "auth/email-already-in-use": "An account with this email already exists. Sign in instead.",
+  "auth/weak-password": "Use at least 6 characters for the password.",
+  "auth/invalid-email": "Enter a valid email address.",
+  "auth/missing-password": "Enter your password.",
+  "auth/too-many-requests": "Too many attempts. Wait a minute and try again.",
+  "auth/network-request-failed": "No connection. Check your internet and try again.",
+  "auth/unauthorized-domain": "This web address isn't allowed to sign in yet. Add it in Firebase under Authentication → Settings → Authorised domains.",
+  "auth/operation-not-allowed": "This sign-in method isn't switched on in Firebase yet (Authentication → Sign-in method).",
+};
+function showAuthError(err) {
+  if (!err || err.code === "auth/popup-closed-by-user" || err.code === "auth/cancelled-popup-request") return;
+  const s = curScreen();
+  const msg = AUTH_ERRORS[err.code]
+    || (String(err.code).startsWith("auth/api-key-not-valid") ? "The Firebase settings for this site aren't valid. Check web/firebase-config.json." : "")
+    || (err.message || "Sign-in failed. Try again.");
+  if (s && s.name === "signin") { s.error = msg; s.info = ""; s.busy = false; render(false); }
+  else { push({ name: "signin", mode: "signin", email: "", password: "", error: msg, info: "", busy: false }); }
+}
+
+/* ---------- helpers ---------- */
+const esc = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+const hl = s => esc(s).split("**").map((p, i) => (i % 2 ? "<mark>" + p + "</mark>" : p)).join("");
+const plain = s => s.replace(/\*\*/g, "");
+const passed = r => r.s * 4 >= r.n * 3;
+
+const ICON = {
+  back: '<path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>',
+  chev: '<path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>',
+  arrow: '<path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>',
+  check: '<path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>',
+  x: '<path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>',
+  book: '<path d="M12 6.5C10 5 7 4.5 4 5v13c3-.5 6 0 8 1.5 2-1.5 5-2 8-1.5V5c-3-.5-6 0-8 1.5zM12 6.5v13" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/>',
+  cards: '<rect x="6" y="3.5" width="12" height="15" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M3.5 8v10.5A2.5 2.5 0 006 21h9" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/>',
+  quiz: '<rect x="4" y="4" width="16" height="16" rx="3" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M9.6 9.6a2.4 2.4 0 114 1.8c-.9.6-1.6 1.1-1.6 2.1M12 16.6v.1" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/>',
+  list: '<path d="M10 7h10M10 12h10M10 17h10" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/><path d="M3.5 7l1.5 1.5L7.5 6M3.5 12l1.5 1.5 2.5-2.5M3.5 17l1.5 1.5 2.5-2.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>',
+  person: '<circle cx="12" cy="8.5" r="3.6" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M5 20c.8-3.6 3.6-5.5 7-5.5s6.2 1.9 7 5.5" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/>',
+  bulb: '<path d="M9 18h6M10 21h4M12 3a6 6 0 00-3.6 10.8c.7.6 1.1 1.4 1.1 2.2h5c0-.8.4-1.6 1.1-2.2A6 6 0 0012 3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>',
+  more: '<circle cx="12" cy="5.5" r="1.8" fill="currentColor"/><circle cx="12" cy="12" r="1.8" fill="currentColor"/><circle cx="12" cy="18.5" r="1.8" fill="currentColor"/>',
+  timer: '<circle cx="12" cy="13.5" r="7" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M12 10v3.8l2.2 1.6M9.5 3h5" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/>',
+  shuffle: '<path d="M4 7h3.5c4 0 5 10 9 10H20M4 17h3.5c1.6 0 2.7-1.6 3.6-3.4M13 10.4C13.9 8.6 15 7 16.5 7H20M17.5 4.5L20 7l-2.5 2.5M17.5 14.5L20 17l-2.5 2.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>',
+  alert: '<circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M12 7.5v5.5M12 16.2v.1" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>',
+};
+const icon = (name, cls) => '<svg viewBox="0 0 24 24" aria-hidden="true"' + (cls ? ' class="' + cls + '"' : "") + ">" + ICON[name] + "</svg>";
+
+function ring(frac, size, stroke, color, track, inner) {
+  const r = (size - stroke) / 2, c = 2 * Math.PI * r, f = Math.max(0, Math.min(1, frac));
+  return '<div class="ring" style="width:' + size + "px;height:" + size + 'px"><svg width="' + size + '" height="' + size + '">' +
+    '<circle cx="' + size / 2 + '" cy="' + size / 2 + '" r="' + r + '" fill="none" stroke="' + track + '" stroke-width="' + stroke + '"/>' +
+    (f > 0 ? '<circle cx="' + size / 2 + '" cy="' + size / 2 + '" r="' + r + '" fill="none" stroke="' + color + '" stroke-width="' + stroke + '" stroke-linecap="round" stroke-dasharray="' + c * f + " " + c + '"/>' : "") +
+    "</svg><span>" + (inner || "") + "</span></div>";
+}
+const bar = (frac, ok) => '<div class="bar' + (ok ? " ok" : "") + '"><div style="width:' + Math.round(Math.max(0, Math.min(1, frac)) * 100) + '%"></div></div>';
+
+function listRow({ title, sub, lead, act, arg, trail }) {
+  return '<button class="card" data-act="' + act + '"' + (arg !== undefined ? ' data-arg="' + esc(arg) + '"' : "") + '><div class="row-in">' +
+    (lead || "") + '<div class="row-text"><div class="row-title">' + esc(title) + "</div>" + (sub ? '<div class="row-sub">' + esc(sub) + "</div>" : "") + "</div>" +
+    (trail !== undefined ? trail : icon("chev", "chev")) + "</div></button>";
+}
+const topbar = (title, actions, back) =>
+  '<header class="topbar"><div class="topbar-in"><button class="icon-btn" data-act="' + (back || "back") + '" aria-label="Back">' + icon("back") + "</button>" +
+  '<div class="topbar-title">' + esc(title) + "</div>" + (actions || "") + "</div></header>";
+
+/* ---------- navigation ---------- */
+let tab = "learn";
+const stack = [];
+let tabScroll = 0, menuOpen = false;
+const curScreen = () => stack[stack.length - 1];
+function cleanup(s) { if (s && s.timer) { clearInterval(s.timer); s.timer = null; } }
+function push(s) { if (stack.length) curScreen().scroll = scrollY; else tabScroll = scrollY; stack.push(s); render(true); }
+function replace(s) { cleanup(stack.pop()); stack.push(s); render(true); }
+function pop() {
+  cleanup(stack.pop());
+  render(false);
+  window.scrollTo(0, stack.length ? (curScreen().scroll || 0) : tabScroll);
+}
+function goTab(t) { tab = t; stack.length = 0; menuOpen = false; render(true); }
+
+/* ---------- views ---------- */
+function viewTabs() {
+  const body = tab === "learn" ? viewLearn() : tab === "cards" ? viewCardsHome() : viewPractice();
+  const tabs = [["learn", "Learn", "book"], ["cards", "Cards", "cards"], ["practice", "Practice", "quiz"]];
+  return '<div class="tabs-page"><main class="wrap">' + body + "</main>" +
+    '<nav class="tabbar"><div class="tabbar-in">' + tabs.map(([k, l, i]) =>
+      '<button class="tab' + (tab === k ? " on" : "") + '" data-act="tab" data-arg="' + k + '"><span class="pill">' + icon(i) + "</span>" + l + "</button>").join("") +
+    "</div></nav></div>";
+}
+
+function continueTarget() {
+  const last = P.last && sectionById(P.last);
+  if (last && !P.read.has(last.id)) return last;
+  if (last) { const i = SECTIONS.indexOf(last); return SECTIONS[i + 1] || SECTIONS.find(s => !P.read.has(s.id)); }
+  return SECTIONS[0];
+}
+
+function viewLearn() {
+  const total = SECTIONS.length, read = SECTIONS.filter(s => P.read.has(s.id)).length;
+  const best = P.results.length ? Math.max(...P.results.map(r => r.s)) : null;
+  const known = CARDS.filter(c => P.cards.has(c.id)).length;
+  const target = continueTarget();
+  const facts = allFacts(CHAPTERS);
+  let h = '<div class="stack">';
+  h += '<div style="display:flex;align-items:flex-start;gap:8px;position:relative"><div style="flex:1;min-width:0"><h1 class="h-page">Life in the UK</h1><div class="sub">Study companion</div></div>' +
+    '<button class="icon-btn" data-act="menu" aria-label="More">' + icon("more") + "</button>" +
+    (menuOpen ? '<div class="menu">' + (FIREBASE_CONFIG && fb ? (fbUser
+      ? '<div class="menu-note">Signed in as ' + esc(fbUser.email || "your account") + '</div><button data-act="signout">Sign out</button>'
+      : '<button data-act="signin">Sign in to sync</button>') : "") + '<button data-act="reset">Reset progress</button></div>' : "") + "</div>";
+  h += '<section class="hero" style="margin-top:12px"><div style="display:flex;align-items:center;gap:16px">' +
+    ring(read / total, 64, 6, "var(--on-primary)", "color-mix(in srgb, var(--on-primary) 22%, transparent)", Math.round(read * 100 / total) + "%") +
+    '<div><h2 style="font-size:20px">' + (read === 0 ? "Let's get started" : read === total ? "Handbook complete" : "Keep going") + '</h2><div class="muted">' + read + " of " + total + " sections read</div></div></div>" +
+    '<div class="hero-stats"><div><div class="stat-v">' + known + "/" + CARDS.length + '</div><div class="stat-l">cards mastered</div></div>' +
+    '<div><div class="stat-v">' + (best === null ? "–" : best + "/24") + '</div><div class="stat-l">best mock test</div></div></div></section>';
+  if (target) {
+    h += '<button class="card" data-act="read" data-arg="' + target.id + '" style="margin-top:4px"><div class="row-in"><span class="badge">' + icon("book") + "</span>" +
+      '<div class="row-text"><div class="small" style="color:var(--primary);font-weight:650">' + (P.last ? "Continue reading" : "Start reading") + "</div>" +
+      '<div class="row-title">' + esc(target.title) + '</div><div class="small">' + esc(chapterOf(target.id).title) + "</div></div>" +
+      '<span style="color:var(--primary)">' + icon("arrow", "chev") + "</span></div></button>";
+  }
+  if (FIREBASE_CONFIG && fb && !fbUser) {
+    h += listRow({ title: "Sync across devices", sub: "Sign in to keep your progress on your phone and computer", lead: '<span class="badge">' + icon("person") + "</span>", act: "signin" });
+  }
+  h += '<div class="label">Chapters</div>';
+  CHAPTERS.forEach(ch => {
+    const done = ch.sections.filter(s => P.read.has(s.id)).length;
+    h += '<button class="card" data-act="chapter" data-arg="' + ch.number + '"><div style="padding:16px">' +
+      '<div style="display:flex;align-items:center;gap:14px"><span class="badge' + (done === ch.sections.length ? " ok" : "") + '">' + ch.number + "</span>" +
+      '<div class="row-text"><div class="row-title">' + esc(ch.title) + '</div><div class="row-sub">' + esc(ch.subtitle) + "</div></div></div>" +
+      '<div class="bar-row" style="margin-top:12px">' + bar(done / ch.sections.length) + "<span>" + done + "/" + ch.sections.length + "</span></div></div></button>";
+  });
+  h += '<div class="label">Revise</div>';
+  h += listRow({ title: "All key facts", sub: facts.filter(f => P.facts.has(f.id)).length + " of " + facts.length + " ticked off", lead: '<span class="badge">' + icon("list") + "</span>", act: "remember", arg: "all" });
+  h += '<p class="foot-note">Condensed from “Life in the United Kingdom: A guide for new residents” (3rd edition). Highlighted text marks facts that often come up in the test. ' +
+    (syncState === "firebase" ? "Your progress is synced to " + esc(fbUser.email || "your account") + "."
+      : syncState === "account" ? "Your progress is saved to your account."
+      : fbFailed ? "Sync is unavailable right now, so your progress is saved in this browser."
+      : "Your progress is saved in this browser.") + "</p>";
+  return h + "</div>";
+}
+
+function viewChapter(s) {
+  const ch = CHAPTERS[s.n - 1];
+  const facts = allFacts([ch]);
+  const cards = cardsFor(ch.number);
+  let h = topbar("Chapter " + ch.number) + '<main class="wrap"><div class="stack">';
+  h += '<h1 class="h-page">' + esc(ch.title) + '</h1><p class="sub">' + hl(ch.intro) + "</p>";
+  h += '<div class="label">Read</div>';
+  ch.sections.forEach((sec, i) => {
+    const done = P.read.has(sec.id);
+    const words = sec.blocks.reduce((n, b) => n + JSON.stringify(b).split(" ").length, 0);
+    h += listRow({
+      title: sec.title, sub: Math.max(1, Math.round(words / 200)) + " min read",
+      lead: '<span class="dot' + (done ? " ok" : "") + '">' + (done ? icon("check") : i + 1) + "</span>", act: "read", arg: sec.id,
+    });
+  });
+  h += '<div class="label">Revise</div>';
+  h += listRow({ title: "Key facts to remember", sub: facts.filter(f => P.facts.has(f.id)).length + " of " + facts.length + " ticked off", lead: '<span class="badge">' + icon("list") + "</span>", act: "remember", arg: ch.number });
+  h += listRow({ title: "Flashcards", sub: cards.filter(c => P.cards.has(c.id)).length + " of " + cards.length + " mastered", lead: '<span class="badge">' + icon("cards") + "</span>", act: "cardsChapter", arg: ch.number });
+  h += listRow({ title: "Chapter quiz", sub: questionsFor(ch.number).length + " practice questions", lead: '<span class="badge">' + icon("quiz") + "</span>", act: "quizChapter", arg: ch.number });
+  return h + "</div></main>";
+}
+
+function blockHtml(b) {
+  switch (b.t) {
+    case "p": return "<p>" + hl(b.text) + "</p>";
+    case "h": return "<h3>" + esc(b.text) + "</h3>";
+    case "ul": return "<ul>" + b.items.map(i => "<li>" + hl(i) + "</li>").join("") + "</ul>";
+    case "person": return '<div class="card person"><div class="person-head"><span class="av">' + icon("person") + "</span>" + esc(b.name) + "</div>" + (b.text ? "<div>" + hl(b.text) + "</div>" : "") + "</div>";
+    case "tip": return '<div class="tip">' + icon("bulb") + "<div>" + hl(b.text) + "</div></div>";
+    case "quote": return '<blockquote class="quote" style="margin:0">' + b.lines.map(l => "<div>" + esc(l) + "</div>").join("") + "<cite>" + esc(b.source) + "</cite></blockquote>";
+    case "table": {
+      const narrow = b.rows.every(r => plain(r[0]).length <= 3);
+      return '<div class="card table' + (narrow ? " narrow" : "") + '">' + b.rows.map(r => '<div class="trow"><div>' + hl(r[0]) + "</div><div>" + hl(r[1]) + "</div></div>").join("") + "</div>";
+    }
+  }
+  return "";
+}
+
+function factRows(facts) {
+  return facts.map(f => '<button class="fact' + (P.facts.has(f.id) ? " on" : "") + '" data-act="fact" data-arg="' + f.id + '"><span class="tick">' + icon("check") + '</span><span class="ft">' + hl(f.text) + "</span></button>").join("");
+}
+
+function viewReader(s) {
+  const sec = sectionById(s.id), ch = chapterOf(s.id);
+  const next = ch.sections[ch.sections.indexOf(sec) + 1];
+  const ticked = sec.remember.filter(f => P.facts.has(f.id)).length;
+  let h = topbar(ch.title,
+    '<button class="text-btn-sm" data-act="scale" data-arg="-1" aria-label="Smaller text">A−</button><button class="text-btn-sm" data-act="scale" data-arg="1" aria-label="Larger text">A+</button>') +
+    '<div class="readbar" style="position:sticky;top:calc(env(safe-area-inset-top, 0px) + 57px);z-index:5"><div id="readbar"></div></div>';
+  h += '<main class="wrap reader"><div class="eyebrow">Section ' + sec.id + "</div><h1>" + esc(sec.title) + '</h1><div class="prose">' + sec.blocks.map(blockHtml).join("") + "</div>";
+  if (sec.remember.length) {
+    h += '<section class="card" style="margin-top:28px"><div class="facts-head"><span class="badge">' + icon("list") + "</span>" +
+      '<div class="row-text"><div class="row-title">Key facts to remember</div><div class="small">Tick each one you know</div></div>' +
+      '<span class="small" style="font-weight:650;color:var(--fg)" id="factcount">' + ticked + "/" + sec.remember.length + "</span></div>" + factRows(sec.remember) + "</section>";
+  }
+  h += '<div style="margin-top:24px" id="readend">';
+  h += next
+    ? '<button class="btn btn-primary" data-act="nextSection" data-arg="' + next.id + '"><span class="two"><small>Next section</small><b>' + esc(next.title) + "</b></span></button>"
+    : '<button class="btn btn-primary" data-act="finishChapter" data-arg="' + ch.number + '">Finish chapter ' + ch.number + "</button>";
+  h += '<button class="link-btn" data-act="back">Back to chapter</button></div></main>';
+  return h;
+}
+
+function viewRemember(s) {
+  const chs = s.n === "all" ? CHAPTERS : [CHAPTERS[s.n - 1]];
+  const facts = allFacts(chs), ticked = facts.filter(f => P.facts.has(f.id)).length;
+  let h = topbar(s.n === "all" ? "All key facts" : "Chapter " + s.n + " · Key facts") + '<main class="wrap"><div class="stack">';
+  h += '<h1 class="h-page">Remember these</h1><p class="sub">The key facts from every section in one place. Tick each one you know.</p>' +
+    '<div class="bar-row" style="margin-top:4px">' + bar(facts.length ? ticked / facts.length : 0, true) + "<span>" + ticked + "/" + facts.length + "</span></div>";
+  chs.forEach(ch => {
+    if (s.n === "all") h += '<h2 style="font-size:20px;margin-top:20px">' + ch.number + ". " + esc(ch.title) + "</h2>";
+    ch.sections.forEach(sec => {
+      if (!sec.remember.length) return;
+      h += '<div class="label">' + esc(sec.title) + '</div><div class="card">' + factRows(sec.remember) + "</div>";
+    });
+  });
+  return h + "</div></main>";
+}
+
+function viewChapterComplete(s) {
+  const ch = CHAPTERS[s.n - 1], next = CHAPTERS[s.n];
+  const qn = Math.min(20, questionsFor(ch.number).length);
+  let h = topbar("") + '<main class="wrap"><div class="done-top">' +
+    ring(1, 88, 8, "var(--ok)", "var(--ok-soft)", '<span style="color:var(--ok);width:40px;height:40px;display:block">' + icon("check") + "</span>") +
+    '<h1 class="h-page" style="margin-top:14px">Chapter ' + ch.number + ' complete</h1><div class="sub">' + esc(ch.title) + "</div>" +
+    '<h2 style="font-size:20px;margin:26px 0 8px">' + (next ? "Do you want to test yourself on this chapter before moving on?" : "That's the whole handbook. How would you like to test yourself?") + "</h2></div>";
+  h += '<div class="stack"><button class="card choice primary" data-act="chapterTest" data-arg="' + ch.number + '">' + icon("quiz") +
+    '<div class="row-text"><div class="row-title">Take the chapter test</div><div class="row-sub">' + qn + " questions with explanations</div></div></button>";
+  h += next
+    ? '<button class="card choice" data-act="read" data-arg="' + next.sections[0].id + '" data-replace="1">' + icon("arrow") + '<div class="row-text"><div class="row-title">Skip to Chapter ' + next.number + '</div><div class="row-sub">' + esc(next.title) + "</div></div></button>"
+    : '<button class="card choice" data-act="mock" data-replace="1">' + icon("book") + '<div class="row-text"><div class="row-title">Take a full mock test</div><div class="row-sub">24 questions, 45 minutes</div></div></button>';
+  h += '<button class="link-btn" data-act="cardsChapter" data-arg="' + ch.number + '">Review with flashcards instead</button></div></main>';
+  return h;
+}
+
+function viewCardsHome() {
+  const known = CARDS.filter(c => P.cards.has(c.id)).length;
+  const learning = CARDS.filter(c => !P.cards.has(c.id));
+  let h = '<div class="stack"><h1 class="h-page">Flashcards</h1><p class="sub">Quick-fire recall of the facts most likely to come up.</p>';
+  h += '<section class="card" style="padding:20px;margin-top:12px"><div style="display:flex;align-items:center;gap:16px">' +
+    ring(known / CARDS.length, 56, 6, "var(--ok)", "var(--surface-2)", Math.round(known * 100 / CARDS.length) + "%") +
+    '<div><div class="row-title">' + known + " of " + CARDS.length + ' mastered</div><div class="row-sub">' + learning.length + " still to learn</div></div></div>" +
+    '<button class="btn btn-primary" style="margin-top:16px" data-act="cardsStudy">' + (learning.length ? "Study 30 unlearned cards" : "Review 30 random cards") + "</button></section>";
+  h += listRow({ title: "Shuffle everything", sub: "All " + CARDS.length + " cards in random order", lead: '<span class="badge">' + icon("shuffle") + "</span>", act: "cardsAll" });
+  h += '<div class="label">By chapter</div>';
+  CHAPTERS.forEach(ch => {
+    const cs = cardsFor(ch.number), k = cs.filter(c => P.cards.has(c.id)).length;
+    h += listRow({ title: ch.title, sub: k + " of " + cs.length + " mastered", lead: '<span class="badge' + (k === cs.length ? " ok" : "") + '">' + ch.number + "</span>", act: "cardsChapter", arg: ch.number });
+  });
+  return h + "</div>";
+}
+
+function viewCards(s) {
+  let h = topbar(s.title) + '<main class="wrap">';
+  if (s.i >= s.ids.length) {
+    h += '<div class="done-top" style="padding-top:60px">' + ring(1, 72, 7, "var(--ok)", "var(--ok-soft)", '<span style="color:var(--ok);width:32px;height:32px;display:block">' + icon("check") + "</span>") +
+      '<h1 class="h-page" style="margin-top:12px">Session complete</h1><p class="sub">You knew ' + (s.ids.length - s.missed.length) + " of " + s.ids.length + " cards.</p></div>" +
+      '<div class="stack" style="margin-top:24px">' + (s.missed.length ? '<button class="btn btn-primary" data-act="cardsRetry">Go again with the ' + s.missed.length + " you missed</button>" : "") +
+      '<button class="link-btn" data-act="back">Done</button></div></main>';
+    return h;
+  }
+  const c = CARD_BY_ID[s.ids[s.i]];
+  h += '<div class="bar-row">' + bar(s.i / s.ids.length) + "<span>" + (s.i + 1) + " / " + s.ids.length + "</span></div>";
+  h += '<div class="flash-wrap"><div class="flash" id="flash" data-act="flip" role="button" tabindex="0" aria-label="Flip card">' +
+    '<div class="face front"><div class="eyebrow">Chapter ' + c.chapter + '</div><div class="q">' + esc(c.front) + '</div><div class="small">Tap to reveal</div></div>' +
+    '<div class="face back"><div class="eyebrow" style="color:inherit;opacity:.75">Answer</div><div class="q">' + esc(c.back) + "</div></div></div></div>";
+  h += '<div class="btn-row"><button class="btn btn-outline" data-act="cardNo">Still learning</button><button class="btn btn-ok" data-act="cardYes">Got it</button></div></main>';
+  return h;
+}
+
+function viewPractice() {
+  const R = P.results;
+  const missed = QUESTIONS.filter(q => P.missed.has(q.id));
+  let h = '<div class="stack"><h1 class="h-page">Practice</h1><p class="sub">Test yourself in the same format as the real exam.</p>';
+  h += '<section class="hero" style="margin-top:12px"><h2 style="font-size:20px">Mock test</h2><div class="muted">24 questions · 45 minutes · pass mark 18 (75%)</div>' +
+    '<div class="hero-stats"><div><div class="stat-v">' + R.length + '</div><div class="stat-l">taken</div></div><div><div class="stat-v">' + R.filter(passed).length +
+    '</div><div class="stat-l">passed</div></div><div><div class="stat-v">' + (R.length ? Math.max(...R.map(r => r.s)) + "/24" : "–") + '</div><div class="stat-l">best</div></div></div>' +
+    '<button class="btn btn-light" style="margin-top:16px" data-act="mock">Start mock test</button></section>';
+  if (R.length) {
+    h += '<div class="label">Recent results</div><div class="chips">' + R.slice(-10).reverse().map(r =>
+      '<div class="chip ' + (passed(r) ? "good" : "bad") + '"><b>' + r.s + "/" + r.n + '</b><span class="small">' + new Date(r.t).toLocaleDateString("en-GB", { day: "numeric", month: "short" }) + "</span></div>").join("") + "</div>";
+  }
+  if (missed.length) {
+    h += '<div class="label">Weak spots</div>' + listRow({ title: "Review mistakes", sub: missed.length + " questions you got wrong last time", lead: '<span class="badge bad">' + icon("alert") + "</span>", act: "quizMissed" });
+  }
+  h += '<div class="label">Quiz by chapter</div>';
+  CHAPTERS.forEach(ch => {
+    const qs = questionsFor(ch.number), tried = qs.filter(q => P.answered.has(q.id)).length;
+    h += listRow({ title: ch.title, sub: qs.length + " questions · " + tried + " tried", lead: '<span class="badge">' + ch.number + "</span>", act: "quizChapter", arg: ch.number });
+  });
+  h += '<p class="foot-note">Practice questions are written from the handbook for this app. The real test uses its own questions, so focus on understanding the facts rather than memorising answers.</p>';
+  return h + "</div>";
+}
+
+function viewSignin(s) {
+  const titles = { signin: "Sign in", signup: "Create account", reset: "Reset password" };
+  let h = topbar(titles[s.mode]) + '<main class="wrap"><div class="stack">';
+  h += '<h1 class="h-page">Sync your progress</h1><p class="sub">Sign in to keep sections, flashcards, ticked facts and test results in step between your iPhone and other devices. Progress you already have here is kept.</p>';
+  if (s.error) h += '<div class="notice bad" role="alert">' + esc(s.error) + "</div>";
+  if (s.info) h += '<div class="notice good">' + esc(s.info) + "</div>";
+  if (s.mode !== "reset") {
+    h += '<button class="btn btn-outline" data-act="google"' + (s.busy ? " disabled" : "") + ">Continue with Google</button>";
+    h += '<div class="divider">or use email</div>';
+  }
+  h += '<form id="authform" class="stack" novalidate>' +
+    '<label class="field" for="auth-email">Email<input id="auth-email" name="email" type="email" autocomplete="email" autocapitalize="off" spellcheck="false" value="' + esc(s.email) + '"></label>' +
+    (s.mode === "reset" ? "" : '<label class="field" for="auth-password">Password<input id="auth-password" name="password" type="password" autocomplete="' +
+      (s.mode === "signup" ? "new-password" : "current-password") + '" value="' + esc(s.password) + '"></label>') +
+    '<button class="btn btn-primary" type="submit"' + (s.busy ? " disabled" : "") + ">" +
+    (s.busy ? "Please wait…" : s.mode === "signup" ? "Create account" : s.mode === "reset" ? "Send reset link" : "Sign in") + "</button></form>";
+  h += s.mode === "signin"
+    ? '<button class="link-btn" data-act="authMode" data-arg="signup">New here? Create an account</button><button class="link-btn" style="padding-top:0" data-act="authMode" data-arg="reset">Forgot password?</button>'
+    : '<button class="link-btn" data-act="authMode" data-arg="signin">I already have an account</button>';
+  h += '<p class="foot-note">Google sign-in can be blocked when the app is opened from the Home Screen. If it doesn\'t work, use email and password.</p>';
+  return h + "</div></main>";
+}
+
+async function authSubmit() {
+  const s = curScreen();
+  if (!fb || !s || s.name !== "signin" || s.busy) return;
+  const email = (s.email || "").trim();
+  if (!email) { s.error = "Enter your email address."; render(false); return; }
+  s.busy = true; s.error = ""; s.info = ""; render(false);
+  try {
+    if (s.mode === "reset") {
+      await fb.auth.sendPasswordResetEmail(email);
+      s.busy = false; s.mode = "signin"; s.info = "Check your email for a link to reset your password."; render(false);
+    } else if (s.mode === "signup") {
+      await fb.auth.createUserWithEmailAndPassword(email, s.password || "");
+    } else {
+      await fb.auth.signInWithEmailAndPassword(email, s.password || "");
+    }
+  } catch (err) { showAuthError(err); }
+}
+
+/* ---------- quiz ---------- */
+function newQuiz(title, ids, mock, continueTo) {
+  const items = ids.map(id => Q_BY_ID[id]).filter(Boolean).map(q => {
+    const tf = q.options.length === 2 && q.options.includes("True") && q.options.includes("False");
+    const order = tf ? q.options.map((_, i) => i) : shuffle(q.options.map((_, i) => i));
+    return { q, tf, options: order.map(i => q.options[i]), correct: order.map((o, i) => (q.correct.includes(o) ? i : -1)).filter(i => i >= 0), sel: [], checked: false };
+  });
+  return { name: "quiz", title, ids, mock, continueTo, items, i: 0, finished: false, left: 45 * 60, showAll: false };
+}
+const isRight = it => it.sel.length === it.correct.length && it.sel.every(i => it.correct.includes(i));
+const fmtTime = s => Math.floor(s / 60) + ":" + String(s % 60).padStart(2, "0");
+
+function finishQuiz(s) {
+  if (s.finished) return;
+  cleanup(s);
+  if (s.mock) {
+    s.items.forEach(it => recordAnswer(it.q.id, isRight(it)));
+    P.results.push({ t: Date.now(), s: s.items.filter(isRight).length, n: s.items.length });
+    P.results = P.results.slice(-50);
+    save();
+  }
+  s.finished = true;
+  render(true);
+}
+function recordAnswer(id, ok) { P.answered.add(id); if (ok) P.missed.delete(id); else P.missed.add(id); }
+
+function viewQuiz(s) {
+  if (s.finished) return viewResults(s);
+  const it = s.items[s.i], q = it.q, multi = q.correct.length > 1;
+  const low = s.left < 300;
+  let h = topbar(s.title, s.mock ? '<div class="timer' + (low ? " low" : "") + '" id="timer">' + icon("timer") + "<span>" + fmtTime(s.left) + "</span></div>" : "", "quizBack");
+  h += '<main class="wrap">';
+  if (s.mock) {
+    h += '<div class="qdots" id="qdots">' + s.items.map((x, i) =>
+      '<button class="qdot' + (i === s.i ? " cur" : x.sel.length === x.correct.length ? " done" : "") + '" data-act="jump" data-arg="' + i + '">' + (i + 1) + "</button>").join("") + "</div>";
+  } else {
+    h += '<div class="bar-row">' + bar((s.i + (it.checked ? 1 : 0)) / s.items.length) + "<span>" + (s.i + 1) + " / " + s.items.length + "</span></div>";
+  }
+  h += '<div class="eyebrow" style="margin-top:22px">Question ' + (s.i + 1) + '</div><h2 class="qtext">' + esc(q.text) + "</h2>" +
+    '<div class="small" style="margin-top:6px;font-size:14px">' + (multi ? "Select TWO answers" : it.tf ? "Is this statement true or false?" : "Select ONE answer") + "</div>";
+  h += '<div class="opts' + (multi ? " multi" : "") + '">' + it.options.map((o, i) => {
+    const sel = it.sel.includes(i), right = it.correct.includes(i);
+    let cls = "", key = String.fromCharCode(65 + i);
+    if (it.checked && right) { cls = " right"; key = icon("check"); }
+    else if (it.checked && sel) { cls = " wrong"; key = icon("x"); }
+    else if (sel) cls = " sel";
+    return '<button class="opt' + cls + '" data-act="opt" data-arg="' + i + '"' + (it.checked ? " disabled" : "") + '><span class="key">' + key + "</span><span>" + esc(o) + "</span></button>";
+  }).join("") + "</div>";
+  if (it.checked) {
+    const ok = isRight(it);
+    h += '<div class="explain ' + (ok ? "good" : "bad") + '"><h3>' + (ok ? "Correct" : "Not quite") + "</h3><div>" + hl(q.explanation) + "</div></div>";
+  }
+  const ready = it.sel.length === it.correct.length;
+  h += '<div class="quiz-foot">';
+  if (s.mock) {
+    h += '<div class="btn-row"><button class="btn btn-outline" data-act="prev"' + (s.i === 0 ? " disabled" : "") + '>Previous</button>' +
+      (s.i === s.items.length - 1 ? '<button class="btn btn-primary" data-act="finishAsk">Finish test</button>' : '<button class="btn btn-primary" data-act="next">Next</button>') + "</div>";
+  } else {
+    h += '<button class="btn btn-primary" data-act="' + (it.checked ? "next" : "check") + '"' + (!it.checked && !ready ? " disabled" : "") + ">" +
+      (!it.checked ? "Check answer" : s.i === s.items.length - 1 ? "See results" : "Next question") + "</button>";
+  }
+  return h + "</div></main>";
+}
+
+function viewResults(s) {
+  const score = s.items.filter(isRight).length, n = s.items.length, ok = score * 4 >= n * 3;
+  const shown = s.showAll ? s.items : s.items.filter(it => !isRight(it));
+  let h = topbar(s.title) + '<main class="wrap"><div class="result-top">' +
+    ring(score / n, 140, 12, ok ? "var(--ok)" : "var(--bad)", "var(--surface-2)", '<b style="font-size:28px">' + score + "/" + n + '</b><small class="small">' + Math.round(score * 100 / n) + "%</small>") +
+    '<div class="verdict ' + (ok ? "good" : "bad") + '">' + (s.mock ? (ok ? "Pass" : "Not a pass yet") : ok ? "Great work" : "Keep practising") + "</div>" +
+    '<p class="sub" style="font-size:14px">' + (s.mock ? "You need 18 out of 24 (75%) to pass the real test." : "Wrong answers are saved to “Review mistakes”.") + "</p></div>";
+  h += '<div class="stack">';
+  if (s.continueTo) h += '<button class="btn btn-primary" data-act="read" data-arg="' + CHAPTERS[s.continueTo - 1].sections[0].id + '" data-replace="1">Continue to Chapter ' + s.continueTo + "</button>";
+  h += '<div class="btn-row"><button class="btn btn-outline" data-act="back">Done</button><button class="btn ' + (s.continueTo ? "btn-outline" : "btn-primary") + '" data-act="retry">' + (s.mock ? "New test" : "Try again") + "</button></div>";
+  h += '<div style="display:flex;align-items:center;justify-content:space-between"><div class="label">' + (s.showAll ? "All questions" : "Questions to review") + '</div><button class="text-btn-sm" style="font-size:15px;color:var(--primary)" data-act="toggleAll">' + (s.showAll ? "Only mistakes" : "Show all") + "</button></div>";
+  if (!shown.length) h += '<p class="sub" style="padding:4px">No mistakes. Every answer was correct.</p>';
+  shown.forEach(it => {
+    const good = isRight(it);
+    h += '<div class="card rv"><div style="display:flex;align-items:center;gap:10px"><span class="dot' + (good ? " ok" : "") + '" style="width:22px;height:22px;' + (good ? "" : "background:var(--bad);color:var(--surface)") + '">' + icon(good ? "check" : "x") + "</span>" +
+      '<span class="small" style="font-weight:600">Question ' + (s.items.indexOf(it) + 1) + '</span></div><div class="row-title" style="margin-top:8px">' + esc(it.q.text) + "</div>" +
+      (good ? "" : '<div class="yours">Your answer: ' + (it.sel.length ? it.sel.map(i => esc(it.options[i])).join(" · ") : "not answered") + "</div>") +
+      '<div class="correct">Correct: ' + it.correct.slice().sort().map(i => esc(it.options[i])).join(" · ") + "</div>" +
+      (it.q.explanation ? '<div class="small" style="margin-top:8px">' + hl(it.q.explanation) + "</div>" : "") + "</div>";
+  });
+  return h + "</div></main>";
+}
+
+/* ---------- modal ---------- */
+function showModal(title, text, confirmLabel, onConfirm, cancelLabel) {
+  const m = document.getElementById("modal");
+  m.innerHTML = '<div class="scrim" data-act="modalClose"><div class="dialog" role="dialog" aria-modal="true"><h2>' + esc(title) + "</h2><p>" + esc(text) + "</p>" +
+    '<div class="acts"><button data-act="modalClose">' + esc(cancelLabel || "Cancel") + '</button><button data-act="modalOk">' + esc(confirmLabel) + "</button></div></div></div>";
+  modalOk = onConfirm;
+}
+let modalOk = null;
+function closeModal() { document.getElementById("modal").innerHTML = ""; modalOk = null; }
+
+/* ---------- render ---------- */
+const app = document.getElementById("app");
+function render(toTop) {
+  document.documentElement.style.setProperty("--read-scale", P.scale);
+  const s = curScreen();
+  let html;
+  if (!s) html = viewTabs();
+  else if (s.name === "chapter") html = viewChapter(s);
+  else if (s.name === "reader") html = viewReader(s);
+  else if (s.name === "remember") html = viewRemember(s);
+  else if (s.name === "complete") html = viewChapterComplete(s);
+  else if (s.name === "signin") html = viewSignin(s);
+  else if (s.name === "cards") html = viewCards(s);
+  else if (s.name === "quiz") html = viewQuiz(s);
+  app.innerHTML = html;
+  if (toTop) window.scrollTo(0, 0);
+  if (s && s.name === "reader") { P.last = s.id; onScroll(); }
+  if (s && s.name === "quiz" && s.mock && !s.finished) {
+    const cur = document.querySelector(".qdot.cur");
+    if (cur) cur.scrollIntoView({ block: "nearest", inline: "center" });
+    if (!s.timer) s.timer = setInterval(() => {
+      s.left--;
+      const t = document.getElementById("timer");
+      if (t) { t.querySelector("span").textContent = fmtTime(Math.max(0, s.left)); t.classList.toggle("low", s.left < 300); }
+      if (s.left <= 0) finishQuiz(s);
+    }, 1000);
+  }
+}
+
+function onScroll() {
+  const s = curScreen();
+  if (!s || s.name !== "reader") return;
+  const max = document.documentElement.scrollHeight - innerHeight;
+  const frac = max <= 0 ? 1 : Math.min(1, scrollY / max);
+  const b = document.getElementById("readbar");
+  if (b) b.style.width = frac * 100 + "%";
+  if (frac > 0.97 && !P.read.has(s.id)) { P.read.add(s.id); save(); }
+}
+addEventListener("scroll", onScroll, { passive: true });
+
+/* ---------- actions ---------- */
+const actions = {
+  tab: el => goTab(el.dataset.arg),
+  back: () => pop(),
+  menu: () => { menuOpen = !menuOpen; render(false); },
+  reset: () => {
+    menuOpen = false; render(false);
+    showModal("Reset all progress?", "Reading progress, flashcards, ticked facts and test results will be cleared.", "Reset", () => {
+      SET_KEYS.forEach(k => P[k].clear()); P.last = null; P.results = []; P.scale = 1; save(); render(false);
+    });
+  },
+  chapter: el => push({ name: "chapter", n: +el.dataset.arg }),
+  signin: () => { menuOpen = false; push({ name: "signin", mode: "signin", email: "", password: "", error: "", info: "", busy: false }); },
+  signout: () => { menuOpen = false; if (fb) fb.auth.signOut(); },
+  authMode: el => { const s = curScreen(); s.mode = el.dataset.arg; s.error = ""; s.info = ""; render(false); },
+  google: async () => {
+    const s = curScreen();
+    if (!fb || s.busy) return;
+    const provider = new firebase.auth.GoogleAuthProvider();
+    try { await fb.auth.signInWithPopup(provider); }
+    catch (err) {
+      if (err && (err.code === "auth/popup-blocked" || err.code === "auth/operation-not-supported-in-this-environment")) {
+        try { await fb.auth.signInWithRedirect(provider); } catch (e2) { showAuthError(e2); }
+      } else showAuthError(err);
+    }
+  },
+  read: el => (el.dataset.replace ? replace : push)({ name: "reader", id: el.dataset.arg }),
+  nextSection: el => { P.read.add(curScreen().id); save(); replace({ name: "reader", id: el.dataset.arg }); },
+  finishChapter: el => { P.read.add(curScreen().id); save(); replace({ name: "complete", n: +el.dataset.arg }); },
+  remember: el => push({ name: "remember", n: el.dataset.arg === "all" ? "all" : +el.dataset.arg }),
+  fact: el => {
+    const id = el.dataset.arg;
+    if (P.facts.has(id)) P.facts.delete(id); else P.facts.add(id);
+    save(); render(false);
+  },
+  scale: el => { P.scale = Math.max(0.85, Math.min(1.4, Math.round((P.scale + 0.1 * +el.dataset.arg) * 100) / 100)); save(); render(false); },
+  chapterTest: el => {
+    const n = +el.dataset.arg;
+    replace(newQuiz("Chapter " + n + " test", shuffle(questionsFor(n)).slice(0, 20).map(q => q.id), false, n < CHAPTERS.length ? n + 1 : null));
+  },
+  cardsStudy: () => {
+    const learning = CARDS.filter(c => !P.cards.has(c.id));
+    push({ name: "cards", title: "Study session", ids: shuffle(learning.length ? learning : CARDS).slice(0, 30).map(c => c.id), i: 0, missed: [] });
+  },
+  cardsAll: () => push({ name: "cards", title: "All cards", ids: shuffle(CARDS).map(c => c.id), i: 0, missed: [] }),
+  cardsChapter: el => push({ name: "cards", title: "Chapter " + el.dataset.arg, ids: shuffle(cardsFor(+el.dataset.arg)).map(c => c.id), i: 0, missed: [] }),
+  flip: () => { const f = document.getElementById("flash"); if (f) f.classList.toggle("flipped"); },
+  cardYes: () => { const s = curScreen(); P.cards.add(s.ids[s.i]); save(); s.i++; render(false); },
+  cardNo: () => { const s = curScreen(); P.cards.delete(s.ids[s.i]); s.missed.push(s.ids[s.i]); save(); s.i++; render(false); },
+  cardsRetry: () => { const s = curScreen(); s.ids = shuffle(s.missed); s.missed = []; s.i = 0; render(true); },
+  mock: el => (el.dataset.replace ? replace : push)(newQuiz("Mock test", mockTest(), true, null)),
+  quizChapter: el => { const n = +el.dataset.arg; push(newQuiz("Chapter " + n + " quiz", shuffle(questionsFor(n)).slice(0, 20).map(q => q.id), false, null)); },
+  quizMissed: () => push(newQuiz("Review mistakes", shuffle(QUESTIONS.filter(q => P.missed.has(q.id))).slice(0, 30).map(q => q.id), false, null)),
+  opt: el => {
+    const s = curScreen(), it = s.items[s.i], i = +el.dataset.arg;
+    if (it.checked) return;
+    if (it.correct.length === 1) it.sel = [i];
+    else if (it.sel.includes(i)) it.sel = it.sel.filter(x => x !== i);
+    else { if (it.sel.length >= it.correct.length) it.sel.shift(); it.sel.push(i); }
+    render(false);
+  },
+  check: () => { const s = curScreen(), it = s.items[s.i]; it.checked = true; recordAnswer(it.q.id, isRight(it)); save(); render(false); },
+  next: () => { const s = curScreen(); if (s.i < s.items.length - 1) { s.i++; render(true); } else finishQuiz(s); },
+  prev: () => { const s = curScreen(); if (s.i > 0) { s.i--; render(true); } },
+  jump: el => { const s = curScreen(); s.i = +el.dataset.arg; render(true); },
+  finishAsk: () => {
+    const s = curScreen(), un = s.items.filter(it => it.sel.length !== it.correct.length).length;
+    showModal("Finish the test?", un ? "You have " + un + " unanswered question" + (un === 1 ? "" : "s") + ". Unanswered questions count as wrong." : "All questions answered. Ready to see your score?",
+      "Finish", () => finishQuiz(s), "Review");
+  },
+  quizBack: () => {
+    const s = curScreen();
+    if (s.finished) return pop();
+    showModal("Leave this " + (s.mock ? "test" : "quiz") + "?", "Your answers so far won't be scored.", "Leave", () => pop(), "Keep going");
+  },
+  retry: () => { const s = curScreen(); replace(newQuiz(s.title, s.mock ? mockTest() : shuffle(s.ids), s.mock, s.continueTo)); },
+  toggleAll: () => { curScreen().showAll = !curScreen().showAll; render(false); },
+  modalClose: (el, ev) => { if (ev.target === el) closeModal(); },
+  modalOk: () => { const f = modalOk; closeModal(); if (f) f(); },
+};
+
+document.addEventListener("click", ev => {
+  const el = ev.target.closest("[data-act]");
+  if (!el) { if (menuOpen) { menuOpen = false; render(false); } return; }
+  const act = el.dataset.act;
+  if (menuOpen && act !== "menu" && act !== "reset") menuOpen = false;
+  if (actions[act]) actions[act](el, ev);
+});
+document.addEventListener("keydown", ev => {
+  if ((ev.key === "Enter" || ev.key === " ") && ev.target.id === "flash") { ev.preventDefault(); actions.flip(); }
+});
+
+document.addEventListener("input", ev => {
+  const s = curScreen();
+  if (s && s.name === "signin" && ev.target.name) s[ev.target.name] = ev.target.value;
+});
+document.addEventListener("submit", ev => {
+  if (ev.target.id === "authform") { ev.preventDefault(); authSubmit(); }
+});
+
+render(true);
+connectAccount();
+connectFirebase();
+</script>
